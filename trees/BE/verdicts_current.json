@@ -1,0 +1,38 @@
+[
+  {
+    "id": "A1",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "A2",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "A3",
+    "verdict": "Trending negative"
+  },
+  {
+    "id": "B1",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "B2",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "B3",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "C1",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "C2",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "C3",
+    "verdict": "Inconclusive"
+  }
+]

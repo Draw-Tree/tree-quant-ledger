@@ -1,0 +1,54 @@
+[
+  {
+    "id": "A1",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "A2",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "A3",
+    "verdict": "Approaching falsification"
+  },
+  {
+    "id": "B1",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "B2",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "B3",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "B4",
+    "verdict": "Trending negative"
+  },
+  {
+    "id": "C1",
+    "verdict": "Trending negative"
+  },
+  {
+    "id": "C2",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "C3",
+    "verdict": "Approaching falsification"
+  },
+  {
+    "id": "D1",
+    "verdict": "Validated"
+  },
+  {
+    "id": "D2",
+    "verdict": "Trending negative"
+  },
+  {
+    "id": "D3",
+    "verdict": "Inconclusive"
+  }
+]

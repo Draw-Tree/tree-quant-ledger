@@ -1,0 +1,66 @@
+[
+  {
+    "id": "A1",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "A2",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "A3",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "A4",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "B1",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "B2",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "B3",
+    "verdict": "Validated"
+  },
+  {
+    "id": "B4",
+    "verdict": "Validated"
+  },
+  {
+    "id": "C1",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "C2",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "C3",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "C4",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "D1",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "D2",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "D3",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "D4",
+    "verdict": "Trending positive"
+  }
+]

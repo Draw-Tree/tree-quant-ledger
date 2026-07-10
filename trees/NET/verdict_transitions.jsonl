@@ -1,0 +1,35 @@
+{"id": "A1", "date": "2026-05-15", "from": "supported", "to": "Validated"}
+{"id": "A2", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "A3", "date": "2026-05-15", "from": "supported", "to": "Validated"}
+{"id": "B1", "date": "2026-05-15", "from": "supported", "to": "Validated"}
+{"id": "B2", "date": "2026-05-15", "from": "supported", "to": "Validated"}
+{"id": "B3", "date": "2026-05-15", "from": "supported", "to": "Validated"}
+{"id": "C1", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "C2", "date": "2026-05-15", "from": "supported", "to": "Validated"}
+{"id": "C3", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "D1", "date": "2026-05-15", "from": "supported", "to": "Validated"}
+{"id": "D2", "date": "2026-05-15", "from": "supported", "to": "Validated"}
+{"id": "D3", "date": "2026-05-15", "from": "supported", "to": "Validated"}
+{"id": "E1", "date": "2026-05-15", "from": "supported", "to": "Validated"}
+{"id": "E2", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "E3", "date": "2026-05-15", "from": "supported", "to": "Validated"}
+{"id": "A1", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
+{"id": "A2", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "A3", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
+{"id": "B1", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
+{"id": "B2", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
+{"id": "B3", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
+{"id": "C1", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "C2", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
+{"id": "C3", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "D1", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
+{"id": "D2", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
+{"id": "D3", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
+{"id": "E1", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
+{"id": "E2", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "E3", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
+{"id": "E2", "date": "2026-05-30", "from": "Trending positive", "to": "Approaching falsification"}
+{"id": "A3", "date": "2026-06-06", "from": "Validated", "to": "Approaching falsification"}
+{"id": "D2", "date": "2026-06-06", "from": "Validated", "to": "Approaching falsification"}
+{"id": "E2", "date": "2026-06-06", "from": "Approaching falsification", "to": "Falsified"}
+{"id": "E2", "date": "2026-06-20", "from": "Falsified", "to": "Validated"}

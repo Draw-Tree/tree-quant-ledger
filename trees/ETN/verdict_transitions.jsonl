@@ -1,0 +1,25 @@
+{"id": "A3", "date": "2026-05-09", "from": "partially_supported", "to": "supported"}
+{"id": "A1", "date": "2026-05-15", "from": "supported", "to": "Validated"}
+{"id": "A2", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "A3", "date": "2026-05-15", "from": "supported", "to": "Validated"}
+{"id": "B1", "date": "2026-05-15", "from": "supported", "to": "Validated"}
+{"id": "B2", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "B3", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "C1", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "C2", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "C3", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "D1", "date": "2026-05-15", "from": "supported", "to": "Validated"}
+{"id": "D2", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "D3", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "A1", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
+{"id": "A2", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "A3", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
+{"id": "B1", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
+{"id": "B2", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "B3", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "C1", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "C2", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "C3", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "D1", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
+{"id": "D2", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "D3", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
