@@ -1,0 +1,37 @@
+{"id": "C1", "date": "2026-05-08", "from": "partially_supported", "to": "challenged"}
+{"id": "D3", "date": "2026-05-10", "from": "challenged", "to": "partially_supported"}
+{"id": "A1", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "A2", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "A3", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "A4", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "B1", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "B2", "date": "2026-05-15", "from": "challenged", "to": "Approaching falsification"}
+{"id": "B3", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "C1", "date": "2026-05-15", "from": "challenged", "to": "Approaching falsification"}
+{"id": "C2", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "C3", "date": "2026-05-15", "from": "challenged", "to": "Approaching falsification"}
+{"id": "D1", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "D2", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "D3", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "E1", "date": "2026-05-15", "from": "challenged", "to": "Approaching falsification"}
+{"id": "E2", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "E3", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "E4", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "A1", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending negative"}
+{"id": "A2", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "A3", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "A4", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "B1", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "B2", "date": "2026-05-16", "from": "Approaching falsification", "to": "Trending negative"}
+{"id": "B3", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "C1", "date": "2026-05-16", "from": "Approaching falsification", "to": "Trending negative"}
+{"id": "C2", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "C3", "date": "2026-05-16", "from": "Approaching falsification", "to": "Trending negative"}
+{"id": "D1", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "D2", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "D3", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "E1", "date": "2026-05-16", "from": "Approaching falsification", "to": "Trending negative"}
+{"id": "E2", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "E3", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "E4", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "C1", "date": "2026-05-30", "from": "Trending negative", "to": "Approaching falsification"}

@@ -1,0 +1,26 @@
+{"id": "C1", "date": "2026-05-08", "from": "partially_supported", "to": "challenged"}
+{"id": "D1", "date": "2026-05-09", "from": "supported", "to": "partially_supported"}
+{"id": "A1", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "A2", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "A3", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "B1", "date": "2026-05-15", "from": "challenged", "to": "Approaching falsification"}
+{"id": "B2", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "B3", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "C1", "date": "2026-05-15", "from": "challenged", "to": "Approaching falsification"}
+{"id": "C2", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "C3", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "D1", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "D2", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "D3", "date": "2026-05-15", "from": "partially_supported", "to": "Inconclusive"}
+{"id": "A1", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "A2", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "A3", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "B1", "date": "2026-05-16", "from": "Approaching falsification", "to": "Trending negative"}
+{"id": "B2", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "B3", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "C1", "date": "2026-05-16", "from": "Approaching falsification", "to": "Trending negative"}
+{"id": "C2", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "C3", "date": "2026-05-16", "from": "Inconclusive", "to": "Inconclusive"}
+{"id": "D1", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "D2", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "D3", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
