@@ -25,7 +25,7 @@
   },
   {
     "id": "C1",
-    "verdict": "Trending positive"
+    "verdict": "Approaching falsification"
   },
   {
     "id": "C2",
@@ -37,14 +37,14 @@
   },
   {
     "id": "D1",
-    "verdict": "Trending positive"
+    "verdict": "Trending negative"
   },
   {
     "id": "D2",
-    "verdict": "Validated"
+    "verdict": "Approaching falsification"
   },
   {
     "id": "D3",
-    "verdict": "Validated"
+    "verdict": "Inconclusive"
   }
 ]

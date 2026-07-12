@@ -24,3 +24,7 @@
 {"id": "D2", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
 {"id": "D3", "date": "2026-05-16", "from": "Approaching falsification", "to": "Trending negative"}
 {"id": "D3", "date": "2026-05-30", "from": "Trending negative", "to": "Validated"}
+{"id": "C1", "date": "2026-07-10", "from": "Trending positive", "to": "Approaching falsification"}
+{"id": "D1", "date": "2026-07-10", "from": "Trending positive", "to": "Trending negative"}
+{"id": "D2", "date": "2026-07-10", "from": "Validated", "to": "Approaching falsification"}
+{"id": "D3", "date": "2026-07-10", "from": "Validated", "to": "Inconclusive"}
