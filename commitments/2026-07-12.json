@@ -1,6 +1,6 @@
 {
   "date": "2026-07-12",
-  "source_commit": "9cdaa389257da1b287713639893cbd08ef293001",
+  "source_commit": "3d84f4a087a5254254994c8f6595c9a4afb3e8d9",
   "algo": "sha256",
   "trees": {
     "000660.KS": {
@@ -327,12 +327,12 @@
     "BABA": {
       "hypothesis_zero.yaml": "5e5d71ec8754a87fa2ab09d39cb6c54ac830b00656cc17b4ecf1bde9f8e99d02",
       "branches.yaml": "a0b68256bd0f46e6a686f82a2e3eace4688d2e825e2b98cf1d83722d6060622b",
-      "valuation.yaml": "b2a25449f966d2bf421ef3c648e46652a388cf1aeff320309be46d717b774bcf",
+      "valuation.yaml": "466c4c3d1ad0270756d2b64d2b0361ed94c58d8f779d6b535259705e70d4aec8",
       "consensus.md": "3359dab7e258ad97eb10f550b4b0847f94d423c1f6a5a027096bbad54fca2a12",
       "report.md": "c377b81eb5174ae333294e57a069d16ae5c9ed7849bc08d9350cdceddeb46b0b",
       "triggers_redflags.yaml": "a659c7dff91a449a0087deb653cc898f0620c96a5c31481042de5f7230dd66e2",
       "narrative_history.yaml": "9bfc6a3f63cb8799ce614be21b2255a07f4282b385e4632969fe3bd905cbab95",
-      "valuation_history.yaml": "7a17b1f3469f85c91837c5d8a29aa350891c5f2cb625954e065e3370b87cb417",
+      "valuation_history.yaml": "d26eeb3fd632d4093af9c3d42144c79a7238dd9af50a9d510aa8fcd719d4f025",
       "hypotheses/A1.json": "c4129464afd7c140f36bca5d2c9d0ec0714a2a823030d760834f256c40b3e310",
       "hypotheses/A2.json": "fda3081f7bd1c98b21b4d04db58c524b04a356056cd0325811917b03546a5d37",
       "hypotheses/A3.json": "c89ebf07ed6ecb6bcd7fb8f20497df2f892d71348e82ee69bc4e394a8db65725",
@@ -860,12 +860,12 @@
     "META": {
       "hypothesis_zero.yaml": "b3825363862cae6dc8cbb7745949ce3d83d6e5582d74a9f753770cea65da737b",
       "branches.yaml": "5260c6a46aa00a7ad566294610a0400022ec35d6bb2ee46332419edf6162ea47",
-      "valuation.yaml": "4a24600a58043909d94389423662e0275235411d9c21b3fd9773fd78c4ee63e6",
+      "valuation.yaml": "77808327e23b3b6a9b7cfa4752eab661f39ec16bb4a2f457e0fb889e62a073e0",
       "consensus.md": "0e341366def49b27d465f48fdcba0848790c80bac0c93f92176bb33d66c38105",
       "report.md": "86796e28a72582c3e9b99d7f7f0b7ad11ef100761fec051dd2f6991041b3afcf",
       "triggers_redflags.yaml": "164190d3d204ccea1e831d41fbb9a3e18718fb01d595b76997ac2bdd1aaeacb6",
       "narrative_history.yaml": "79dc6b65a683d4d43a3107da94c2e8e74ebd54ac65762467d5b398a6756efa04",
-      "valuation_history.yaml": "4a809710fa128cf734923f09c5d52e49dd41987d64c2597d379f87b24bfe3674",
+      "valuation_history.yaml": "7575f27248511838076021671dc9393ab8a23c14206314f0012739dd582021cc",
       "hypotheses/A1.json": "6549ddb125c16e35fe0dfb5ead01b647e61abe26822dca62b702dbbe4def7099",
       "hypotheses/A2.json": "1e1e0cf04b60640e3ee2311a5804b75c566fb669bc8ca5311c07b675f769a690",
       "hypotheses/A3.json": "e394726081eb9360483e49592ddf790f06c855b793094232af5f69eb4915a161",
