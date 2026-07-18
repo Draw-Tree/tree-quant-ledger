@@ -17,7 +17,7 @@
   },
   {
     "id": "B2",
-    "verdict": "Validated"
+    "verdict": "Trending negative"
   },
   {
     "id": "B3",
@@ -57,6 +57,6 @@
   },
   {
     "id": "E3",
-    "verdict": "Inconclusive"
+    "verdict": "Trending negative"
   }
 ]

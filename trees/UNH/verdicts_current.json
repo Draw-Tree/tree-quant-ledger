@@ -9,15 +9,15 @@
   },
   {
     "id": "A3",
-    "verdict": "Inconclusive"
+    "verdict": "Trending positive"
   },
   {
     "id": "B1",
-    "verdict": "Inconclusive"
+    "verdict": "Validated"
   },
   {
     "id": "B2",
-    "verdict": "Inconclusive"
+    "verdict": "Validated"
   },
   {
     "id": "B3",
@@ -37,7 +37,7 @@
   },
   {
     "id": "D1",
-    "verdict": "Inconclusive"
+    "verdict": "Trending positive"
   },
   {
     "id": "D2",

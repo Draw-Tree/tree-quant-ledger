@@ -29,3 +29,5 @@
 {"id": "E1", "date": "2026-05-16", "from": "Inconclusive", "to": "Inconclusive"}
 {"id": "E2", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
 {"id": "E3", "date": "2026-05-16", "from": "Inconclusive", "to": "Inconclusive"}
+{"id": "B2", "date": "2026-07-18", "from": "Validated", "to": "Trending negative"}
+{"id": "E3", "date": "2026-07-18", "from": "Inconclusive", "to": "Trending negative"}

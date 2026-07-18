@@ -23,3 +23,4 @@
 {"id": "D1", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
 {"id": "D2", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
 {"id": "A3", "date": "2026-07-11", "from": "Trending positive", "to": "Inconclusive"}
+{"id": "A2", "date": "2026-07-18", "from": "Validated", "to": "Trending negative"}

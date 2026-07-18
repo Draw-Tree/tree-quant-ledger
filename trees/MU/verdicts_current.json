@@ -1,50 +1,50 @@
 [
   {
     "id": "A1",
-    "verdict": "Inconclusive"
+    "verdict": "Trending positive"
   },
   {
     "id": "A2",
-    "verdict": "Trending positive"
+    "verdict": "Validated"
   },
   {
     "id": "A3",
-    "verdict": "Inconclusive"
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "A4",
+    "verdict": "Validated"
   },
   {
     "id": "B1",
-    "verdict": "Trending negative"
+    "verdict": "Trending positive"
   },
   {
     "id": "B2",
-    "verdict": "Trending positive"
+    "verdict": "Validated"
   },
   {
     "id": "B3",
     "verdict": "Inconclusive"
   },
   {
+    "id": "B4",
+    "verdict": "Trending positive"
+  },
+  {
     "id": "C1",
-    "verdict": "Validated"
+    "verdict": "Trending positive"
   },
   {
     "id": "C2",
-    "verdict": "Trending negative"
+    "verdict": "Validated"
   },
   {
     "id": "C3",
     "verdict": "Trending positive"
   },
   {
-    "id": "D1",
-    "verdict": "Inconclusive"
-  },
-  {
-    "id": "D2",
-    "verdict": "Inconclusive"
-  },
-  {
-    "id": "D3",
-    "verdict": "Inconclusive"
+    "id": "C4",
+    "verdict": "Trending negative"
   }
 ]
