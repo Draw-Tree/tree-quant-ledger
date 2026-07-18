@@ -5,15 +5,15 @@
   },
   {
     "id": "A2",
-    "verdict": "Trending negative"
+    "verdict": "Falsified"
   },
   {
     "id": "A3",
-    "verdict": "Validated"
+    "verdict": "Trending negative"
   },
   {
     "id": "B1",
-    "verdict": "Validated"
+    "verdict": "Trending positive"
   },
   {
     "id": "B2",

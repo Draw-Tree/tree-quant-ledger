@@ -17,11 +17,11 @@
   },
   {
     "id": "B2",
-    "verdict": "Validated"
+    "verdict": "Trending positive"
   },
   {
     "id": "B3",
-    "verdict": "Trending positive"
+    "verdict": "Trending negative"
   },
   {
     "id": "C1",
@@ -33,7 +33,7 @@
   },
   {
     "id": "C3",
-    "verdict": "Validated"
+    "verdict": "Falsified"
   },
   {
     "id": "D1",
