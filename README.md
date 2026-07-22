@@ -54,11 +54,18 @@ Stock Trees 研究系統的**公開操作帳本**。
   （僅 ID）的當前判定與全部歷史轉變（date / from / to）；`recode: true`
   標記方法論重新編碼（非市場事件），計算預測力時應剔除
 
-**校準（`calibration/`）**
-- `CALIBRATION.md` — 判定轉變 × 前向回報的分組統計（方向×衝擊等級），
-  每次出口自動重算，附欄位字典與誠實聲明（樣本少、事件重疊、未對沖大市）
-- `events.csv` — 逐事件原始表（ID／枚舉／數字），供外部重算或以自選
-  價格來源重建前向回報
+**校準（`calibration/`）——alpha 研究資料集**
+- `CALIBRATION.md` — 結果表：超額回報曲線（1–8 週）、降級×等級、
+  轉變廣度×cascade、permutation 檢定；每次出口自動重算
+- `events.csv`（schema v2）— 一行一個判定轉變事件：等級、必要葉旗、
+  state 壽命、1–8 週原始＋超額回報、cluster 標記——去重、算超額、切
+  feature 一表搞掂
+- `clusters.csv` — 一行一個 ticker×事件週：廣度特徵（幾多葉/幾多支/
+  等級加權淨變化）＋未來 28 日 cascade 結果＋cluster 層超額回報
+- `SPEC.md` — 欄位字典、有效性規則、預登記分析協議、等級重校程序、
+  artifact 案底（研究者由此讀起）
+- `analysis.py` — 生成本頁全部數字的腳本本體（固定種子，跑同一份
+  code 得同一份數）
 
 **承諾（`commitments/{date}.json`）**
 - 私有內容檔案的 SHA-256 雜湊＋私有庫 commit hash
