@@ -46,6 +46,7 @@ verdict_history（假說 JSON，事實源）
 | 欄 | 定義 |
 |---|---|
 | `cluster_id` / `ticker` / `first_event` / `last_event` | ticker×ISO 事件週；首末事件日 |
+| `mix_type` | 訊號純度：down_only（純降級週）／mixed（同週有升有降，訊號互相抵銷）／up_only／lateral_only |
 | `n_events` / `n_hypotheses` / `n_branches` | 廣度：事件數、涉及葉數、涉及分支數 |
 | `n_down` / `n_up` / `n_lateral` | 方向分解 |
 | `sum_score_delta` | 淨分數變化（正=淨升級） |
@@ -78,6 +79,14 @@ verdict_history（假說 JSON，事實源）
    - **H-grade**：降級後超額回報為負，負向幅度隨衝擊等級遞增。
    - **H-breadth**：同週降級廣度（`n_down`、`grade_weighted_delta`、
      `any_necessity_down`）愈大，未來 28 日 cascade 機率愈高、超額回報愈差。
+   - **H-purity**（2026-07-22 增補）：逐隻股票逐週看淨方向——同週有升有降
+     （mixed）＝訊號互相抵銷，不應與純降級週（down_only）混計；預期
+     純降級週回報差於混合週，且純降級多葉週差於單葉週。**誠實聲明**：
+     此假說由維護者檢視首批 19 個對齊事件（ACN 混合週 +4.6% 異常）後
+     提出，對該批樣本屬 in-sample 探索——假說由數據啟發，不能用同一批
+     數據證明自己；僅對其後累積的新樣本具預登記檢定效力。純度口徑的
+     permutation 檢定（down_only vs up_only＋lateral_only，mixed 剔除）
+     與原始口徑並列呈報。
    - cascade 解讀警示：本管道每週重審同批假說，同一單新聞可連續兩週觸發
      轉變，「再有轉變」部分是管道自身持續反應；一律對比無降級週基準行。
 
@@ -101,6 +110,8 @@ verdict_history（假說 JSON，事實源）
 
 ## 8. 版本紀錄
 
+- **v2.1（2026-07-22）**：clusters.csv 加 `mix_type`（訊號純度）；新增
+  H-purity 假說（附 in-sample 誠實聲明）與純度口徑 permutation 檢定。
 - **v2（2026-07-22）**：加 event_id/cluster/pool/excess/necessity/state 壽命
   /conviction_delta 欄；clusters.csv＋廣度 cascade 層；分析腳本隨庫發布；
   預登記協議與重校程序成文。
