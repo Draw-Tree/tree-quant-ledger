@@ -28,6 +28,8 @@ verdict_history（假說 JSON，事實源）
 | `grade_implied_from_fib` | True＝等級由舊制 Fibonacci 權重遷移映射推得，非人工判定 | — |
 | `branch_weight` | 分支 log-odds 合成權重（致命2.5/重創1.6/明顯受損0.9/輕微0.4/邊緣0.15） | — |
 | `is_necessity_leaf` | 該假說是否分支之必要葉（證偽即殺支） | — |
+| `model` | 判讀模型：entry 有 stamp 用 stamp（2026-07-22 起 apply-patch 寫入）；無則按日期推斷年代（<07-16 grok-4.5／07-16–17 deepseek-v3.2／≥07-18 deepseek-v4-pro） | 不空 |
+| `model_transition` | True＝事件屬模型切換首個判讀日（07-16/17/18）的重新評分潮，非市場事件；統計表剔除、原始行保留 | — |
 | `date` / `from` / `to` | 事件日、轉變前後判定（六值枚舉） | — |
 | `score_delta` | 判定分數差（✅+2/🟢+1/⚪0/🟡−1/🟠−2/🔴−3） | 空＝legacy 判定無法映射 |
 | `direction` | downgrade / upgrade / lateral（按 score_delta 符號） | — |
@@ -107,9 +109,13 @@ verdict_history（假說 JSON，事實源）
 | 2026-07-22 | 964 事件中 908 個「前向回報」實為追蹤首週行情 | 判定史始於 5 月、價格史始於 7 月，at_or_after 錯配 | 規則 4.2（7 日對齊），錯配事件前向回報清空 |
 | 2026-07-22 | 34 條 leg 回報恆為 0 | 07-22 補行未 sync 價（snapshot_price_date 未變） | 規則 4.3（stale-leg），`cmd_snapshot` 加寫行警示 |
 | 2026-07-21 | 首版「首個訊號」表（降級 −1.5%、等級單調）誤讀為訊號 | 上述兩 artifact ＋事件重覆計數 | RELEASES.md 已附正式更正；主口徑改 cluster×超額 |
+| 2026-07-22 | 07-18 週轉變量爆升至常態 4–6 倍（32 個 vs 平時 5–8）、方向偏淡（23 降 9 升）、跳≥2 級 12 個 | 判讀模型遷移（07-16 grok-4.5→deepseek-v3.2；07-18→v4-pro）——「換改卷老師」重新評分潮，非市場事件 | `model`／`model_transition` 欄入表；遷移日事件統計表剔除、觀察名單剔除；公開實驗延至 07-31 後首個 mark 開始；覆核計劃：追蹤 07-18 批轉變其後數週的反轉率——低反轉＝一次性口徑重校，高反轉＝模型噪音需整批標記 |
 
 ## 8. 版本紀錄
 
+- **v2.2（2026-07-22）**：events.csv 加 `model`／`model_transition` 欄；
+  遷移日事件於統計表與觀察名單剔除（原始行保留）；verdict_history 新
+  entry 起帶 `model` stamp；公開實驗開始日定為 07-31 後首個 mark。
 - **v2.1（2026-07-22）**：clusters.csv 加 `mix_type`（訊號純度）；新增
   H-purity 假說（附 in-sample 誠實聲明）與純度口徑 permutation 檢定。
 - **v2（2026-07-22）**：加 event_id/cluster/pool/excess/necessity/state 壽命
