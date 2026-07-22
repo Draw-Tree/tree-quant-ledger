@@ -156,8 +156,16 @@ def build_clusters(events: list[dict]) -> list[dict]:
             if sd is not None and w is not None:
                 gw += sd * w
         aligned = [e for e in evs if e.get("row_date")]
+        n_dn = sum(1 for e in evs if e.get("direction") == "downgrade")
+        n_up = sum(1 for e in evs if e.get("direction") == "upgrade")
+        # 訊號純度（H-purity，2026-07-22 維護者提出）：同週淨方向。
+        # mixed＝同週有升有降，訊號互相抵銷，不應與純降級週混為一談。
+        mix_type = ("mixed" if (n_dn and n_up) else
+                    "down_only" if n_dn else
+                    "up_only" if n_up else "lateral_only")
         row = {
             "cluster_id": cid, "ticker": t,
+            "mix_type": mix_type,
             "first_event": min(dates).isoformat() if dates else None,
             "last_event": last.isoformat() if last else None,
             "n_events": len(evs),
@@ -200,14 +208,9 @@ def _curve_cells(rows: list[dict], key_prefix: str, cl_of) -> str:
     return " | ".join(cells)
 
 
-def permutation_p(clusters: list[dict]) -> tuple:
-    """cluster 層：降級 cluster 的 excess_h1 是否低於其他（單尾）。"""
-    pts = [(c, _f(c, "excess_h1")) for c in clusters if c.get("aligned")]
-    pts = [(c, v) for c, v in pts if v is not None]
-    down = [v for c, v in pts if c["n_down"] > 0]
-    other = [v for c, v in pts if c["n_down"] == 0]
+def _perm(down: list, other: list) -> float | None:
     if len(down) < 2 or len(other) < 1:
-        return None, len(down), len(other)
+        return None
     obs = statistics.mean(down) - statistics.mean(other)
     vals = down + other
     rng = random.Random(PERM_SEED)
@@ -216,7 +219,27 @@ def permutation_p(clusters: list[dict]) -> tuple:
         rng.shuffle(vals)
         if statistics.mean(vals[:len(down)]) - statistics.mean(vals[len(down):]) <= obs:
             cnt += 1
-    return (cnt / PERM_N, len(down), len(other))
+    return cnt / PERM_N
+
+
+def permutation_p(clusters: list[dict]) -> tuple:
+    """cluster 層：降級 cluster 的 excess_h1 是否低於其他（單尾）。"""
+    pts = [(c, _f(c, "excess_h1")) for c in clusters if c.get("aligned")]
+    pts = [(c, v) for c, v in pts if v is not None]
+    down = [v for c, v in pts if c["n_down"] > 0]
+    other = [v for c, v in pts if c["n_down"] == 0]
+    return (_perm(down, other), len(down), len(other))
+
+
+def permutation_p_purity(clusters: list[dict]) -> tuple:
+    """純度口徑：純降級週 vs 純升級／僅橫向週（混合週剔除——訊號抵銷，
+    歸邊不明）。H-purity 於 2026-07-22 見樣本後提出，本檢定對現有樣本屬
+    in-sample 探索，只對之後累積的新樣本具預登記效力。"""
+    pts = [(c, _f(c, "excess_h1")) for c in clusters if c.get("aligned")]
+    pts = [(c, v) for c, v in pts if v is not None]
+    down = [v for c, v in pts if c.get("mix_type") == "down_only"]
+    other = [v for c, v in pts if c.get("mix_type") in ("up_only", "lateral_only")]
+    return (_perm(down, other), len(down), len(other))
 
 
 def markdown_tables(events: list[dict], clusters: list[dict]) -> str:
@@ -242,6 +265,42 @@ def markdown_tables(events: list[dict], clusters: list[dict]) -> str:
     for g in GRADE_ORDER:
         grp = [e for e in downs if (e.get("impact_grade") or "") == g]
         out.append(f"| {g} | {len(grp)} | {_curve_cells(grp, 'excess_h', cl_of)} |")
+
+    # 訊號純度（H-purity）：同週淨方向——純降／混合／純升，逐類對照。
+    out += ["", "### 訊號純度 × 結果（假說 H-purity：同週有升有降＝訊號抵銷，"
+            "不應與純降級週混計）", "",
+            "逐隻股票逐週看：該週是全部降級、有升有降、還是全部升級？"
+            "混合週的降級不是乾淨的壞消息——同一棵樹另一條分支同週在改善。",
+            "",
+            "| 週類型 | cluster 數 | 有價格 | 平均超額 +1週 | 平均超額 +2週 | 28日內再有降級 |",
+            "|---|---|---|---|---|---|"]
+    _MIX_ZH = {"down_only": "純降級週", "mixed": "混合週（有升有降）",
+               "up_only": "純升級週", "lateral_only": "僅橫向週"}
+    for m in ("down_only", "mixed", "up_only", "lateral_only"):
+        grp = [c for c in clusters if c.get("mix_type") == m]
+        if not grp:
+            continue
+        e1 = [x for x in (_f(c, "excess_h1") for c in grp) if x is not None]
+        e2 = [x for x in (_f(c, "excess_h2") for c in grp) if x is not None]
+        p_dn = sum(1 for c in grp if c["fut_downgrades_28d"] > 0) / len(grp)
+        out.append(
+            f"| {_MIX_ZH[m]} | {len(grp)} | {len(e1)} | "
+            f"{_pct(statistics.mean(e1)) if e1 else '—'} | "
+            f"{_pct(statistics.mean(e2)) if e2 else '—'} | {p_dn * 100:.0f}% |")
+    pd1 = [c for c in clusters if c.get("mix_type") == "down_only"
+           and c["n_down"] == 1]
+    pdm = [c for c in clusters if c.get("mix_type") == "down_only"
+           and c["n_down"] >= 2]
+    for grp, label in ((pd1, "　純降級：單葉"), (pdm, "　純降級：多葉（≥2）")):
+        e1 = [x for x in (_f(c, "excess_h1") for c in grp) if x is not None]
+        p_dn = (sum(1 for c in grp if c["fut_downgrades_28d"] > 0) / len(grp)
+                if grp else 0)
+        out.append(
+            f"| {label} | {len(grp)} | {len(e1)} | "
+            f"{_pct(statistics.mean(e1)) if e1 else '—'} | — | {p_dn * 100:.0f}% |")
+    out += ["", "純度注意：H-purity 由維護者於 2026-07-22 檢視樣本後提出，上表對"
+            "現有樣本屬 in-sample 探索（假說由同一批數據啟發，不能用同一批數據"
+            "證明自己）；對之後累積的新樣本才具預登記檢定效力。"]
 
     # 廣度 × cascade：同週轉變愈多，未來 28 日係咪愈大機會繼續轉差？
     out += ["", "### 轉變廣度 ×未來 cascade（預登記假說 H-breadth）", "",
@@ -285,14 +344,21 @@ def markdown_tables(events: list[dict], clusters: list[dict]) -> str:
             "解讀以對比基準行（無降級週）為準。"]
 
     p, nd, no = permutation_p(clusters)
+    p2, nd2, no2 = permutation_p_purity(clusters)
     out += ["", "### 顯著性（cluster 層 permutation 檢定）", ""]
     if p is None:
         out.append(f"樣本不足（降級 cluster {nd}、對照 {no}），未能檢定。")
     else:
         out.append(
-            f"降級 cluster（{nd} 個）對其他有價格 cluster（{no} 個）的 +1 週超額回報"
-            f"差異，單尾 permutation p = **{p:.3f}**（{PERM_N:,} 次重抽，固定種子）。"
-            f"p ≥ 0.05 即未達顯著——如實呈報，不因結果不好看而隱藏。")
+            f"1. **原始口徑**：有降級的 cluster（{nd} 個）對無降級 cluster"
+            f"（{no} 個）的 +1 週超額回報差異，單尾 p = **{p:.3f}**"
+            f"（{PERM_N:,} 次重抽，固定種子）。")
+    if p2 is not None:
+        out.append(
+            f"2. **純度口徑**（剔除混合週）：純降級週（{nd2} 個）對純升級／"
+            f"僅橫向週（{no2} 個），單尾 p = **{p2:.3f}**。對現有樣本屬"
+            f" in-sample 探索（見純度注意）。")
+    out.append("p ≥ 0.05 即未達顯著——如實呈報，不因結果不好看而隱藏。")
     return "\n".join(out)
 
 
