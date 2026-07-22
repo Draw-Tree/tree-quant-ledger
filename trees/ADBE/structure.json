@@ -1,0 +1,64 @@
+{
+  "as_of": "2026-07-22",
+  "grade_weights": {
+    "致命": 2.5,
+    "重創": 1.6,
+    "明顯受損": 0.9,
+    "輕微": 0.4,
+    "邊緣": 0.15
+  },
+  "branches": [
+    {
+      "id": "A",
+      "weight": 1.6,
+      "impact_grade": "重創",
+      "aggregation": "portfolio",
+      "necessity_leaves": [],
+      "leaf_weights": {},
+      "leaves": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    {
+      "id": "B",
+      "weight": 1.6,
+      "impact_grade": "重創",
+      "aggregation": "portfolio",
+      "necessity_leaves": [],
+      "leaf_weights": {},
+      "leaves": [
+        "B1",
+        "B2",
+        "B3"
+      ]
+    },
+    {
+      "id": "C",
+      "weight": 0.9,
+      "impact_grade": "明顯受損",
+      "aggregation": "portfolio",
+      "necessity_leaves": [],
+      "leaf_weights": {},
+      "leaves": [
+        "C1",
+        "C2",
+        "C3"
+      ]
+    },
+    {
+      "id": "D",
+      "weight": 0.15,
+      "impact_grade": "邊緣",
+      "aggregation": "portfolio",
+      "necessity_leaves": [],
+      "leaf_weights": {},
+      "leaves": [
+        "D1",
+        "D2",
+        "D3"
+      ]
+    }
+  ]
+}

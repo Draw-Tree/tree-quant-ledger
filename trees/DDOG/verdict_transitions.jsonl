@@ -24,3 +24,4 @@
 {"id": "D3", "date": "2026-05-16", "from": "Validated", "to": "Validated"}
 {"id": "B2", "date": "2026-05-30", "from": "Trending positive", "to": "Approaching falsification"}
 {"id": "D1", "date": "2026-06-20", "from": "Validated", "to": "Falsified"}
+{"id": "D1", "date": "2026-07-22", "from": "Falsified", "to": "Validated", "recode": true}

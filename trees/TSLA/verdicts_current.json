@@ -1,11 +1,11 @@
 [
   {
     "id": "A1",
-    "verdict": "Validated"
+    "verdict": "Trending negative"
   },
   {
     "id": "A2",
-    "verdict": "Trending positive"
+    "verdict": "Trending negative"
   },
   {
     "id": "A3",
@@ -17,7 +17,7 @@
   },
   {
     "id": "B2",
-    "verdict": "Trending positive"
+    "verdict": "Trending negative"
   },
   {
     "id": "B3",
