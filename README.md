@@ -28,7 +28,7 @@ Stock Trees 研究系統的**公開操作帳本**。
 |---|---|
 | 看表現 | 上表＋[`portfolio/PERFORMANCE.md`](portfolio/PERFORMANCE.md)（逐週對基準） |
 | 明白系統怎樣運作 | [`portfolio/RELEASES.md`](portfolio/RELEASES.md) 的「設計全貌」——五步把論點變成注碼，另見 [`portfolio/PROTOCOL.md`](portfolio/PROTOCOL.md)（預登記協議） |
-| 自行檢驗判定變化有無預測力 | 「如何驗證」第 3 條（`verdict_transitions` × `structure.json`） |
+| 看判定變化有無預測力 | [`calibration/CALIBRATION.md`](calibration/CALIBRATION.md)——每週重算的降級×等級前向回報表；自行重算見「如何驗證」第 3 條 |
 | 驗證我們沒有改寫歷史 | 「如何驗證」第 1、2 條（git 歷史＋`commitments/`） |
 | 挑戰我們的方法 | [`portfolio/OPEN_QUESTIONS.md`](portfolio/OPEN_QUESTIONS.md)（公開掛帳的方法論爭議） |
 
@@ -54,6 +54,12 @@ Stock Trees 研究系統的**公開操作帳本**。
   （僅 ID）的當前判定與全部歷史轉變（date / from / to）；`recode: true`
   標記方法論重新編碼（非市場事件），計算預測力時應剔除
 
+**校準（`calibration/`）**
+- `CALIBRATION.md` — 判定轉變 × 前向回報的分組統計（方向×衝擊等級），
+  每次出口自動重算，附欄位字典與誠實聲明（樣本少、事件重疊、未對沖大市）
+- `events.csv` — 逐事件原始表（ID／枚舉／數字），供外部重算或以自選
+  價格來源重建前向回報
+
 **承諾（`commitments/{date}.json`）**
 - 私有內容檔案的 SHA-256 雜湊＋私有庫 commit hash
 
@@ -62,10 +68,13 @@ Stock Trees 研究系統的**公開操作帳本**。
 1. **操作不可竄改**：本庫由排程自動 commit；fork/watch 本庫即可偵測任何歷史改寫。
 2. **內容承諾**：若我們日後發布任何一棵樹的原文，任何人可對發布檔案計算
    SHA-256，與當日 `commitments/` 中的紀錄比對——證明內容未曾事後修改。
-3. **判定變化的預測力（外部可覆核）**：以 `verdict_transitions.jsonl` 取全部
-   轉變事件（剔除 `recode: true`），按判定分數（✅+2／🟢+1／⚪0／🟡−1／🟠−2／🔴−3）
-   分為升級與降級；以 `structure.json` 將每片葉映射到所屬分支的衝擊等級；
-   再以任一公開價格來源計算事件後 1 週／4 週前瞻回報。可檢驗的預登記主張
+3. **判定變化的預測力（外部可覆核）**：我們每週在
+   [`calibration/CALIBRATION.md`](calibration/CALIBRATION.md) 重算一份分組
+   結果（方向×衝擊等級的前向回報），原始事件表在 `calibration/events.csv`。
+   要獨立重算：以 `verdict_transitions.jsonl` 取全部轉變事件（剔除
+   `recode: true`），按判定分數（✅+2／🟢+1／⚪0／🟡−1／🟠−2／🔴−3）分為升級
+   與降級；以 `structure.json` 將每片葉映射到所屬分支的衝擊等級；再以任一
+   公開價格來源計算事件後 1 週／4 週前瞻回報。可檢驗的預登記主張
    （RELEASES.md「首個訊號」）：降級事件的前瞻回報為負，且負向幅度隨衝擊
    等級遞增（重創支 < 明顯受損支 < 輕微支）。樣本仍少，歡迎推翻。
 
