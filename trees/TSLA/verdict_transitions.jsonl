@@ -28,3 +28,6 @@
 {"id": "D2", "date": "2026-05-30", "from": "Trending negative", "to": "Approaching falsification"}
 {"id": "D2", "date": "2026-06-13", "from": "Approaching falsification", "to": "Falsified"}
 {"id": "D1", "date": "2026-07-04", "from": "Trending negative", "to": "Falsified"}
+{"id": "A1", "date": "2026-07-22", "from": "Validated", "to": "Trending negative", "recode": true}
+{"id": "A2", "date": "2026-07-22", "from": "Trending positive", "to": "Trending negative", "recode": true}
+{"id": "B2", "date": "2026-07-22", "from": "Trending positive", "to": "Trending negative", "recode": true}

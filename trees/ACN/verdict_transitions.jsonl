@@ -4,3 +4,4 @@
 {"id": "C1", "date": "2026-07-04", "from": "Inconclusive", "to": "Trending positive"}
 {"id": "A3", "date": "2026-07-11", "from": "Validated", "to": "Inconclusive"}
 {"id": "A1", "date": "2026-07-18", "from": "Validated", "to": "Trending negative"}
+{"id": "C3", "date": "2026-07-22", "from": "Inconclusive", "to": "Inconclusive", "recode": true}

@@ -37,7 +37,7 @@
   },
   {
     "id": "D1",
-    "verdict": "Trending negative"
+    "verdict": "Trending positive"
   },
   {
     "id": "D2",
@@ -45,6 +45,6 @@
   },
   {
     "id": "D3",
-    "verdict": "Trending negative"
+    "verdict": "Inconclusive"
   }
 ]
