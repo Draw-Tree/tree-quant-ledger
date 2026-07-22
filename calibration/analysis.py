@@ -365,30 +365,43 @@ def markdown_tables(events: list[dict], clusters: list[dict]) -> str:
 # ---- 入口 ------------------------------------------------------------------
 
 def build(raw_events_path: str, quant_root: str, outdir: str) -> str:
-    """讀 raw 事件表 → 寫 events.csv（v2）＋ clusters.csv → 回傳結果表 markdown。"""
+    """讀 raw 事件表 → 寫 events.csv（v2）＋ clusters.csv → 回傳結果表 markdown。
+
+    model_transition 事件（判讀模型切換首個判讀日的重新評分潮，非市場事件）
+    完整保留於 events.csv（帶旗），但統計表與 clusters 一律剔除——與 recode
+    同一邏輯，只是 recode 於引擎層剔、transition 於分析層剔（旗留覆核）。"""
     with open(raw_events_path, encoding="utf-8") as f:
-        events = list(csv.DictReader(f))
+        all_events = list(csv.DictReader(f))
     legs = load_pool_legs(quant_root)
-    events = enrich(events, legs)
+    all_events = enrich(all_events, legs)
+    n_trans = sum(1 for e in all_events if str(e.get("model_transition")) == "True")
+    events = [e for e in all_events if str(e.get("model_transition")) != "True"]
     clusters = build_clusters(events)
 
     outp = Path(outdir)
     outp.mkdir(parents=True, exist_ok=True)
     ev_fields: list[str] = []
-    for e in events:
+    for e in all_events:
         for k in e:
             if k not in ev_fields:
                 ev_fields.append(k)
     with open(outp / "events.csv", "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=ev_fields)
         w.writeheader()
-        w.writerows(events)
+        w.writerows(all_events)
     cl_fields = list(clusters[0].keys()) if clusters else []
     with open(outp / "clusters.csv", "w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cl_fields)
         w.writeheader()
         w.writerows(clusters)
-    return markdown_tables(events, clusters)
+    note = ""
+    if n_trans:
+        note = (f"\n**模型遷移剔除**：{n_trans} 個事件帶 `model_transition` 旗"
+                "（判讀模型切換首個判讀日的重新評分潮，非市場事件——2026-07-16/18"
+                " 由 grok-4.5 遷移至 deepseek-v3.2／v4-pro，當日轉變量為常態"
+                " 4–6 倍），已於上列全部統計表剔除；原始行連旗完整保留於"
+                " events.csv，`model` 欄記錄每個事件的判讀模型年代。\n")
+    return markdown_tables(events, clusters) + note
 
 
 def main() -> int:
