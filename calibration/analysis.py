@@ -302,7 +302,7 @@ def markdown_tables(events: list[dict], clusters: list[dict]) -> str:
             "現有樣本屬 in-sample 探索（假說由同一批數據啟發，不能用同一批數據"
             "證明自己）；對之後累積的新樣本才具預登記檢定效力。"]
 
-    # 廣度 × cascade：同週轉變愈多，未來 28 日係咪愈大機會繼續轉差？
+    # 廣度 × cascade：同週轉變愈多，未來 28 日是否更大機會繼續轉差？
     out += ["", "### 轉變廣度 ×未來 cascade（預登記假說 H-breadth）", "",
             "同一 ticker 同一週有多片葉／多支分支齊轉變，是否預示未來仲有更多轉變、"
             "以及更差的超額回報？bucket 按該週降級事件數；cascade＝其後 28 日內"
