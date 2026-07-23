@@ -182,6 +182,12 @@ verdict_history（假說 JSON，事實源）
 
 ## 8. 版本紀錄
 
+- **v2.8（2026-07-23）**：point-in-time 價格回補工具（`price_backfill.py`
+  ＋手動 workflow）——以 Yahoo 歷史日線補返 07-11 缺行的 12 棵樹（另 3 棵
+  無先前行、無狀態可搬，不補）。界線：只補客觀市場價與 carried state
+  （該週無 judging 發生）、目標規則自動發現不容挑選、逐行帶
+  `backfilled: true` 標記、pi_*／er_* 以舊 targets＋新價確定性重算。
+  回補屬資料修復而非改寫歷史：價格可對照任一公開數據源覆核。
 - **v2.7（2026-07-23）**：價格可用性加固（§7 末行）——fetch 重試＋Finnhub
   後備、apply-patch 空價保護、週六 price-sweep 掃底 workflow；目標：任何
   一棵樹不再出現「成週冇星期五收市價」。
