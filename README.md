@@ -8,6 +8,25 @@ Stock Trees 研究系統的**公開操作帳本**。
 每一筆動作——以及對私有內容的 SHA-256 承諾。研究原文（假說、結論、估值邏輯）
 不在此庫，但**每一個對外的賭注與判定都預先公開、事後可驗、錯誤不可塗改**。
 
+## 🎯 主假說（我們在驗證甚麼）
+
+**假說樹的判定變化走在股價前面**——純降級股其後一週跑輸全池中位、純升級股
+跑贏；等級愈重、降級愈齊，效應愈強。
+
+對應的 **Alpha 策略讀數**：做多純升級組、做空純降級組（等權），持有一週。
+此組合的市場中性回報＝**組差**（升級組超額均值−降級組超額均值）；另設
+**加權組差**，以 |訊號分| 為權（訊號分＝Σ±衝擊等級權重：致命 2.5／重創
+1.6／明顯受損 0.9／輕微 0.4／邊緣 0.15——此為現行值；權重隨校準樣本累積
+以 Bayesian 信度混合重估，見 `calibration/SPEC.md` §6）。大盤升跌與板塊
+順逆風在組差中互相抵銷——**組差持續 >0 即策略有 alpha**。
+
+檢驗機制：每週六名單先公開（Slack ＋
+[`portfolio/verdict_watch.jsonl`](portfolio/verdict_watch.jsonl)
+append-only 帳本），下週六對答案，逐週組差落賬；累積 ≥30 個獨立降級樣本
+後跑正式 permutation 檢定。完整定義見
+[`calibration/SPEC.md`](calibration/SPEC.md) §0，實驗規則見
+[`portfolio/PUBLIC_EXPERIMENT_20260722.md`](portfolio/PUBLIC_EXPERIMENT_20260722.md)。
+
 ## 📈 最新表現（對比基準）
 
 截至 **2026-07-20**（三指數自 2026-07-14 起 base 100，指數對指數、貨幣中性）：
@@ -29,6 +48,7 @@ Stock Trees 研究系統的**公開操作帳本**。
 | 看表現 | 上表＋[`portfolio/PERFORMANCE.md`](portfolio/PERFORMANCE.md)（逐週對基準） |
 | 明白系統怎樣運作 | [`portfolio/RELEASES.md`](portfolio/RELEASES.md) 的「設計全貌」——五步把論點變成注碼，另見 [`portfolio/PROTOCOL.md`](portfolio/PROTOCOL.md)（預登記協議） |
 | 看判定變化有無預測力 | [`calibration/CALIBRATION.md`](calibration/CALIBRATION.md)——每週重算的降級×等級前向回報表；自行重算見「如何驗證」第 3 條 |
+| 追每週公開實驗（主假說對答案） | [`portfolio/verdict_watch.jsonl`](portfolio/verdict_watch.jsonl)——名單先公開、下週對答案、逐週組差落賬；規則見 [`portfolio/PUBLIC_EXPERIMENT_20260722.md`](portfolio/PUBLIC_EXPERIMENT_20260722.md) |
 | 驗證我們沒有改寫歷史 | 「如何驗證」第 1、2 條（git 歷史＋`commitments/`） |
 | 挑戰我們的方法 | [`portfolio/OPEN_QUESTIONS.md`](portfolio/OPEN_QUESTIONS.md)（公開掛帳的方法論爭議） |
 

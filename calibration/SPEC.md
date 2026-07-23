@@ -5,6 +5,35 @@
 > 不需要任何對話上下文即可正確使用這批數據做 alpha 研究與等級重校。
 > 隨每次出口同步到公開庫 `calibration/SPEC.md`。schema_version = 2。
 
+## 0. 主假說與 Alpha 策略（整個資料集為此而存在）
+
+**主假說 H**：假說樹的判定變化走在股價前面——純降級股其後一週跑輸全池
+中位、純升級股跑贏；等級愈重、降級愈齊，效應愈強。
+
+**Alpha 策略讀數**：做多純升級組、做空純降級組（等權），持有一週。此
+組合的市場中性回報＝
+
+```
+組差（spread）＝升級組超額均值 − 降級組超額均值
+加權組差（weighted spread）＝同式，但以 |訊號分| 為權
+訊號分＝Σ±衝擊等級權重（致命 2.5／重創 1.6／明顯受損 0.9／
+        輕微 0.4／邊緣 0.15；升級＋、降級−）
+```
+
+大盤升跌與板塊順逆風在組差中互相抵銷——**組差持續 >0 即策略有 alpha**，
+單邊命中率只是輔助讀數。超額＝個股一週回報−全池中位（口徑同 §5.2）。
+
+衝擊等級權重是**變數而非常數**：隨校準樣本累積按 §6 以 Bayesian 信度
+混合重估，上列為現行值；事實源＝`_lib/tree_quant.py` 之 `IMPACT_GRADES`，
+週報訊號分／加權組差／方法腳註皆即時讀取該處，重校後自動跟隨。
+
+**檢驗機制**：每週六名單先公開（Slack ＋ `verdict_watch.jsonl`
+append-only 帳本），下週六對答案；逐週 `spread_pp`／`wspread_pp` 落賬；
+累積 ≥30 個獨立降級樣本後跑正式 permutation 檢定（§5.4）。mixed 週
+（同股同週有升有降）依 H-purity 不入比分；recode 與模型遷移事件於
+源頭剔除（§4.1、§7）。實驗規則全文見公開庫
+`portfolio/PUBLIC_EXPERIMENT_20260722.md`。
+
 ## 1. 資料層級
 
 ```
@@ -30,6 +59,7 @@ verdict_history（假說 JSON，事實源）
 | `is_necessity_leaf` | 該假說是否分支之必要葉（證偽即殺支） | — |
 | `model` | 判讀模型：entry 有 stamp 用 stamp（2026-07-22 起 apply-patch 寫入）；無則按日期推斷年代（<07-16 grok-4.5／07-16–17 deepseek-v3.2／≥07-18 deepseek-v4-pro） | 不空 |
 | `model_transition` | True＝事件屬模型切換首個判讀日（07-16/17/18）的重新評分潮，非市場事件；統計表剔除、原始行保留 | — |
+| `trigger` | 觸發源：`weekly`＝週六掃描；`earnings`＝財報後裁定（每日 cron 偵測業績剛公布，`--earnings-mode` 以發布材料重審）。兩層統計性質不同，分析須分層（§5.6 H-trigger） | 空＝2026-07-23 stamp 前 legacy，觸發源不可考 |
 | `date` / `from` / `to` | 事件日、轉變前後判定（六值枚舉） | — |
 | `score_delta` | 判定分數差（✅+2/🟢+1/⚪0/🟡−1/🟠−2/🔴−3） | 空＝legacy 判定無法映射 |
 | `direction` | downgrade / upgrade / lateral（按 score_delta 符號） | — |
@@ -89,6 +119,21 @@ verdict_history（假說 JSON，事實源）
      數據證明自己；僅對其後累積的新樣本具預登記檢定效力。純度口徑的
      permutation 檢定（down_only vs up_only＋lateral_only，mixed 剔除）
      與原始口徑並列呈報。
+   - **H-trigger**（2026-07-23 增補，先寫規則後見數據）：判定轉變按觸發源
+     分兩層——`weekly`（週六掃描：判讀模型從一週新聞流中發現的增量資訊）
+     與 `earnings`（財報後裁定：業績公布翌日以發布材料重審）。財報後層
+     的股價已於公布時即時反應大半，其後一週超額回報測的是**財報後漂移**
+     （post-earnings drift）而非純資訊發現；預期：(a) 兩層的降級後超額
+     回報同號（漂移文獻支持財報後仍沿意外方向延續），但 (b) 週掃描層
+     的幅度更大（財報層的資訊已部分入價）。兩層永遠分開呈報，不合併
+     檢定；主組差照計全樣本，觸發源作分層輔助讀數，累積 ≥30 個獨立
+     cluster／層後分層 permutation。stamp 前 legacy 事件（`trigger` 空）
+     不入分層檢定。
+   - **H-spread**（2026-07-23 增補，主策略讀數）：每週「組差」（§0：升級組
+     超額均值−降級組超額均值）之時間序列均值 >0；加權組差（|訊號分| 為權）
+     同號且幅度不小於等權版——若加權版明顯弱於等權版，即「等級愈重效應
+     愈強」不成立，IMPACT_GRADES 應依 §6 重校。逐週 `spread_pp`／
+     `wspread_pp` 存於 `portfolio/verdict_watch.jsonl` 之 review 欄。
    - cascade 解讀警示：本管道每週重審同批假說，同一單新聞可連續兩週觸發
      轉變，「再有轉變」部分是管道自身持續反應；一律對比無降級週基準行。
 
@@ -114,6 +159,14 @@ verdict_history（假說 JSON，事實源）
 
 ## 8. 版本紀錄
 
+- **v2.4（2026-07-23）**：events.csv 加 `trigger` 欄（weekly／earnings／
+  空＝legacy）；判讀 patch 與 apply-patch 全艦隊 stamp 觸發源；§5.6 增補
+  H-trigger（財報後裁定＝財報後漂移層，與週掃描分層呈報）；週報明細
+  以 📅 標記財報後裁定、分維度摘要加按觸發源一行。
+- **v2.3（2026-07-23）**：新增 §0 主假說與 Alpha 策略（組差／加權組差／
+  訊號分定義）；§5.6 增補 H-spread（主策略讀數）；週報第二條 message
+  改組差頭條＋合併排榜，`verdict_watch.jsonl` review 欄新增
+  `spread_pp`／`wspread_pp`。
 - **v2.2（2026-07-22）**：events.csv 加 `model`／`model_transition` 欄；
   遷移日事件於統計表與觀察名單剔除（原始行保留）；verdict_history 新
   entry 起帶 `model` stamp；公開實驗開始日定為 07-31 後首個 mark。
