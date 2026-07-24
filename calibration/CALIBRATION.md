@@ -1,6 +1,6 @@
 # 🧪 校準結果：判定轉變 × 前向回報 × cascade
 
-> 出口日期 2026-07-23。本頁全部數字由 [`analysis.py`](analysis.py) 對[`events.csv`](events.csv)／[`clusters.csv`](clusters.csv) 重算生成（固定種子，完全可重現）；欄位字典、有效性規則、預登記協議與 artifact 案底見 [`SPEC.md`](SPEC.md)。方法論重新編碼（recode）已於源頭剔除。
+> 出口日期 2026-07-24。本頁全部數字由 [`analysis.py`](analysis.py) 對[`events.csv`](events.csv)／[`clusters.csv`](clusters.csv) 重算生成（固定種子，完全可重現）；欄位字典、有效性規則、預登記協議與 artifact 案底見 [`SPEC.md`](SPEC.md)。方法論重新編碼（recode）已於源頭剔除。
 
 **讀表指南**：分析單位是 **cluster**（ticker×事件週）——同週同股多個事件共享同一段回報，事件數會誇大樣本；每格括號內為（事件數/獨立 cluster 數）。主口徑是**超額回報**（扣同期全池中位）；原始回報僅供參考。橫向一格未轉平，訊號就未完。
 
