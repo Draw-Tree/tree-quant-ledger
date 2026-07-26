@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="856" height="92" font-family="system-ui,-apple-system,sans-serif" font-size="12">
-<rect width="856" height="92" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="856" height="242" font-family="system-ui,-apple-system,sans-serif" font-size="12">
+<rect width="856" height="242" fill="#ffffff"/>
 <text x="10" y="20" font-size="15" font-weight="bold" fill="#111827">訊號生命線：名單公開後逐週表現（相對全池中位），行到判定翻轉為止</text>
 <text x="221.0" y="38" text-anchor="middle" fill="#6b7280">+1週</text>
 <text x="283.0" y="38" text-anchor="middle" fill="#6b7280">+2週</text>
@@ -10,4 +10,64 @@
 <text x="593.0" y="38" text-anchor="middle" fill="#6b7280">+7週</text>
 <text x="655.0" y="38" text-anchor="middle" fill="#6b7280">+8週</text>
 <text x="698" y="38" fill="#6b7280">結局</text>
+<text x="10" y="66" fill="#111827" font-weight="bold">🔺 AMD +0.9</text>
+<rect x="192" y="50" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="254" y="50" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="316" y="50" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="378" y="50" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="440" y="50" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="502" y="50" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="564" y="50" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="626" y="50" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<text x="698" y="66" fill="#6b7280">等開market</text>
+<text x="10" y="96" fill="#111827" font-weight="bold">🔻 ISRG -0.9</text>
+<rect x="192" y="80" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="254" y="80" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="316" y="80" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="378" y="80" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="440" y="80" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="502" y="80" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="564" y="80" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="626" y="80" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<text x="698" y="96" fill="#6b7280">等開market</text>
+<text x="10" y="126" fill="#111827" font-weight="bold">🔺 IFNNY +1.6</text>
+<rect x="192" y="110" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="254" y="110" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="316" y="110" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="378" y="110" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="440" y="110" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="502" y="110" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="564" y="110" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="626" y="110" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<text x="698" y="126" fill="#6b7280">等開market</text>
+<text x="10" y="156" fill="#111827" font-weight="bold">🔻 PLTR -1.6</text>
+<rect x="192" y="140" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="254" y="140" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="316" y="140" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="378" y="140" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="440" y="140" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="502" y="140" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="564" y="140" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="626" y="140" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<text x="698" y="156" fill="#6b7280">等開market</text>
+<text x="10" y="186" fill="#111827" font-weight="bold">🔺 CEG +2.5</text>
+<rect x="192" y="170" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="254" y="170" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="316" y="170" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="378" y="170" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="440" y="170" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="502" y="170" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="564" y="170" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="626" y="170" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<text x="698" y="186" fill="#6b7280">等開market</text>
+<text x="10" y="216" fill="#111827" font-weight="bold">🔻 NET -2.5</text>
+<rect x="192" y="200" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="254" y="200" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="316" y="200" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="378" y="200" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="440" y="200" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="502" y="200" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="564" y="200" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<rect x="626" y="200" width="58" height="22" rx="4" fill="#e5e7eb"/>
+<text x="698" y="216" fill="#6b7280">等開market</text>
 </svg>
