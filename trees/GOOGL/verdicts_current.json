@@ -1,23 +1,23 @@
 [
   {
     "id": "A1",
-    "verdict": "Validated"
+    "verdict": "Trending positive"
   },
   {
     "id": "A2",
-    "verdict": "Trending positive"
+    "verdict": "Inconclusive"
   },
   {
     "id": "A3",
-    "verdict": "Approaching falsification"
-  },
-  {
-    "id": "B1",
     "verdict": "Trending positive"
   },
   {
+    "id": "B1",
+    "verdict": "Inconclusive"
+  },
+  {
     "id": "B2",
-    "verdict": "Validated"
+    "verdict": "Inconclusive"
   },
   {
     "id": "B3",
@@ -25,26 +25,26 @@
   },
   {
     "id": "C1",
-    "verdict": "Validated"
+    "verdict": "Inconclusive"
   },
   {
     "id": "C2",
-    "verdict": "Trending negative"
+    "verdict": "Approaching falsification"
   },
   {
     "id": "C3",
-    "verdict": "Trending negative"
+    "verdict": "Approaching falsification"
   },
   {
     "id": "D1",
-    "verdict": "Validated"
+    "verdict": "Trending positive"
   },
   {
     "id": "D2",
-    "verdict": "Validated"
+    "verdict": "Falsified"
   },
   {
     "id": "D3",
-    "verdict": "Validated"
+    "verdict": "Trending negative"
   }
 ]

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="856" height="92" font-family="system-ui,-apple-system,sans-serif" font-size="12">
+<rect width="856" height="92" fill="#ffffff"/>
+<text x="10" y="20" font-size="15" font-weight="bold" fill="#111827">訊號生命線：名單公開後逐週表現（相對全池中位），行到判定翻轉為止</text>
+<text x="221.0" y="38" text-anchor="middle" fill="#6b7280">+1週</text>
+<text x="283.0" y="38" text-anchor="middle" fill="#6b7280">+2週</text>
+<text x="345.0" y="38" text-anchor="middle" fill="#6b7280">+3週</text>
+<text x="407.0" y="38" text-anchor="middle" fill="#6b7280">+4週</text>
+<text x="469.0" y="38" text-anchor="middle" fill="#6b7280">+5週</text>
+<text x="531.0" y="38" text-anchor="middle" fill="#6b7280">+6週</text>
+<text x="593.0" y="38" text-anchor="middle" fill="#6b7280">+7週</text>
+<text x="655.0" y="38" text-anchor="middle" fill="#6b7280">+8週</text>
+<text x="698" y="38" fill="#6b7280">結局</text>
+</svg>

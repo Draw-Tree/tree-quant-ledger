@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-24",
+  "as_of": "2026-07-26",
   "grade_weights": {
     "致命": 2.5,
     "重創": 1.6,
@@ -36,8 +36,8 @@
     },
     {
       "id": "C",
-      "weight": 2.5,
-      "impact_grade": "致命",
+      "weight": 1.6,
+      "impact_grade": "重創",
       "aggregation": "portfolio",
       "necessity_leaves": [],
       "leaf_weights": {},
@@ -49,8 +49,8 @@
     },
     {
       "id": "D",
-      "weight": 1.6,
-      "impact_grade": "重創",
+      "weight": 2.5,
+      "impact_grade": "致命",
       "aggregation": "portfolio",
       "necessity_leaves": [],
       "leaf_weights": {},
