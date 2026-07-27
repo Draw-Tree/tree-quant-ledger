@@ -8,19 +8,21 @@
 
 ### 🔻 降級（研究上預期其後跑輸全池）
 
-| 股票 | 最重等級 | 訊號 | 觸發 | 判定變化 |
-|---|---|---|---|---|
-| **ISRG** | 明顯受損 | -0.9 | 🗓️ 週掃描 | B1 Trending negative→Approaching falsification |
-| **PLTR** | 重創 | -1.6 | 🗓️ 週掃描 | B2 Approaching falsification→Falsified |
-| **NET** | 致命 | -2.5 | 🗓️ 週掃描 | A3 Approaching falsification→Falsified |
+| 股票 | 訊號前一週 | 最重等級 | 訊號 | 觸發 | 判定變化 |
+|---|---|---|---|---|---|
+| **ISRG** | -2.3% | 明顯受損 | -0.9 | 🗓️ 週掃描 | B1 Trending negative→Approaching falsification |
+| **PLTR** | -7.1% | 重創 | -1.6 | 🗓️ 週掃描 | B2 Approaching falsification→Falsified |
+| **NET** | -5.6% | 致命 | -2.5 | 🗓️ 週掃描 | A3 Approaching falsification→Falsified |
 
 ### 🔺 升級（預期跑贏）
 
-| 股票 | 最重等級 | 訊號 | 觸發 | 判定變化 |
-|---|---|---|---|---|
-| **AMD** | 明顯受損 | +0.9 | 🗓️ 週掃描 | D3 Trending positive→Validated |
-| **IFNNY** | 重創 | +1.6 | 🗓️ 週掃描 | C3 Trending positive→Validated |
-| **CEG** | 致命 | +2.5 | 🗓️ 週掃描 | C2 Trending negative→Validated |
+| 股票 | 訊號前一週 | 最重等級 | 訊號 | 觸發 | 判定變化 |
+|---|---|---|---|---|---|
+| **AMD** | ⚠ +5.3% | 明顯受損 | +0.9 | 🗓️ 週掃描 | D3 Trending positive→Validated |
+| **IFNNY** | — | 重創 | +1.6 | 🗓️ 週掃描 | C3 Trending positive→Validated |
+| **CEG** | ⚠ +8.7% | 致命 | +2.5 | 🗓️ 週掃描 | C2 Trending negative→Validated |
+
+> 「訊號前一週」＝**判定改變之前**那一週該股的升跌，並非其後的表現。⚠ 標示訊號發出前已朝同方向走過者（升級側 >+5%／降級側 <-8%）——該段或已被市場計入。此為披露，不影響入選。
 
 ## 訊號生命線
 
