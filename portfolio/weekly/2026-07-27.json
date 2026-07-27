@@ -1,0 +1,6100 @@
+{
+  "date": "2026-07-27",
+  "protocol": "v1.1",
+  "params": {
+    "kelly_fraction": 0.5,
+    "position_cap": 0.33,
+    "haircut_lambda": 0.9,
+    "no_trade_threshold": 0.01
+  },
+  "ideas": [
+    {
+      "ticker": "AAOI",
+      "bull": 184.81,
+      "bear": 42.55,
+      "current": 92.61,
+      "conviction": 0.5794,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 42.55,
+      "downside_raw": 0.5405,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.1123,
+          "base": 0.7403,
+          "bear": 0.1474
+        },
+        "er_blend": 0.3494,
+        "conviction_tree": 0.482
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "AAPL",
+      "bull": 391.4,
+      "bear": 186.9,
+      "current": 337.6871,
+      "conviction": 0.7926,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 186.9,
+      "downside_raw": 0.4465,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.4314,
+          "base": 0.5686,
+          "bear": 0.0
+        },
+        "er_blend": 0.0334,
+        "conviction_tree": 0.6145
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "ACN",
+      "bull": 257.98,
+      "bear": 103.58,
+      "current": 154.36,
+      "conviction": 0.4821,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 103.58,
+      "downside_raw": 0.329,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.5635,
+        "p_used": {
+          "bull": 0.0844,
+          "base": 0.7497,
+          "bear": 0.1659
+        },
+        "er_blend": 0.1533,
+        "conviction_tree": 0.4148
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "ADBE",
+      "bull": 374.6,
+      "bear": 200.0,
+      "current": 238.135,
+      "conviction": 0.7067,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 200.0,
+      "downside_raw": 0.1601,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.617,
+          "base": 0.2635,
+          "bear": 0.1195
+        },
+        "er_blend": 0.358,
+        "conviction_tree": 0.7121
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "ADI",
+      "bull": 624.0,
+      "bear": 215.21,
+      "current": 362.97,
+      "conviction": 0.6729,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 215.21,
+      "downside_raw": 0.4071,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.4218,
+          "base": 0.4708,
+          "bear": 0.1074
+        },
+        "er_blend": 0.3507,
+        "conviction_tree": 0.6399
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "ALAB",
+      "bull": 492.78,
+      "bear": 122.78,
+      "current": 270.0176,
+      "conviction": 0.5871,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 122.78,
+      "downside_raw": 0.5453,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.5609,
+        "p_used": {
+          "bull": 0.179,
+          "base": 0.6678,
+          "bear": 0.1532
+        },
+        "er_blend": 0.2592,
+        "conviction_tree": 0.5934
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "AMBA",
+      "bull": 118.26,
+      "bear": 39.81,
+      "current": 63.4,
+      "conviction": 0.6218,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 39.81,
+      "downside_raw": 0.3721,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6277,
+        "p_used": {
+          "bull": 0.2137,
+          "base": 0.5705,
+          "bear": 0.2158
+        },
+        "er_blend": 0.3973,
+        "conviction_tree": 0.5622
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "AMD",
+      "bull": 960.0,
+      "bear": 210.0,
+      "current": 479.24,
+      "conviction": 0.6492,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 210.0,
+      "downside_raw": 0.5618,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.625,
+        "p_used": {
+          "bull": 0.3292,
+          "base": 0.5106,
+          "bear": 0.1602
+        },
+        "er_blend": 0.4542,
+        "conviction_tree": 0.7132
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "AMZN",
+      "bull": 345.72,
+      "bear": 169.52,
+      "current": 234.095,
+      "conviction": 0.5052,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 169.52,
+      "downside_raw": 0.2758,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6296,
+        "p_used": {
+          "bull": 0.1153,
+          "base": 0.789,
+          "bear": 0.0957
+        },
+        "er_blend": 0.1044,
+        "conviction_tree": 0.5374
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "APP",
+      "bull": 921.79,
+      "bear": 241.54,
+      "current": 403.07,
+      "conviction": 0.3301,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 241.54,
+      "downside_raw": 0.4007,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.2636,
+        "p_used": {
+          "bull": 0.0171,
+          "base": 0.5585,
+          "bear": 0.4244
+        },
+        "er_blend": 0.1563,
+        "conviction_tree": 0.4229
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "BABA",
+      "bull": 175.76,
+      "bear": 60.89,
+      "current": 112.9601,
+      "conviction": 0.6762,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 60.89,
+      "downside_raw": 0.461,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6611,
+        "p_used": {
+          "bull": 0.4898,
+          "base": 0.5102,
+          "bear": 0.0
+        },
+        "er_blend": 0.2266,
+        "conviction_tree": 0.69
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "BE",
+      "bull": 276.87,
+      "bear": 51.7,
+      "current": 177.0695,
+      "conviction": 0.5536,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 51.7,
+      "downside_raw": 0.708,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.3534,
+        "p_used": {
+          "bull": 0.0,
+          "base": 0.9904,
+          "bear": 0.0096
+        },
+        "er_blend": -0.004,
+        "conviction_tree": 0.3556
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "CBRS",
+      "bull": 147.13,
+      "bear": 28.39,
+      "current": 182.6001,
+      "conviction": 0.3077,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 28.39,
+      "downside_raw": 0.8445,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": null,
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "CEG",
+      "bull": 405.54,
+      "bear": 171.19,
+      "current": 270.725,
+      "conviction": 0.7095,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 171.19,
+      "downside_raw": 0.3677,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.4904,
+          "base": 0.4983,
+          "bear": 0.0114
+        },
+        "er_blend": 0.2465,
+        "conviction_tree": 0.7575
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "CHYM",
+      "bull": 39.29,
+      "bear": 13.59,
+      "current": 21.27,
+      "conviction": 0.5798,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 13.59,
+      "downside_raw": 0.3611,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6295,
+        "p_used": {
+          "bull": 0.3483,
+          "base": 0.5389,
+          "bear": 0.1128
+        },
+        "er_blend": 0.3395,
+        "conviction_tree": 0.6264
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "COHR",
+      "bull": 477.9,
+      "bear": 124.0,
+      "current": 257.5101,
+      "conviction": 0.6035,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 124.0,
+      "downside_raw": 0.5185,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6215,
+        "p_used": {
+          "bull": 0.2417,
+          "base": 0.6274,
+          "bear": 0.1309
+        },
+        "er_blend": 0.311,
+        "conviction_tree": 0.5731
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "CRDO",
+      "bull": 468.69,
+      "bear": 94.33,
+      "current": 197.84,
+      "conviction": 0.4511,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 94.33,
+      "downside_raw": 0.5232,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.5247,
+        "p_used": {
+          "bull": 0.1563,
+          "base": 0.6648,
+          "bear": 0.1789
+        },
+        "er_blend": 0.3303,
+        "conviction_tree": 0.5499
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "CRM",
+      "bull": 261.11,
+      "bear": 131.08,
+      "current": 173.0325,
+      "conviction": 0.4463,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 131.08,
+      "downside_raw": 0.2425,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.4706,
+        "p_used": {
+          "bull": 0.1191,
+          "base": 0.7355,
+          "bear": 0.1454
+        },
+        "er_blend": 0.0929,
+        "conviction_tree": 0.507
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "CVX",
+      "bull": 192.0,
+      "bear": 97.5,
+      "current": 192.0194,
+      "conviction": 0.4681,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 97.5,
+      "downside_raw": 0.4922,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": null,
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "DDOG",
+      "bull": 316.9,
+      "bear": 158.8,
+      "current": 250.58,
+      "conviction": 0.7728,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 158.8,
+      "downside_raw": 0.3663,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.3819,
+          "base": 0.5639,
+          "bear": 0.0542
+        },
+        "er_blend": 0.1213,
+        "conviction_tree": 0.6406
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "ENPH",
+      "bull": 63.93,
+      "bear": 15.78,
+      "current": 36.55,
+      "conviction": 0.4199,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 15.78,
+      "downside_raw": 0.5683,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.5263,
+        "p_used": {
+          "bull": 0.1659,
+          "base": 0.8341,
+          "bear": 0.0
+        },
+        "er_blend": -0.0151,
+        "conviction_tree": 0.4585
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "ETN",
+      "bull": 496.0,
+      "bear": 272.0,
+      "current": 389.54,
+      "conviction": 0.7836,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 272.0,
+      "downside_raw": 0.3017,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.4946,
+          "base": 0.4359,
+          "bear": 0.0695
+        },
+        "er_blend": 0.1489,
+        "conviction_tree": 0.678
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "FUTU",
+      "bull": 176.92,
+      "bear": 67.31,
+      "current": 102.51,
+      "conviction": 0.5067,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 67.31,
+      "downside_raw": 0.3434,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.5744,
+        "p_used": {
+          "bull": 0.2144,
+          "base": 0.6762,
+          "bear": 0.1094
+        },
+        "er_blend": 0.1984,
+        "conviction_tree": 0.5758
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "GLW",
+      "bull": 249.59,
+      "bear": 61.29,
+      "current": 137.0,
+      "conviction": 0.7949,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 61.29,
+      "downside_raw": 0.5526,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.6446,
+          "base": 0.2037,
+          "bear": 0.1517
+        },
+        "er_blend": 0.54,
+        "conviction_tree": 0.8241
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "GOOGL",
+      "bull": 501.2,
+      "bear": 276.35,
+      "current": 325.56,
+      "conviction": 0.2906,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 276.35,
+      "downside_raw": 0.1512,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.5845,
+        "p_used": {
+          "bull": 0.0,
+          "base": 0.7297,
+          "bear": 0.2703
+        },
+        "er_blend": 0.0495,
+        "conviction_tree": 0.1359
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "HOOD",
+      "bull": 125.49,
+      "bear": 33.19,
+      "current": 93.6198,
+      "conviction": 0.8494,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 33.19,
+      "downside_raw": 0.6455,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.4892,
+          "base": 0.4503,
+          "bear": 0.0605
+        },
+        "er_blend": 0.192,
+        "conviction_tree": 0.7384
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "HPQ",
+      "bull": 40.0,
+      "bear": 19.95,
+      "current": 26.05,
+      "conviction": 0.3281,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 19.95,
+      "downside_raw": 0.2342,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.5421,
+        "p_used": {
+          "bull": 0.0,
+          "base": 0.8771,
+          "bear": 0.1229
+        },
+        "er_blend": 0.0184,
+        "conviction_tree": 0.2789
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "HUBS",
+      "bull": 653.28,
+      "bear": 189.19,
+      "current": 221.14,
+      "conviction": 0.2985,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 189.19,
+      "downside_raw": 0.1445,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.3948,
+        "p_used": {
+          "bull": 0.1334,
+          "base": 0.3496,
+          "bear": 0.517
+        },
+        "er_blend": 0.482,
+        "conviction_tree": 0.5505
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "IBM",
+      "bull": 380.8,
+      "bear": 207.1,
+      "current": 218.0,
+      "conviction": 0.3171,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 211.0,
+      "downside_raw": 0.0321,
+      "downside_floored": true,
+      "bear_breach_review": null,
+      "thin_downside": true,
+      "sizing_blend": {
+        "z": 0.4926,
+        "p_used": {
+          "bull": 0.0111,
+          "base": 0.5189,
+          "bear": 0.47
+        },
+        "er_blend": 0.2027,
+        "conviction_tree": 0.3854
+      },
+      "bear_proximity_review": true
+    },
+    {
+      "ticker": "IFNNY",
+      "bull": 123.02,
+      "bear": 31.35,
+      "current": 72.53,
+      "conviction": 0.3375,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 31.35,
+      "downside_raw": 0.5678,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.5597,
+        "p_used": {
+          "bull": 0.0562,
+          "base": 0.7631,
+          "bear": 0.1808
+        },
+        "er_blend": -0.1412,
+        "conviction_tree": 0.0472
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "INTC",
+      "bull": 186.0,
+      "bear": 37.6,
+      "current": 87.38,
+      "conviction": 0.7429,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 37.6,
+      "downside_raw": 0.5697,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.5707,
+          "base": 0.2738,
+          "bear": 0.1555
+        },
+        "er_blend": 0.6919,
+        "conviction_tree": 0.7987
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "ISRG",
+      "bull": 607.72,
+      "bear": 212.39,
+      "current": 355.95,
+      "conviction": 0.6714,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 212.39,
+      "downside_raw": 0.4033,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.4276,
+          "base": 0.4749,
+          "bear": 0.0975
+        },
+        "er_blend": 0.3423,
+        "conviction_tree": 0.6332
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "LITE",
+      "bull": 1141.05,
+      "bear": 161.05,
+      "current": 700.3951,
+      "conviction": 0.7261,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 161.05,
+      "downside_raw": 0.7701,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6105,
+        "p_used": {
+          "bull": 0.3433,
+          "base": 0.6072,
+          "bear": 0.0495
+        },
+        "er_blend": 0.2459,
+        "conviction_tree": 0.7456
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "MDB",
+      "bull": 501.31,
+      "bear": 186.91,
+      "current": 310.33,
+      "conviction": 0.7481,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 186.91,
+      "downside_raw": 0.3977,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6397,
+        "p_used": {
+          "bull": 0.393,
+          "base": 0.41,
+          "bear": 0.197
+        },
+        "er_blend": 0.3602,
+        "conviction_tree": 0.7203
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "MDT",
+      "bull": 130.2,
+      "bear": 74.75,
+      "current": 85.06,
+      "conviction": 0.4082,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 74.75,
+      "downside_raw": 0.1212,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.5321,
+        "p_used": {
+          "bull": 0.1296,
+          "base": 0.5852,
+          "bear": 0.2852
+        },
+        "er_blend": 0.1449,
+        "conviction_tree": 0.5042
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "META",
+      "bull": 918.0,
+      "bear": 286.0,
+      "current": 602.245,
+      "conviction": 0.6862,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 286.0,
+      "downside_raw": 0.5251,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6445,
+        "p_used": {
+          "bull": 0.3524,
+          "base": 0.6253,
+          "bear": 0.0223
+        },
+        "er_blend": 0.195,
+        "conviction_tree": 0.6533
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "MRVL",
+      "bull": 298.29,
+      "bear": 88.09,
+      "current": 183.29,
+      "conviction": 0.6215,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 88.09,
+      "downside_raw": 0.5194,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6206,
+        "p_used": {
+          "bull": 0.1255,
+          "base": 0.7576,
+          "bear": 0.1169
+        },
+        "er_blend": 0.1933,
+        "conviction_tree": 0.5125
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "MSFT",
+      "bull": 586.7,
+      "bear": 369.0,
+      "current": 390.75,
+      "conviction": 0.6021,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 369.0,
+      "downside_raw": 0.0557,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": true,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.519,
+          "base": 0.2465,
+          "bear": 0.2344
+        },
+        "er_blend": 0.2798,
+        "conviction_tree": 0.6501
+      },
+      "bear_proximity_review": true
+    },
+    {
+      "ticker": "MU",
+      "bull": 1937.0,
+      "bear": 367.0,
+      "current": 855.46,
+      "conviction": 0.7079,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 367.0,
+      "downside_raw": 0.571,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6457,
+        "p_used": {
+          "bull": 0.4054,
+          "base": 0.3781,
+          "bear": 0.2165
+        },
+        "er_blend": 0.7281,
+        "conviction_tree": 0.6309
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "NBIS",
+      "bull": 741.34,
+      "bear": 52.13,
+      "current": 185.155,
+      "conviction": 0.3321,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 52.13,
+      "downside_raw": 0.7185,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.4134,
+        "p_used": {
+          "bull": 0.0256,
+          "base": 0.6149,
+          "bear": 0.3595
+        },
+        "er_blend": 0.5178,
+        "conviction_tree": 0.4027
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "NET",
+      "bull": 265.0,
+      "bear": 45.14,
+      "current": 260.53,
+      "conviction": 0.878,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 45.14,
+      "downside_raw": 0.8267,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.6273,
+          "base": 0.3727,
+          "bear": 0.0
+        },
+        "er_blend": -0.0858,
+        "conviction_tree": 0.6406
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "NKE",
+      "bull": 57.2,
+      "bear": 34.4,
+      "current": 42.07,
+      "conviction": 0.5898,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 34.4,
+      "downside_raw": 0.1823,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.33,
+          "base": 0.5923,
+          "bear": 0.0777
+        },
+        "er_blend": 0.1373,
+        "conviction_tree": 0.6645
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "NOK",
+      "bull": 32.95,
+      "bear": 4.29,
+      "current": 8.93,
+      "conviction": 0.3802,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 4.29,
+      "downside_raw": 0.5196,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.5024,
+        "p_used": {
+          "bull": 0.1674,
+          "base": 0.5391,
+          "bear": 0.2935
+        },
+        "er_blend": 0.7006,
+        "conviction_tree": 0.5416
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "NOW",
+      "bull": 179.29,
+      "bear": 84.18,
+      "current": 102.715,
+      "conviction": 0.6317,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 84.18,
+      "downside_raw": 0.1805,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.498,
+          "base": 0.328,
+          "bear": 0.1741
+        },
+        "er_blend": 0.4045,
+        "conviction_tree": 0.7189
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "NVDA",
+      "bull": 418.5,
+      "bear": 154.0,
+      "current": 198.79,
+      "conviction": 0.3837,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 154.0,
+      "downside_raw": 0.2253,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.5025,
+        "p_used": {
+          "bull": 0.1497,
+          "base": 0.5513,
+          "bear": 0.299
+        },
+        "er_blend": 0.2852,
+        "conviction_tree": 0.5622
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "OKLO",
+      "bull": 126.22,
+      "bear": 24.43,
+      "current": 40.46,
+      "conviction": 0.3654,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 24.43,
+      "downside_raw": 0.3962,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6293,
+        "p_used": {
+          "bull": 0.1524,
+          "base": 0.657,
+          "bear": 0.1906
+        },
+        "er_blend": 0.523,
+        "conviction_tree": 0.5278
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "ON",
+      "bull": 122.85,
+      "bear": 47.7,
+      "current": 85.105,
+      "conviction": 0.5961,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 47.7,
+      "downside_raw": 0.4395,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.4204,
+        "p_used": {
+          "bull": 0.0,
+          "base": 0.8027,
+          "bear": 0.1973
+        },
+        "er_blend": 0.0868,
+        "conviction_tree": 0.3446
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "ONDS",
+      "bull": 8.18,
+      "bear": 2.9,
+      "current": 7.81,
+      "conviction": 0.6809,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 2.9,
+      "downside_raw": 0.6287,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6322,
+        "p_used": {
+          "bull": 0.3261,
+          "base": 0.6739,
+          "bear": 0.0
+        },
+        "er_blend": -0.1683,
+        "conviction_tree": 0.3433
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "PDD",
+      "bull": 154.17,
+      "bear": 64.44,
+      "current": 84.34,
+      "conviction": 0.277,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 64.44,
+      "downside_raw": 0.2359,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.5061,
+        "p_used": {
+          "bull": 0.0,
+          "base": 0.8285,
+          "bear": 0.1715
+        },
+        "er_blend": 0.0588,
+        "conviction_tree": 0.3233
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "PLTR",
+      "bull": 176.39,
+      "bear": 53.14,
+      "current": 127.06,
+      "conviction": 0.6377,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 53.14,
+      "downside_raw": 0.5818,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6612,
+        "p_used": {
+          "bull": 0.14,
+          "base": 0.86,
+          "bear": 0.0
+        },
+        "er_blend": 0.0368,
+        "conviction_tree": 0.4626
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "PM",
+      "bull": 261.9,
+      "bear": 159.3,
+      "current": 196.155,
+      "conviction": 0.4096,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 159.3,
+      "downside_raw": 0.1879,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.5388,
+        "p_used": {
+          "bull": 0.0109,
+          "base": 0.9031,
+          "bear": 0.086
+        },
+        "er_blend": 0.0264,
+        "conviction_tree": 0.3531
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "POET",
+      "bull": 16.34,
+      "bear": 5.19,
+      "current": 6.835,
+      "conviction": 0.4387,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 5.19,
+      "downside_raw": 0.2407,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6337,
+        "p_used": {
+          "bull": 0.1978,
+          "base": 0.5619,
+          "bear": 0.2402
+        },
+        "er_blend": 0.475,
+        "conviction_tree": 0.5622
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "RDDT",
+      "bull": 144.09,
+      "bear": 43.24,
+      "current": 179.06,
+      "conviction": 0.5174,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 43.24,
+      "downside_raw": 0.7585,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": null,
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "SKHY",
+      "bull": 259.0,
+      "bear": 22.5,
+      "current": 140.76,
+      "conviction": 0.6911,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 22.5,
+      "downside_raw": 0.8402,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6444,
+        "p_used": {
+          "bull": 0.2708,
+          "base": 0.6475,
+          "bear": 0.0816
+        },
+        "er_blend": 0.321,
+        "conviction_tree": 0.597
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "SMR",
+      "bull": 21.93,
+      "bear": 3.52,
+      "current": 8.16,
+      "conviction": 0.3005,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 3.52,
+      "downside_raw": 0.5686,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.0,
+          "base": 0.8356,
+          "bear": 0.1644
+        },
+        "er_blend": 0.1093,
+        "conviction_tree": 0.2133
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "SNDK",
+      "bull": 2050.0,
+      "bear": 151.0,
+      "current": 1228.49,
+      "conviction": 0.6091,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 151.0,
+      "downside_raw": 0.8771,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.4791,
+        "p_used": {
+          "bull": 0.2187,
+          "base": 0.7813,
+          "bear": 0.0
+        },
+        "er_blend": 0.0645,
+        "conviction_tree": 0.5323
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "SNOW",
+      "bull": 400.29,
+      "bear": 168.41,
+      "current": 267.3613,
+      "conviction": 0.6849,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 168.41,
+      "downside_raw": 0.3701,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.4,
+          "base": 0.5326,
+          "bear": 0.0674
+        },
+        "er_blend": 0.2239,
+        "conviction_tree": 0.6909
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "STX",
+      "bull": 447.0,
+      "bear": 78.0,
+      "current": 781.167,
+      "conviction": 0.49,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 78.0,
+      "downside_raw": 0.9001,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": null,
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "TEAM",
+      "bull": 200.26,
+      "bear": 50.75,
+      "current": 94.305,
+      "conviction": 0.7015,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 50.75,
+      "downside_raw": 0.4619,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.5707,
+          "base": 0.3727,
+          "bear": 0.0566
+        },
+        "er_blend": 0.6503,
+        "conviction_tree": 0.7419
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "TER",
+      "bull": 382.01,
+      "bear": 100.16,
+      "current": 321.04,
+      "conviction": 0.6614,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 100.16,
+      "downside_raw": 0.688,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.5,
+        "p_used": {
+          "bull": 0.359,
+          "base": 0.641,
+          "bear": 0.0
+        },
+        "er_blend": -0.1074,
+        "conviction_tree": 0.4365
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "TSLA",
+      "bull": 641.36,
+      "bear": 107.18,
+      "current": 305.835,
+      "conviction": 0.4503,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 107.18,
+      "downside_raw": 0.6495,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.0,
+          "base": 0.8022,
+          "bear": 0.1978
+        },
+        "er_blend": 0.137,
+        "conviction_tree": 0.2868
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "TSM",
+      "bull": 610.68,
+      "bear": 210.3,
+      "current": 389.405,
+      "conviction": 0.6887,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 210.3,
+      "downside_raw": 0.4599,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.3453,
+          "base": 0.5681,
+          "bear": 0.0866
+        },
+        "er_blend": 0.2481,
+        "conviction_tree": 0.7397
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "TTD",
+      "bull": 46.12,
+      "bear": 13.48,
+      "current": 17.87,
+      "conviction": 0.2593,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 13.48,
+      "downside_raw": 0.2457,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.5,
+        "p_used": {
+          "bull": 0.0416,
+          "base": 0.6633,
+          "bear": 0.2951
+        },
+        "er_blend": 0.2279,
+        "conviction_tree": 0.4338
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "TYL",
+      "bull": 525.6,
+      "bear": 252.0,
+      "current": 317.83,
+      "conviction": 0.4417,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 252.0,
+      "downside_raw": 0.2071,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6575,
+        "p_used": {
+          "bull": 0.1928,
+          "base": 0.6947,
+          "bear": 0.1124
+        },
+        "er_blend": 0.1731,
+        "conviction_tree": 0.5125
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "UBER",
+      "bull": 123.4,
+      "bear": 56.5,
+      "current": 66.49,
+      "conviction": 0.2971,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 56.5,
+      "downside_raw": 0.1502,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.5253,
+        "p_used": {
+          "bull": 0.0578,
+          "base": 0.6643,
+          "bear": 0.2779
+        },
+        "er_blend": 0.1487,
+        "conviction_tree": 0.4557
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "UNH",
+      "bull": 503.5,
+      "bear": 225.0,
+      "current": 417.47,
+      "conviction": 0.7326,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 225.0,
+      "downside_raw": 0.461,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.5935,
+        "p_used": {
+          "bull": 0.4006,
+          "base": 0.5994,
+          "bear": 0.0
+        },
+        "er_blend": 0.0277,
+        "conviction_tree": 0.7098
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "UUUU",
+      "bull": 19.76,
+      "bear": 7.02,
+      "current": 11.385,
+      "conviction": 0.5717,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 7.02,
+      "downside_raw": 0.3834,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6566,
+        "p_used": {
+          "bull": 0.1497,
+          "base": 0.7028,
+          "bear": 0.1475
+        },
+        "er_blend": 0.2564,
+        "conviction_tree": 0.5711
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "V",
+      "bull": 491.2,
+      "bear": 305.8,
+      "current": 362.87,
+      "conviction": 0.7338,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 305.8,
+      "downside_raw": 0.1573,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6667,
+        "p_used": {
+          "bull": 0.6058,
+          "base": 0.3066,
+          "bear": 0.0877
+        },
+        "er_blend": 0.2177,
+        "conviction_tree": 0.7316
+      },
+      "bear_proximity_review": false
+    },
+    {
+      "ticker": "XE",
+      "bull": 24.7,
+      "bear": 8.32,
+      "current": 13.885,
+      "conviction": 0.4398,
+      "conviction_source": "stock-trees",
+      "lot_size": 1,
+      "meta_currency": "USD",
+      "fx_used": 1.0,
+      "bear_tree": 8.32,
+      "downside_raw": 0.4008,
+      "downside_floored": false,
+      "bear_breach_review": null,
+      "thin_downside": false,
+      "sizing_blend": {
+        "z": 0.6424,
+        "p_used": {
+          "bull": 0.1627,
+          "base": 0.8373,
+          "bear": 0.0
+        },
+        "er_blend": 0.118,
+        "conviction_tree": 0.5663
+      },
+      "bear_proximity_review": false
+    }
+  ],
+  "ideas_meta": {
+    "skipped": [
+      {
+        "ticker": "005930.KS",
+        "reason": "non_us_execution"
+      },
+      {
+        "ticker": "6324.T",
+        "reason": "non_us_execution"
+      },
+      {
+        "ticker": "9992",
+        "reason": "non_us_execution"
+      },
+      {
+        "ticker": "TSLA-OPTIMUS",
+        "reason": "excluded_duplicate"
+      }
+    ],
+    "fx": {}
+  },
+  "nlv_used": 41232.03462098896,
+  "nlv_account": 121270.69006173222,
+  "sleeve": "A",
+  "sleeve_fraction": 0.34,
+  "positions_before": [
+    {
+      "ticker": "V",
+      "shares": 11.0
+    },
+    {
+      "ticker": "PM",
+      "shares": 8.0
+    },
+    {
+      "ticker": "HOOD",
+      "shares": 14.0
+    },
+    {
+      "ticker": "APP",
+      "shares": 2.0
+    },
+    {
+      "ticker": "IBM",
+      "shares": 5.0
+    },
+    {
+      "ticker": "AAPL",
+      "shares": 3.0
+    },
+    {
+      "ticker": "OKLO",
+      "shares": 23.0
+    },
+    {
+      "ticker": "ON",
+      "shares": 17.0
+    },
+    {
+      "ticker": "ALAB",
+      "shares": 1.0
+    },
+    {
+      "ticker": "HUBS",
+      "shares": 21.0
+    },
+    {
+      "ticker": "ETN",
+      "shares": 7.0
+    },
+    {
+      "ticker": "BABA",
+      "shares": 14.0
+    },
+    {
+      "ticker": "CHYM",
+      "shares": 93.0
+    },
+    {
+      "ticker": "NBIS",
+      "shares": 3.0
+    },
+    {
+      "ticker": "INTC",
+      "shares": 29.0
+    },
+    {
+      "ticker": "XE",
+      "shares": 59.0
+    },
+    {
+      "ticker": "ADBE",
+      "shares": 18.0
+    },
+    {
+      "ticker": "TTD",
+      "shares": 83.0
+    },
+    {
+      "ticker": "UBER",
+      "shares": 24.0
+    },
+    {
+      "ticker": "AMD",
+      "shares": 2.0
+    },
+    {
+      "ticker": "ADI",
+      "shares": 6.0
+    },
+    {
+      "ticker": "TYL",
+      "shares": 7.0
+    },
+    {
+      "ticker": "NKE",
+      "shares": 25.0
+    },
+    {
+      "ticker": "PLTR",
+      "shares": 7.0
+    },
+    {
+      "ticker": "SMR",
+      "shares": 82.0
+    },
+    {
+      "ticker": "CVX",
+      "shares": 5.0
+    },
+    {
+      "ticker": "PDD",
+      "shares": 19.0
+    },
+    {
+      "ticker": "CRM",
+      "shares": 12.0
+    },
+    {
+      "ticker": "NOK",
+      "shares": 479.0
+    },
+    {
+      "ticker": "ACN",
+      "shares": 20.0
+    },
+    {
+      "ticker": "ONDS",
+      "shares": 39.0
+    },
+    {
+      "ticker": "AMBA",
+      "shares": 205.0
+    },
+    {
+      "ticker": "CEG",
+      "shares": 11.0
+    },
+    {
+      "ticker": "GLW",
+      "shares": 10.0
+    },
+    {
+      "ticker": "GOOGL",
+      "shares": 6.0
+    },
+    {
+      "ticker": "MRVL",
+      "shares": 3.0
+    },
+    {
+      "ticker": "ISRG",
+      "shares": 9.0
+    },
+    {
+      "ticker": "NVDA",
+      "shares": 10.0
+    },
+    {
+      "ticker": "META",
+      "shares": 1.0
+    },
+    {
+      "ticker": "TSM",
+      "shares": 4.0
+    },
+    {
+      "ticker": "MSFT",
+      "shares": 16.0
+    },
+    {
+      "ticker": "UNH",
+      "shares": 1.0
+    },
+    {
+      "ticker": "MU",
+      "shares": 2.0
+    },
+    {
+      "ticker": "POET",
+      "shares": 249.0
+    },
+    {
+      "ticker": "FUTU",
+      "shares": 21.0
+    },
+    {
+      "ticker": "MDB",
+      "shares": 5.0
+    },
+    {
+      "ticker": "HPQ",
+      "shares": 39.0
+    },
+    {
+      "ticker": "000660.KS",
+      "shares": 25.0
+    },
+    {
+      "ticker": "SNOW",
+      "shares": 6.0
+    },
+    {
+      "ticker": "CRDO",
+      "shares": 3.0
+    },
+    {
+      "ticker": "TEAM",
+      "shares": 19.0
+    },
+    {
+      "ticker": "AAOI",
+      "shares": 4.0
+    },
+    {
+      "ticker": "DDOG",
+      "shares": 4.0
+    },
+    {
+      "ticker": "COHR",
+      "shares": 4.0
+    },
+    {
+      "ticker": "MDT",
+      "shares": 70.0
+    },
+    {
+      "ticker": "STX",
+      "shares": 1.0
+    },
+    {
+      "ticker": "NOW",
+      "shares": 60.0
+    },
+    {
+      "ticker": "UUUU",
+      "shares": 58.0
+    },
+    {
+      "ticker": "AMZN",
+      "shares": 4.0
+    }
+  ],
+  "engine": {
+    "request": {
+      "ideas": [
+        {
+          "ticker": "AAOI",
+          "bull": 184.81,
+          "bear": 42.55,
+          "current": 92.61,
+          "conviction": 0.5794,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "AAPL",
+          "bull": 391.4,
+          "bear": 186.9,
+          "current": 337.6871,
+          "conviction": 0.7926,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "ACN",
+          "bull": 257.98,
+          "bear": 103.58,
+          "current": 154.36,
+          "conviction": 0.4821,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "ADBE",
+          "bull": 374.6,
+          "bear": 200.0,
+          "current": 238.135,
+          "conviction": 0.7067,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "ADI",
+          "bull": 624.0,
+          "bear": 215.21,
+          "current": 362.97,
+          "conviction": 0.6729,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "ALAB",
+          "bull": 492.78,
+          "bear": 122.78,
+          "current": 270.0176,
+          "conviction": 0.5871,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "AMBA",
+          "bull": 118.26,
+          "bear": 39.81,
+          "current": 63.4,
+          "conviction": 0.6218,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "AMD",
+          "bull": 960.0,
+          "bear": 210.0,
+          "current": 479.24,
+          "conviction": 0.6492,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "AMZN",
+          "bull": 345.72,
+          "bear": 169.52,
+          "current": 234.095,
+          "conviction": 0.5052,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "APP",
+          "bull": 921.79,
+          "bear": 241.54,
+          "current": 403.07,
+          "conviction": 0.3301,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "BABA",
+          "bull": 175.76,
+          "bear": 60.89,
+          "current": 112.9601,
+          "conviction": 0.6762,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "BE",
+          "bull": 276.87,
+          "bear": 51.7,
+          "current": 177.0695,
+          "conviction": 0.5536,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "CBRS",
+          "bull": 147.13,
+          "bear": 28.39,
+          "current": 182.6001,
+          "conviction": 0.3077,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "CEG",
+          "bull": 405.54,
+          "bear": 171.19,
+          "current": 270.725,
+          "conviction": 0.7095,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "CHYM",
+          "bull": 39.29,
+          "bear": 13.59,
+          "current": 21.27,
+          "conviction": 0.5798,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "COHR",
+          "bull": 477.9,
+          "bear": 124.0,
+          "current": 257.5101,
+          "conviction": 0.6035,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "CRDO",
+          "bull": 468.69,
+          "bear": 94.33,
+          "current": 197.84,
+          "conviction": 0.4511,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "CRM",
+          "bull": 261.11,
+          "bear": 131.08,
+          "current": 173.0325,
+          "conviction": 0.4463,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "CVX",
+          "bull": 192.0,
+          "bear": 97.5,
+          "current": 192.0194,
+          "conviction": 0.4681,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "DDOG",
+          "bull": 316.9,
+          "bear": 158.8,
+          "current": 250.58,
+          "conviction": 0.7728,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "ENPH",
+          "bull": 63.93,
+          "bear": 15.78,
+          "current": 36.55,
+          "conviction": 0.4199,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "ETN",
+          "bull": 496.0,
+          "bear": 272.0,
+          "current": 389.54,
+          "conviction": 0.7836,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "FUTU",
+          "bull": 176.92,
+          "bear": 67.31,
+          "current": 102.51,
+          "conviction": 0.5067,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "GLW",
+          "bull": 249.59,
+          "bear": 61.29,
+          "current": 137.0,
+          "conviction": 0.7949,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "GOOGL",
+          "bull": 501.2,
+          "bear": 276.35,
+          "current": 325.56,
+          "conviction": 0.2906,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "HOOD",
+          "bull": 125.49,
+          "bear": 33.19,
+          "current": 93.6198,
+          "conviction": 0.8494,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "HPQ",
+          "bull": 40.0,
+          "bear": 19.95,
+          "current": 26.05,
+          "conviction": 0.3281,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "HUBS",
+          "bull": 653.28,
+          "bear": 189.19,
+          "current": 221.14,
+          "conviction": 0.2985,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "IBM",
+          "bull": 380.8,
+          "bear": 207.1,
+          "current": 218.0,
+          "conviction": 0.3171,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "IFNNY",
+          "bull": 123.02,
+          "bear": 31.35,
+          "current": 72.53,
+          "conviction": 0.3375,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "INTC",
+          "bull": 186.0,
+          "bear": 37.6,
+          "current": 87.38,
+          "conviction": 0.7429,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "ISRG",
+          "bull": 607.72,
+          "bear": 212.39,
+          "current": 355.95,
+          "conviction": 0.6714,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "LITE",
+          "bull": 1141.05,
+          "bear": 161.05,
+          "current": 700.3951,
+          "conviction": 0.7261,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "MDB",
+          "bull": 501.31,
+          "bear": 186.91,
+          "current": 310.33,
+          "conviction": 0.7481,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "MDT",
+          "bull": 130.2,
+          "bear": 74.75,
+          "current": 85.06,
+          "conviction": 0.4082,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "META",
+          "bull": 918.0,
+          "bear": 286.0,
+          "current": 602.245,
+          "conviction": 0.6862,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "MRVL",
+          "bull": 298.29,
+          "bear": 88.09,
+          "current": 183.29,
+          "conviction": 0.6215,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "MSFT",
+          "bull": 586.7,
+          "bear": 369.0,
+          "current": 390.75,
+          "conviction": 0.6021,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "MU",
+          "bull": 1937.0,
+          "bear": 367.0,
+          "current": 855.46,
+          "conviction": 0.7079,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "NBIS",
+          "bull": 741.34,
+          "bear": 52.13,
+          "current": 185.155,
+          "conviction": 0.3321,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "NET",
+          "bull": 265.0,
+          "bear": 45.14,
+          "current": 260.53,
+          "conviction": 0.878,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "NKE",
+          "bull": 57.2,
+          "bear": 34.4,
+          "current": 42.07,
+          "conviction": 0.5898,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "NOK",
+          "bull": 32.95,
+          "bear": 4.29,
+          "current": 8.93,
+          "conviction": 0.3802,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "NOW",
+          "bull": 179.29,
+          "bear": 84.18,
+          "current": 102.715,
+          "conviction": 0.6317,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "NVDA",
+          "bull": 418.5,
+          "bear": 154.0,
+          "current": 198.79,
+          "conviction": 0.3837,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "OKLO",
+          "bull": 126.22,
+          "bear": 24.43,
+          "current": 40.46,
+          "conviction": 0.3654,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "ON",
+          "bull": 122.85,
+          "bear": 47.7,
+          "current": 85.105,
+          "conviction": 0.5961,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "ONDS",
+          "bull": 8.18,
+          "bear": 2.9,
+          "current": 7.81,
+          "conviction": 0.6809,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "PDD",
+          "bull": 154.17,
+          "bear": 64.44,
+          "current": 84.34,
+          "conviction": 0.277,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "PLTR",
+          "bull": 176.39,
+          "bear": 53.14,
+          "current": 127.06,
+          "conviction": 0.6377,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "PM",
+          "bull": 261.9,
+          "bear": 159.3,
+          "current": 196.155,
+          "conviction": 0.4096,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "POET",
+          "bull": 16.34,
+          "bear": 5.19,
+          "current": 6.835,
+          "conviction": 0.4387,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "RDDT",
+          "bull": 144.09,
+          "bear": 43.24,
+          "current": 179.06,
+          "conviction": 0.5174,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "SKHY",
+          "bull": 259.0,
+          "bear": 22.5,
+          "current": 140.76,
+          "conviction": 0.6911,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "SMR",
+          "bull": 21.93,
+          "bear": 3.52,
+          "current": 8.16,
+          "conviction": 0.3005,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "SNDK",
+          "bull": 2050.0,
+          "bear": 151.0,
+          "current": 1228.49,
+          "conviction": 0.6091,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "SNOW",
+          "bull": 400.29,
+          "bear": 168.41,
+          "current": 267.3613,
+          "conviction": 0.6849,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "STX",
+          "bull": 447.0,
+          "bear": 78.0,
+          "current": 781.167,
+          "conviction": 0.49,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "TEAM",
+          "bull": 200.26,
+          "bear": 50.75,
+          "current": 94.305,
+          "conviction": 0.7015,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "TER",
+          "bull": 382.01,
+          "bear": 100.16,
+          "current": 321.04,
+          "conviction": 0.6614,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "TSLA",
+          "bull": 641.36,
+          "bear": 107.18,
+          "current": 305.835,
+          "conviction": 0.4503,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "TSM",
+          "bull": 610.68,
+          "bear": 210.3,
+          "current": 389.405,
+          "conviction": 0.6887,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "TTD",
+          "bull": 46.12,
+          "bear": 13.48,
+          "current": 17.87,
+          "conviction": 0.2593,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "TYL",
+          "bull": 525.6,
+          "bear": 252.0,
+          "current": 317.83,
+          "conviction": 0.4417,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "UBER",
+          "bull": 123.4,
+          "bear": 56.5,
+          "current": 66.49,
+          "conviction": 0.2971,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "UNH",
+          "bull": 503.5,
+          "bear": 225.0,
+          "current": 417.47,
+          "conviction": 0.7326,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "UUUU",
+          "bull": 19.76,
+          "bear": 7.02,
+          "current": 11.385,
+          "conviction": 0.5717,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "V",
+          "bull": 491.2,
+          "bear": 305.8,
+          "current": 362.87,
+          "conviction": 0.7338,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        },
+        {
+          "ticker": "XE",
+          "bull": 24.7,
+          "bear": 8.32,
+          "current": 13.885,
+          "conviction": 0.4398,
+          "conviction_source": "stock-trees",
+          "lot_size": 1
+        }
+      ],
+      "params": {
+        "kelly_fraction": 0.5,
+        "position_cap": 0.33,
+        "haircut_lambda": 0.9,
+        "no_trade_threshold": 0.01
+      },
+      "execution": {
+        "broker": "ibkr",
+        "nlv": 41232.03462098896,
+        "positions": [
+          {
+            "ticker": "V",
+            "shares": 11.0
+          },
+          {
+            "ticker": "PM",
+            "shares": 8.0
+          },
+          {
+            "ticker": "HOOD",
+            "shares": 14.0
+          },
+          {
+            "ticker": "APP",
+            "shares": 2.0
+          },
+          {
+            "ticker": "IBM",
+            "shares": 5.0
+          },
+          {
+            "ticker": "AAPL",
+            "shares": 3.0
+          },
+          {
+            "ticker": "OKLO",
+            "shares": 23.0
+          },
+          {
+            "ticker": "ON",
+            "shares": 17.0
+          },
+          {
+            "ticker": "ALAB",
+            "shares": 1.0
+          },
+          {
+            "ticker": "HUBS",
+            "shares": 21.0
+          },
+          {
+            "ticker": "ETN",
+            "shares": 7.0
+          },
+          {
+            "ticker": "BABA",
+            "shares": 14.0
+          },
+          {
+            "ticker": "CHYM",
+            "shares": 93.0
+          },
+          {
+            "ticker": "NBIS",
+            "shares": 3.0
+          },
+          {
+            "ticker": "INTC",
+            "shares": 29.0
+          },
+          {
+            "ticker": "XE",
+            "shares": 59.0
+          },
+          {
+            "ticker": "ADBE",
+            "shares": 18.0
+          },
+          {
+            "ticker": "TTD",
+            "shares": 83.0
+          },
+          {
+            "ticker": "UBER",
+            "shares": 24.0
+          },
+          {
+            "ticker": "AMD",
+            "shares": 2.0
+          },
+          {
+            "ticker": "ADI",
+            "shares": 6.0
+          },
+          {
+            "ticker": "TYL",
+            "shares": 7.0
+          },
+          {
+            "ticker": "NKE",
+            "shares": 25.0
+          },
+          {
+            "ticker": "PLTR",
+            "shares": 7.0
+          },
+          {
+            "ticker": "SMR",
+            "shares": 82.0
+          },
+          {
+            "ticker": "CVX",
+            "shares": 5.0
+          },
+          {
+            "ticker": "PDD",
+            "shares": 19.0
+          },
+          {
+            "ticker": "CRM",
+            "shares": 12.0
+          },
+          {
+            "ticker": "NOK",
+            "shares": 479.0
+          },
+          {
+            "ticker": "ACN",
+            "shares": 20.0
+          },
+          {
+            "ticker": "ONDS",
+            "shares": 39.0
+          },
+          {
+            "ticker": "AMBA",
+            "shares": 205.0
+          },
+          {
+            "ticker": "CEG",
+            "shares": 11.0
+          },
+          {
+            "ticker": "GLW",
+            "shares": 10.0
+          },
+          {
+            "ticker": "GOOGL",
+            "shares": 6.0
+          },
+          {
+            "ticker": "MRVL",
+            "shares": 3.0
+          },
+          {
+            "ticker": "ISRG",
+            "shares": 9.0
+          },
+          {
+            "ticker": "NVDA",
+            "shares": 10.0
+          },
+          {
+            "ticker": "META",
+            "shares": 1.0
+          },
+          {
+            "ticker": "TSM",
+            "shares": 4.0
+          },
+          {
+            "ticker": "MSFT",
+            "shares": 16.0
+          },
+          {
+            "ticker": "UNH",
+            "shares": 1.0
+          },
+          {
+            "ticker": "MU",
+            "shares": 2.0
+          },
+          {
+            "ticker": "POET",
+            "shares": 249.0
+          },
+          {
+            "ticker": "FUTU",
+            "shares": 21.0
+          },
+          {
+            "ticker": "MDB",
+            "shares": 5.0
+          },
+          {
+            "ticker": "HPQ",
+            "shares": 39.0
+          },
+          {
+            "ticker": "000660.KS",
+            "shares": 25.0
+          },
+          {
+            "ticker": "SNOW",
+            "shares": 6.0
+          },
+          {
+            "ticker": "CRDO",
+            "shares": 3.0
+          },
+          {
+            "ticker": "TEAM",
+            "shares": 19.0
+          },
+          {
+            "ticker": "AAOI",
+            "shares": 4.0
+          },
+          {
+            "ticker": "DDOG",
+            "shares": 4.0
+          },
+          {
+            "ticker": "COHR",
+            "shares": 4.0
+          },
+          {
+            "ticker": "MDT",
+            "shares": 70.0
+          },
+          {
+            "ticker": "STX",
+            "shares": 1.0
+          },
+          {
+            "ticker": "NOW",
+            "shares": 60.0
+          },
+          {
+            "ticker": "UUUU",
+            "shares": 58.0
+          },
+          {
+            "ticker": "AMZN",
+            "shares": 4.0
+          }
+        ],
+        "trd_env": "SIMULATE"
+      },
+      "fetch_prices": false
+    },
+    "response": {
+      "ok": true,
+      "allocations": [
+        {
+          "ticker": "MSFT",
+          "target_weight": 0.1412,
+          "raw_kelly": 5.0118,
+          "flag": "haircut",
+          "current_weight": 0.1516,
+          "action": "SELL",
+          "delta_value": -429,
+          "qty": 1,
+          "lot_size": 1
+        },
+        {
+          "ticker": "IBM",
+          "target_weight": 0.0759,
+          "raw_kelly": 2.7138,
+          "flag": "haircut",
+          "current_weight": 0.0264,
+          "action": "BUY",
+          "delta_value": 2039,
+          "qty": 9,
+          "lot_size": 1
+        },
+        {
+          "ticker": "ADBE",
+          "target_weight": 0.0555,
+          "raw_kelly": 1.9506,
+          "flag": "haircut",
+          "current_weight": 0.104,
+          "action": "SELL",
+          "delta_value": -2000,
+          "qty": 8,
+          "lot_size": 1
+        },
+        {
+          "ticker": "V",
+          "target_weight": 0.0546,
+          "raw_kelly": 1.9565,
+          "flag": "haircut",
+          "current_weight": 0.0968,
+          "action": "SELL",
+          "delta_value": -1741,
+          "qty": 4,
+          "lot_size": 1
+        },
+        {
+          "ticker": "NOW",
+          "target_weight": 0.0419,
+          "raw_kelly": 1.5033,
+          "flag": "haircut",
+          "current_weight": 0.1495,
+          "action": "SELL",
+          "delta_value": -4437,
+          "qty": 43,
+          "lot_size": 1
+        },
+        {
+          "ticker": "MDT",
+          "target_weight": 0.0313,
+          "raw_kelly": 1.1263,
+          "flag": "haircut",
+          "current_weight": 0.1444,
+          "action": "SELL",
+          "delta_value": -4662,
+          "qty": 54,
+          "lot_size": 1
+        },
+        {
+          "ticker": "NKE",
+          "target_weight": 0.0291,
+          "raw_kelly": 1.0472,
+          "flag": "haircut",
+          "current_weight": 0.0255,
+          "action": "HOLD",
+          "delta_value": 149,
+          "qty": 0,
+          "lot_size": 1
+        },
+        {
+          "ticker": "ETN",
+          "target_weight": 0.0248,
+          "raw_kelly": 0.9026,
+          "flag": "haircut",
+          "current_weight": 0.0661,
+          "action": "SELL",
+          "delta_value": -1704,
+          "qty": 4,
+          "lot_size": 1
+        },
+        {
+          "ticker": "HUBS",
+          "target_weight": 0.0237,
+          "raw_kelly": 0.8535,
+          "flag": "haircut",
+          "current_weight": 0.1126,
+          "action": "SELL",
+          "delta_value": -3666,
+          "qty": 16,
+          "lot_size": 1
+        },
+        {
+          "ticker": "MDB",
+          "target_weight": 0.0204,
+          "raw_kelly": 0.7359,
+          "flag": "haircut",
+          "current_weight": 0.0376,
+          "action": "SELL",
+          "delta_value": -709,
+          "qty": 2,
+          "lot_size": 1
+        },
+        {
+          "ticker": "POET",
+          "target_weight": 0.0197,
+          "raw_kelly": 0.7096,
+          "flag": "haircut",
+          "current_weight": 0.0413,
+          "action": "SELL",
+          "delta_value": -889,
+          "qty": 130,
+          "lot_size": 1
+        },
+        {
+          "ticker": "CEG",
+          "target_weight": 0.0194,
+          "raw_kelly": 0.6732,
+          "flag": "haircut",
+          "current_weight": 0.0722,
+          "action": "SELL",
+          "delta_value": -2179,
+          "qty": 8,
+          "lot_size": 1
+        },
+        {
+          "ticker": "TYL",
+          "target_weight": 0.0178,
+          "raw_kelly": 0.6393,
+          "flag": "haircut",
+          "current_weight": 0.054,
+          "action": "SELL",
+          "delta_value": -1493,
+          "qty": 4,
+          "lot_size": 1
+        },
+        {
+          "ticker": "TEAM",
+          "target_weight": 0.0174,
+          "raw_kelly": 0.6266,
+          "flag": "haircut",
+          "current_weight": 0.0435,
+          "action": "SELL",
+          "delta_value": -1074,
+          "qty": 11,
+          "lot_size": 1
+        },
+        {
+          "ticker": "AMBA",
+          "target_weight": 0.0171,
+          "raw_kelly": 0.617,
+          "flag": "haircut",
+          "current_weight": 0.3152,
+          "action": "SELL",
+          "delta_value": -12290,
+          "qty": 193,
+          "lot_size": 1
+        },
+        {
+          "ticker": "SNOW",
+          "target_weight": 0.0169,
+          "raw_kelly": 0.6084,
+          "flag": "haircut",
+          "current_weight": 0.0389,
+          "action": "SELL",
+          "delta_value": -908,
+          "qty": 3,
+          "lot_size": 1
+        },
+        {
+          "ticker": "DDOG",
+          "target_weight": 0.0169,
+          "raw_kelly": 0.6257,
+          "flag": "haircut",
+          "current_weight": 0.0243,
+          "action": "HOLD",
+          "delta_value": -308,
+          "qty": 0,
+          "lot_size": 1
+        },
+        {
+          "ticker": "ADI",
+          "target_weight": 0.0168,
+          "raw_kelly": 0.5991,
+          "flag": "haircut",
+          "current_weight": 0.0528,
+          "action": "SELL",
+          "delta_value": -1485,
+          "qty": 4,
+          "lot_size": 1
+        },
+        {
+          "ticker": "GLW",
+          "target_weight": 0.0168,
+          "raw_kelly": 0.5944,
+          "flag": "haircut",
+          "current_weight": 0.0332,
+          "action": "SELL",
+          "delta_value": -678,
+          "qty": 4,
+          "lot_size": 1
+        },
+        {
+          "ticker": "ISRG",
+          "target_weight": 0.0167,
+          "raw_kelly": 0.6001,
+          "flag": "haircut",
+          "current_weight": 0.0777,
+          "action": "SELL",
+          "delta_value": -2517,
+          "qty": 7,
+          "lot_size": 1
+        },
+        {
+          "ticker": "UBER",
+          "target_weight": 0.0161,
+          "raw_kelly": 0.5781,
+          "flag": "haircut",
+          "current_weight": 0.0387,
+          "action": "SELL",
+          "delta_value": -934,
+          "qty": 14,
+          "lot_size": 1
+        },
+        {
+          "ticker": "NVDA",
+          "target_weight": 0.0159,
+          "raw_kelly": 0.5727,
+          "flag": "haircut",
+          "current_weight": 0.0482,
+          "action": "SELL",
+          "delta_value": -1332,
+          "qty": 6,
+          "lot_size": 1
+        },
+        {
+          "ticker": "CHYM",
+          "target_weight": 0.0151,
+          "raw_kelly": 0.5549,
+          "flag": "haircut",
+          "current_weight": 0.048,
+          "action": "SELL",
+          "delta_value": -1354,
+          "qty": 63,
+          "lot_size": 1
+        },
+        {
+          "ticker": "INTC",
+          "target_weight": 0.0149,
+          "raw_kelly": 0.5381,
+          "flag": "haircut",
+          "current_weight": 0.0615,
+          "action": "SELL",
+          "delta_value": -1918,
+          "qty": 21,
+          "lot_size": 1
+        },
+        {
+          "ticker": "MU",
+          "target_weight": 0.014,
+          "raw_kelly": 0.5044,
+          "flag": "haircut",
+          "current_weight": 0.0415,
+          "action": "SELL",
+          "delta_value": -1134,
+          "qty": 1,
+          "lot_size": 1
+        },
+        {
+          "ticker": "TSM",
+          "target_weight": 0.0132,
+          "raw_kelly": 0.4748,
+          "flag": "haircut",
+          "current_weight": 0.0378,
+          "action": "SELL",
+          "delta_value": -1014,
+          "qty": 2,
+          "lot_size": 1
+        },
+        {
+          "ticker": "UUUU",
+          "target_weight": 0.0126,
+          "raw_kelly": 0.4545,
+          "flag": "haircut",
+          "current_weight": 0.016,
+          "action": "HOLD",
+          "delta_value": -140,
+          "qty": 0,
+          "lot_size": 1
+        },
+        {
+          "ticker": "BABA",
+          "target_weight": 0.0124,
+          "raw_kelly": 0.4423,
+          "flag": "haircut",
+          "current_weight": 0.0384,
+          "action": "SELL",
+          "delta_value": -1070,
+          "qty": 9,
+          "lot_size": 1
+        },
+        {
+          "ticker": "HOOD",
+          "target_weight": 0.0121,
+          "raw_kelly": 0.4368,
+          "flag": "haircut",
+          "current_weight": 0.0318,
+          "action": "SELL",
+          "delta_value": -811,
+          "qty": 8,
+          "lot_size": 1
+        },
+        {
+          "ticker": "FUTU",
+          "target_weight": 0.0116,
+          "raw_kelly": 0.398,
+          "flag": "haircut",
+          "current_weight": 0.0522,
+          "action": "SELL",
+          "delta_value": -1675,
+          "qty": 16,
+          "lot_size": 1
+        },
+        {
+          "ticker": "AMD",
+          "target_weight": 0.0109,
+          "raw_kelly": 0.4029,
+          "flag": "haircut",
+          "current_weight": 0.0232,
+          "action": "SELL",
+          "delta_value": -510,
+          "qty": 1,
+          "lot_size": 1
+        },
+        {
+          "ticker": "AMZN",
+          "target_weight": 0.0109,
+          "raw_kelly": 0.3969,
+          "flag": "haircut",
+          "current_weight": 0.0227,
+          "action": "SELL",
+          "delta_value": -489,
+          "qty": 2,
+          "lot_size": 1
+        },
+        {
+          "ticker": "CRM",
+          "target_weight": 0.0102,
+          "raw_kelly": 0.3765,
+          "flag": "haircut",
+          "current_weight": 0.0504,
+          "action": "SELL",
+          "delta_value": -1655,
+          "qty": 9,
+          "lot_size": 1
+        },
+        {
+          "ticker": "COHR",
+          "target_weight": 0.0098,
+          "raw_kelly": 0.3504,
+          "flag": "haircut",
+          "current_weight": 0.025,
+          "action": "SELL",
+          "delta_value": -624,
+          "qty": 2,
+          "lot_size": 1
+        },
+        {
+          "ticker": "META",
+          "target_weight": 0.0098,
+          "raw_kelly": 0.3541,
+          "flag": "haircut",
+          "current_weight": 0.0146,
+          "action": "HOLD",
+          "delta_value": -197,
+          "qty": 0,
+          "lot_size": 1
+        },
+        {
+          "ticker": "ACN",
+          "target_weight": 0.0098,
+          "raw_kelly": 0.347,
+          "flag": "haircut",
+          "current_weight": 0.0749,
+          "action": "SELL",
+          "delta_value": -2684,
+          "qty": 17,
+          "lot_size": 1
+        },
+        {
+          "ticker": "AAOI",
+          "target_weight": 0.0091,
+          "raw_kelly": 0.3247,
+          "flag": "haircut",
+          "current_weight": 0.009,
+          "action": "HOLD",
+          "delta_value": 4,
+          "qty": 0,
+          "lot_size": 1
+        },
+        {
+          "ticker": "OKLO",
+          "target_weight": 0.0086,
+          "raw_kelly": 0.3114,
+          "flag": "haircut",
+          "current_weight": 0.0226,
+          "action": "SELL",
+          "delta_value": -574,
+          "qty": 14,
+          "lot_size": 1
+        },
+        {
+          "ticker": "GOOGL",
+          "target_weight": 0.0085,
+          "raw_kelly": 0.3038,
+          "flag": "haircut",
+          "current_weight": 0.0474,
+          "action": "SELL",
+          "delta_value": -1602,
+          "qty": 4,
+          "lot_size": 1
+        },
+        {
+          "ticker": "MRVL",
+          "target_weight": 0.0082,
+          "raw_kelly": 0.2967,
+          "flag": "haircut",
+          "current_weight": 0.0133,
+          "action": "HOLD",
+          "delta_value": -211,
+          "qty": 0,
+          "lot_size": 1
+        },
+        {
+          "ticker": "TTD",
+          "target_weight": 0.0081,
+          "raw_kelly": 0.2935,
+          "flag": "haircut",
+          "current_weight": 0.036,
+          "action": "SELL",
+          "delta_value": -1148,
+          "qty": 64,
+          "lot_size": 1
+        },
+        {
+          "ticker": "ALAB",
+          "target_weight": 0.008,
+          "raw_kelly": 0.2881,
+          "flag": "haircut",
+          "current_weight": 0.0065,
+          "action": "HOLD",
+          "delta_value": 60,
+          "qty": 0,
+          "lot_size": 1
+        },
+        {
+          "ticker": "LITE",
+          "target_weight": 0.007,
+          "raw_kelly": 0.2538,
+          "flag": "haircut",
+          "current_weight": 0,
+          "action": "HOLD",
+          "delta_value": 290,
+          "qty": 0,
+          "lot_size": 1
+        },
+        {
+          "ticker": "NOK",
+          "target_weight": 0.007,
+          "raw_kelly": 0.2506,
+          "flag": "haircut",
+          "current_weight": 0.1037,
+          "action": "SELL",
+          "delta_value": -3991,
+          "qty": 446,
+          "lot_size": 1
+        },
+        {
+          "ticker": "CRDO",
+          "target_weight": 0.0066,
+          "raw_kelly": 0.2306,
+          "flag": "haircut",
+          "current_weight": 0.0144,
+          "action": "HOLD",
+          "delta_value": -322,
+          "qty": 0,
+          "lot_size": 1
+        },
+        {
+          "ticker": "AAPL",
+          "target_weight": 0.0065,
+          "raw_kelly": 0.2356,
+          "flag": "haircut",
+          "current_weight": 0.0246,
+          "action": "SELL",
+          "delta_value": -747,
+          "qty": 2,
+          "lot_size": 1
+        },
+        {
+          "ticker": "SKHY",
+          "target_weight": 0.0063,
+          "raw_kelly": 0.2274,
+          "flag": "haircut",
+          "current_weight": 0,
+          "action": "HOLD",
+          "delta_value": 260,
+          "qty": 0,
+          "lot_size": 1
+        },
+        {
+          "ticker": "ON",
+          "target_weight": 0.0062,
+          "raw_kelly": 0.2228,
+          "flag": "haircut",
+          "current_weight": 0.0351,
+          "action": "SELL",
+          "delta_value": -1192,
+          "qty": 14,
+          "lot_size": 1
+        },
+        {
+          "ticker": "PM",
+          "target_weight": 0.0058,
+          "raw_kelly": 0.2093,
+          "flag": "haircut",
+          "current_weight": 0.0381,
+          "action": "SELL",
+          "delta_value": -1330,
+          "qty": 6,
+          "lot_size": 1
+        },
+        {
+          "ticker": "XE",
+          "target_weight": 0.0052,
+          "raw_kelly": 0.1891,
+          "flag": "haircut",
+          "current_weight": 0.0199,
+          "action": "SELL",
+          "delta_value": -603,
+          "qty": 43,
+          "lot_size": 1
+        },
+        {
+          "ticker": "PDD",
+          "target_weight": 0.0042,
+          "raw_kelly": 0.1504,
+          "flag": "haircut",
+          "current_weight": 0.0389,
+          "action": "SELL",
+          "delta_value": -1431,
+          "qty": 16,
+          "lot_size": 1
+        },
+        {
+          "ticker": "APP",
+          "target_weight": 0.0041,
+          "raw_kelly": 0.1516,
+          "flag": "haircut",
+          "current_weight": 0.0196,
+          "action": "SELL",
+          "delta_value": -638,
+          "qty": 1,
+          "lot_size": 1
+        },
+        {
+          "ticker": "UNH",
+          "target_weight": 0.004,
+          "raw_kelly": 0.1457,
+          "flag": "haircut",
+          "current_weight": 0.0101,
+          "action": "HOLD",
+          "delta_value": -251,
+          "qty": 0,
+          "lot_size": 1
+        },
+        {
+          "ticker": "NBIS",
+          "target_weight": 0.0033,
+          "raw_kelly": 0.1199,
+          "flag": "haircut",
+          "current_weight": 0.0135,
+          "action": "SELL",
+          "delta_value": -418,
+          "qty": 2,
+          "lot_size": 1
+        },
+        {
+          "ticker": "TSLA",
+          "target_weight": 0.0027,
+          "raw_kelly": 0.0961,
+          "flag": "haircut",
+          "current_weight": 0,
+          "action": "HOLD",
+          "delta_value": 110,
+          "qty": 0,
+          "lot_size": 1
+        },
+        {
+          "ticker": "PLTR",
+          "target_weight": 0.0023,
+          "raw_kelly": 0.0815,
+          "flag": "haircut",
+          "current_weight": 0.0216,
+          "action": "SELL",
+          "delta_value": -796,
+          "qty": 6,
+          "lot_size": 1
+        },
+        {
+          "ticker": "HPQ",
+          "target_weight": 0.002,
+          "raw_kelly": 0.0732,
+          "flag": "haircut",
+          "current_weight": 0.0246,
+          "action": "SELL",
+          "delta_value": -932,
+          "qty": 35,
+          "lot_size": 1
+        },
+        {
+          "ticker": "SMR",
+          "target_weight": 0.0016,
+          "raw_kelly": 0.057,
+          "flag": "haircut",
+          "current_weight": 0.0162,
+          "action": "SELL",
+          "delta_value": -604,
+          "qty": 74,
+          "lot_size": 1
+        },
+        {
+          "ticker": "SNDK",
+          "target_weight": 0.0015,
+          "raw_kelly": 0.055,
+          "flag": "haircut",
+          "current_weight": 0,
+          "action": "HOLD",
+          "delta_value": 63,
+          "qty": 0,
+          "lot_size": 1
+        }
+      ],
+      "cash": 0,
+      "cash_reason": null,
+      "portfolio_conviction": 35.8447,
+      "excluded": [
+        {
+          "ticker": "BE",
+          "flag": "do_not_buy",
+          "reason": "negative edge — do not buy"
+        },
+        {
+          "ticker": "CBRS",
+          "flag": "do_not_buy",
+          "reason": "bull target must exceed current price"
+        },
+        {
+          "ticker": "CVX",
+          "flag": "do_not_buy",
+          "reason": "bull target must exceed current price"
+        },
+        {
+          "ticker": "ENPH",
+          "flag": "do_not_buy",
+          "reason": "negative edge — do not buy"
+        },
+        {
+          "ticker": "IFNNY",
+          "flag": "do_not_buy",
+          "reason": "negative edge — do not buy"
+        },
+        {
+          "ticker": "NET",
+          "flag": "do_not_buy",
+          "reason": "negative edge — do not buy"
+        },
+        {
+          "ticker": "ONDS",
+          "flag": "do_not_buy",
+          "reason": "negative edge — do not buy"
+        },
+        {
+          "ticker": "RDDT",
+          "flag": "do_not_buy",
+          "reason": "bull target must exceed current price"
+        },
+        {
+          "ticker": "STX",
+          "flag": "do_not_buy",
+          "reason": "bull target must exceed current price"
+        },
+        {
+          "ticker": "TER",
+          "flag": "do_not_buy",
+          "reason": "negative edge — do not buy"
+        }
+      ],
+      "correlation": {
+        "tickers": [
+          "AAOI",
+          "AAPL",
+          "ACN",
+          "ADBE",
+          "ADI",
+          "ALAB",
+          "AMBA",
+          "AMD",
+          "AMZN",
+          "APP",
+          "BABA",
+          "BE",
+          "CBRS",
+          "CEG",
+          "CHYM",
+          "COHR",
+          "CRDO",
+          "CRM",
+          "CVX",
+          "DDOG",
+          "ENPH",
+          "ETN",
+          "FUTU",
+          "GLW",
+          "GOOGL"
+        ],
+        "used": [
+          [
+            1,
+            -0.11735610275850772,
+            -0.021637835213520258,
+            -0.15474396142235283,
+            0.4511434219810758,
+            0.36512321658987984,
+            0.1112519667013643,
+            0.4646988958208617,
+            -0.23826590912677742,
+            0.1417720455848494,
+            0.056671834259368774,
+            0.2231354347558377,
+            0.21495363884666546,
+            0.08363053316697344,
+            -0.12141830102206135,
+            0.7591752767347967,
+            0.22048394587522704,
+            -0.05548139890658574,
+            -0.036211852882174586,
+            0.15171954241026978,
+            0.30959617654685917,
+            0.5441838763937918,
+            -0.09669802534672839,
+            0.36789738226999136,
+            -0.17109050014611113
+          ],
+          [
+            -0.11735610275850772,
+            1,
+            0.4806567207254834,
+            0.4925178703587811,
+            0.08663775957903151,
+            -0.1458821387704157,
+            0.21933908060455085,
+            0.05741238702290168,
+            0.6300333039745148,
+            0.30473564606006276,
+            0.597807009900766,
+            0.10147103104613527,
+            -0.06393973785176765,
+            0.142290955368713,
+            0.14146516546405094,
+            -0.3210884239763439,
+            -0.12925576552474022,
+            0.4980353785641107,
+            0.1993732308277581,
+            0.2930782059431045,
+            0.28126324028258765,
+            0.10308305666700918,
+            -0.05877837990280113,
+            -0.49534527561815633,
+            0.42418292547715647
+          ],
+          [
+            -0.021637835213520258,
+            0.4806567207254834,
+            1,
+            0.5534548132583132,
+            -0.2812738412704932,
+            -0.2704804033072978,
+            -0.023809987668740654,
+            -0.11556558099475729,
+            0.34094842587242824,
+            0.3142546954698478,
+            0.46707443835613655,
+            -0.574318119223109,
+            -0.12790965043178598,
+            -0.22605128019573645,
+            0.19970973766907618,
+            -0.42867233000483285,
+            -0.2533982135591341,
+            0.6707280367535432,
+            0.48517082937666195,
+            0.44674538608195535,
+            0.14603297127728815,
+            -0.3512694590375957,
+            -0.12847453680875753,
+            -0.5909070335333695,
+            0.17235639284581772
+          ],
+          [
+            -0.15474396142235283,
+            0.4925178703587811,
+            0.5534548132583132,
+            1,
+            -0.2905510834323127,
+            -0.30134862315541705,
+            -0.1361669765435295,
+            -0.1940213939354964,
+            0.29424211481256485,
+            0.3899090600684025,
+            0.4538974864061408,
+            -0.3871192077174488,
+            -0.19033472675342458,
+            -0.39289155264739356,
+            0.5531572461352656,
+            -0.3532845737992719,
+            -0.490732262794478,
+            0.9120699254700547,
+            0.3386748374471976,
+            0.6109012299798916,
+            0.11552439028904626,
+            -0.15281135055884426,
+            -0.07215571191258772,
+            -0.22333529522135148,
+            0.07715851980995068
+          ],
+          [
+            0.4511434219810758,
+            0.08663775957903151,
+            -0.2812738412704932,
+            -0.2905510834323127,
+            1,
+            0.28364044035054364,
+            0.017706736174305533,
+            0.6387248477283212,
+            -0.042056282151650984,
+            0.06070449749638284,
+            0.17843157300778062,
+            0.5201599426295543,
+            -0.07381460928891534,
+            0.3853674662131176,
+            -0.28670055062317823,
+            0.5574060741027107,
+            0.4124126981349868,
+            -0.2181408468917107,
+            -0.17785944991065353,
+            -0.04115784625922438,
+            0.2649364464236091,
+            0.7755890958587988,
+            0.10667694081260785,
+            0.20374758441086002,
+            0.01263468664472484
+          ],
+          [
+            0.36512321658987984,
+            -0.1458821387704157,
+            -0.2704804033072978,
+            -0.30134862315541705,
+            0.28364044035054364,
+            1,
+            0.5097217358314916,
+            0.764736099373907,
+            0.07563385759191595,
+            0.4710128227443667,
+            -0.4532802770671134,
+            0.6377942996577107,
+            -0.045627433388130724,
+            0.22505428366098454,
+            0.08273566366175222,
+            0.5519677992346435,
+            0.7633658542041826,
+            -0.1323875613322358,
+            -0.6726835555069428,
+            0.2953108130277829,
+            0.6568221121493915,
+            0.487232161596608,
+            -0.4589743454200093,
+            0.6238446603740511,
+            0.06705782799058048
+          ],
+          [
+            0.1112519667013643,
+            0.21933908060455085,
+            -0.023809987668740654,
+            -0.1361669765435295,
+            0.017706736174305533,
+            0.5097217358314916,
+            1,
+            0.5302088282228763,
+            0.4555960322407756,
+            0.4221105618105148,
+            -0.11185232449518712,
+            0.38631341526232305,
+            0.3842413289712459,
+            0.19677884130370096,
+            0.30050047174611205,
+            0.1410130394198692,
+            0.39288558719511396,
+            -0.06993043666916168,
+            -0.4325097492690422,
+            0.22736331140932842,
+            0.3725852402023752,
+            0.3230034801751133,
+            -0.012055775204809686,
+            0.27446283715641406,
+            0.4161525045157986
+          ],
+          [
+            0.4646988958208617,
+            0.05741238702290168,
+            -0.11556558099475729,
+            -0.1940213939354964,
+            0.6387248477283212,
+            0.764736099373907,
+            0.5302088282228763,
+            1,
+            0.23908747734027766,
+            0.48314957164362254,
+            -0.11509550084030445,
+            0.589949807402816,
+            -0.05868620223870109,
+            0.4652840176082177,
+            0.16381123490689037,
+            0.641434026901329,
+            0.6215186131343945,
+            0.011924829838328564,
+            -0.5107354364928285,
+            0.3794965126239804,
+            0.7152144411861504,
+            0.7766010578117096,
+            -0.1533305279603603,
+            0.5329823195892285,
+            0.07394241532210229
+          ],
+          [
+            -0.23826590912677742,
+            0.6300333039745148,
+            0.34094842587242824,
+            0.29424211481256485,
+            -0.042056282151650984,
+            0.07563385759191595,
+            0.4555960322407756,
+            0.23908747734027766,
+            1,
+            0.40712955685977725,
+            0.38684143206488614,
+            0.024471678729145945,
+            0.007306217812991625,
+            0.14293684141406335,
+            0.5176731293750277,
+            -0.36268725698952525,
+            -0.030527371901343872,
+            0.3521686356183667,
+            -0.1771215099026013,
+            0.4211811831204391,
+            0.3981981304443492,
+            0.08317249427802496,
+            -0.0011446291553405693,
+            -0.17325774469702673,
+            0.76205509119683
+          ],
+          [
+            0.1417720455848494,
+            0.30473564606006276,
+            0.3142546954698478,
+            0.3899090600684025,
+            0.06070449749638284,
+            0.4710128227443667,
+            0.4221105618105148,
+            0.48314957164362254,
+            0.40712955685977725,
+            1,
+            -0.15069408835006537,
+            0.1464698811757305,
+            -0.18285217706361875,
+            -0.2639366929146055,
+            0.5256167339966099,
+            0.09809851286285824,
+            0.2545116657745437,
+            0.540885281355917,
+            -0.4878450071428989,
+            0.7179944530484695,
+            0.479300473837115,
+            0.29838503960708024,
+            -0.18285647325617202,
+            0.14678025772580153,
+            0.3437212736456322
+          ],
+          [
+            0.056671834259368774,
+            0.597807009900766,
+            0.46707443835613655,
+            0.4538974864061408,
+            0.17843157300778062,
+            -0.4532802770671134,
+            -0.11185232449518712,
+            -0.11509550084030445,
+            0.38684143206488614,
+            -0.15069408835006537,
+            1,
+            -0.3058704072501232,
+            0.12591226435031705,
+            0.10747536698850624,
+            -0.015485868334505428,
+            -0.269124047472405,
+            -0.34233835144384284,
+            0.3685843230136882,
+            0.6725506878774482,
+            0.09745403370269262,
+            0.03300102603230778,
+            -0.003016231536863633,
+            0.12656884530517704,
+            -0.49393133010090634,
+            0.1977729747581024
+          ],
+          [
+            0.2231354347558377,
+            0.10147103104613527,
+            -0.574318119223109,
+            -0.3871192077174488,
+            0.5201599426295543,
+            0.6377942996577107,
+            0.38631341526232305,
+            0.589949807402816,
+            0.024471678729145945,
+            0.1464698811757305,
+            -0.3058704072501232,
+            1,
+            -0.0659165140311561,
+            0.4422632672751536,
+            -0.14259591157278093,
+            0.5367277526584824,
+            0.5916071002777543,
+            -0.30882224459931934,
+            -0.560734120525544,
+            -0.05802329143766399,
+            0.3865289858187826,
+            0.6540848226716931,
+            -0.11850458739579922,
+            0.4212879021860271,
+            0.08241376065274277
+          ],
+          [
+            0.21495363884666546,
+            -0.06393973785176765,
+            -0.12790965043178598,
+            -0.19033472675342458,
+            -0.07381460928891534,
+            -0.045627433388130724,
+            0.3842413289712459,
+            -0.05868620223870109,
+            0.007306217812991625,
+            -0.18285217706361875,
+            0.12591226435031705,
+            -0.0659165140311561,
+            1,
+            0.03851164347689099,
+            -0.1660692568505948,
+            -0.00020744927320028446,
+            -0.005096651489370037,
+            -0.31724105443873357,
+            0.13602364298497183,
+            -0.22357731416558566,
+            -0.26130571799686264,
+            -0.04459572642646473,
+            0.2799959617614434,
+            -0.027508937777856256,
+            0.031197093866206484
+          ],
+          [
+            0.08363053316697344,
+            0.142290955368713,
+            -0.22605128019573645,
+            -0.39289155264739356,
+            0.3853674662131176,
+            0.22505428366098454,
+            0.19677884130370096,
+            0.4652840176082177,
+            0.14293684141406335,
+            -0.2639366929146055,
+            0.10747536698850624,
+            0.4422632672751536,
+            0.03851164347689099,
+            1,
+            -0.29420921509563047,
+            0.312371492643619,
+            0.3539721666907378,
+            -0.3370148138902912,
+            -0.04309476787218643,
+            -0.3005749873573594,
+            0.43228393715270524,
+            0.3889036505261422,
+            -0.02196928973975603,
+            0.12506701027062583,
+            -0.19526046510877737
+          ],
+          [
+            -0.12141830102206135,
+            0.14146516546405094,
+            0.19970973766907618,
+            0.5531572461352656,
+            -0.28670055062317823,
+            0.08273566366175222,
+            0.30050047174611205,
+            0.16381123490689037,
+            0.5176731293750277,
+            0.5256167339966099,
+            -0.015485868334505428,
+            -0.14259591157278093,
+            -0.1660692568505948,
+            -0.29420921509563047,
+            1,
+            -0.07458496359849603,
+            -0.3254343200256806,
+            0.5895738813511546,
+            -0.29502275565384783,
+            0.7199708777604866,
+            0.22064253756942867,
+            0.058690098241216244,
+            0.10613490011022637,
+            0.3415292480058161,
+            0.3507112312696332
+          ],
+          [
+            0.7591752767347967,
+            -0.3210884239763439,
+            -0.42867233000483285,
+            -0.3532845737992719,
+            0.5574060741027107,
+            0.5519677992346435,
+            0.1410130394198692,
+            0.641434026901329,
+            -0.36268725698952525,
+            0.09809851286285824,
+            -0.269124047472405,
+            0.5367277526584824,
+            -0.00020744927320028446,
+            0.312371492643619,
+            -0.07458496359849603,
+            1,
+            0.351295719512178,
+            -0.24591663112316836,
+            -0.2841569654822286,
+            0.004905733933697082,
+            0.38250309712960145,
+            0.691573347920661,
+            -0.08645212417338162,
+            0.70737498709537,
+            -0.3788121756299531
+          ],
+          [
+            0.22048394587522704,
+            -0.12925576552474022,
+            -0.2533982135591341,
+            -0.490732262794478,
+            0.4124126981349868,
+            0.7633658542041826,
+            0.39288558719511396,
+            0.6215186131343945,
+            -0.030527371901343872,
+            0.2545116657745437,
+            -0.34233835144384284,
+            0.5916071002777543,
+            -0.005096651489370037,
+            0.3539721666907378,
+            -0.3254343200256806,
+            0.351295719512178,
+            1,
+            -0.3524615882766071,
+            -0.4977059580810586,
+            -0.029413407530062084,
+            0.45339639164148215,
+            0.372938860698837,
+            -0.32843854756630503,
+            0.24659580015761476,
+            -0.03535408677504286
+          ],
+          [
+            -0.05548139890658574,
+            0.4980353785641107,
+            0.6707280367535432,
+            0.9120699254700547,
+            -0.2181408468917107,
+            -0.1323875613322358,
+            -0.06993043666916168,
+            0.011924829838328564,
+            0.3521686356183667,
+            0.540885281355917,
+            0.3685843230136882,
+            -0.30882224459931934,
+            -0.31724105443873357,
+            -0.3370148138902912,
+            0.5895738813511546,
+            -0.24591663112316836,
+            -0.3524615882766071,
+            1,
+            0.22381750532826464,
+            0.7948210937926494,
+            0.3098706486638489,
+            -0.08025475158475154,
+            -0.12542954194949638,
+            -0.19096439911528462,
+            0.09641646866181279
+          ],
+          [
+            -0.036211852882174586,
+            0.1993732308277581,
+            0.48517082937666195,
+            0.3386748374471976,
+            -0.17785944991065353,
+            -0.6726835555069428,
+            -0.4325097492690422,
+            -0.5107354364928285,
+            -0.1771215099026013,
+            -0.4878450071428989,
+            0.6725506878774482,
+            -0.560734120525544,
+            0.13602364298497183,
+            -0.04309476787218643,
+            -0.29502275565384783,
+            -0.2841569654822286,
+            -0.4977059580810586,
+            0.22381750532826464,
+            1,
+            -0.21988245781896396,
+            -0.27357205020283976,
+            -0.4290534568732104,
+            0.06590400858072076,
+            -0.6000633409903113,
+            -0.3352868189281129
+          ],
+          [
+            0.15171954241026978,
+            0.2930782059431045,
+            0.44674538608195535,
+            0.6109012299798916,
+            -0.04115784625922438,
+            0.2953108130277829,
+            0.22736331140932842,
+            0.3794965126239804,
+            0.4211811831204391,
+            0.7179944530484695,
+            0.09745403370269262,
+            -0.05802329143766399,
+            -0.22357731416558566,
+            -0.3005749873573594,
+            0.7199708777604866,
+            0.004905733933697082,
+            -0.029413407530062084,
+            0.7948210937926494,
+            -0.21988245781896396,
+            1,
+            0.46746945618702174,
+            0.17863478816778425,
+            -0.11300474487605307,
+            0.1857501906438586,
+            0.24281371837856408
+          ],
+          [
+            0.30959617654685917,
+            0.28126324028258765,
+            0.14603297127728815,
+            0.11552439028904626,
+            0.2649364464236091,
+            0.6568221121493915,
+            0.3725852402023752,
+            0.7152144411861504,
+            0.3981981304443492,
+            0.479300473837115,
+            0.03300102603230778,
+            0.3865289858187826,
+            -0.26130571799686264,
+            0.43228393715270524,
+            0.22064253756942867,
+            0.38250309712960145,
+            0.45339639164148215,
+            0.3098706486638489,
+            -0.27357205020283976,
+            0.46746945618702174,
+            1,
+            0.5045160882003462,
+            -0.46398914682643105,
+            0.34612363835989685,
+            0.02523580386037473
+          ],
+          [
+            0.5441838763937918,
+            0.10308305666700918,
+            -0.3512694590375957,
+            -0.15281135055884426,
+            0.7755890958587988,
+            0.487232161596608,
+            0.3230034801751133,
+            0.7766010578117096,
+            0.08317249427802496,
+            0.29838503960708024,
+            -0.003016231536863633,
+            0.6540848226716931,
+            -0.04459572642646473,
+            0.3889036505261422,
+            0.058690098241216244,
+            0.691573347920661,
+            0.372938860698837,
+            -0.08025475158475154,
+            -0.4290534568732104,
+            0.17863478816778425,
+            0.5045160882003462,
+            1,
+            -0.019574553126587974,
+            0.5118931434643649,
+            0.06174869301890183
+          ],
+          [
+            -0.09669802534672839,
+            -0.05877837990280113,
+            -0.12847453680875753,
+            -0.07215571191258772,
+            0.10667694081260785,
+            -0.4589743454200093,
+            -0.012055775204809686,
+            -0.1533305279603603,
+            -0.0011446291553405693,
+            -0.18285647325617202,
+            0.12656884530517704,
+            -0.11850458739579922,
+            0.2799959617614434,
+            -0.02196928973975603,
+            0.10613490011022637,
+            -0.08645212417338162,
+            -0.32843854756630503,
+            -0.12542954194949638,
+            0.06590400858072076,
+            -0.11300474487605307,
+            -0.46398914682643105,
+            -0.019574553126587974,
+            1,
+            -0.12983203856149925,
+            0.05405781468318257
+          ],
+          [
+            0.36789738226999136,
+            -0.49534527561815633,
+            -0.5909070335333695,
+            -0.22333529522135148,
+            0.20374758441086002,
+            0.6238446603740511,
+            0.27446283715641406,
+            0.5329823195892285,
+            -0.17325774469702673,
+            0.14678025772580153,
+            -0.49393133010090634,
+            0.4212879021860271,
+            -0.027508937777856256,
+            0.12506701027062583,
+            0.3415292480058161,
+            0.70737498709537,
+            0.24659580015761476,
+            -0.19096439911528462,
+            -0.6000633409903113,
+            0.1857501906438586,
+            0.34612363835989685,
+            0.5118931434643649,
+            -0.12983203856149925,
+            1,
+            -0.16951578229013609
+          ],
+          [
+            -0.17109050014611113,
+            0.42418292547715647,
+            0.17235639284581772,
+            0.07715851980995068,
+            0.01263468664472484,
+            0.06705782799058048,
+            0.4161525045157986,
+            0.07394241532210229,
+            0.76205509119683,
+            0.3437212736456322,
+            0.1977729747581024,
+            0.08241376065274277,
+            0.031197093866206484,
+            -0.19526046510877737,
+            0.3507112312696332,
+            -0.3788121756299531,
+            -0.03535408677504286,
+            0.09641646866181279,
+            -0.3352868189281129,
+            0.24281371837856408,
+            0.02523580386037473,
+            0.06174869301890183,
+            0.05405781468318257,
+            -0.16951578229013609,
+            1
+          ]
+        ],
+        "sameDay": [
+          [
+            1,
+            -0.04423187884523649,
+            -0.26607489189804406,
+            -0.23134299916252238,
+            0.34779413939096665,
+            0.46171076691043644,
+            0.5100441161942123,
+            0.49321391192873426,
+            -0.01985053916674576,
+            0.25531887716416835,
+            0.11961994346826067,
+            0.4306267692478458,
+            0.43798206027702014,
+            0.017770758125875332,
+            0.21835810644303175,
+            0.7830185757501771,
+            0.45990821859514985,
+            -0.1329310101857641,
+            -0.11742961843132636,
+            0.26758756147230073,
+            0.40950137019012833,
+            0.4617566053939258,
+            0.09930270321273366,
+            0.6417132344018941,
+            -0.012015590733859377
+          ],
+          [
+            -0.04423187884523649,
+            1,
+            0.1862807111053621,
+            0.3448263252421285,
+            -0.07140010584462271,
+            -0.00455349142000212,
+            -0.004909796315903109,
+            -0.06908116629333218,
+            0.40655872770862195,
+            0.2106782302393688,
+            0.25922165919169016,
+            -0.006998443453457392,
+            0.0029860578550702085,
+            0.1250652353395886,
+            0.1782428283319187,
+            -0.09956007304629452,
+            -0.1069929671501308,
+            0.20481927235195377,
+            -0.10754172502907913,
+            0.10117721640416844,
+            0.19966899597942497,
+            -0.09372393117586095,
+            -0.0576419765706353,
+            -0.22659784322587867,
+            0.0986041805640028
+          ],
+          [
+            -0.26607489189804406,
+            0.1862807111053621,
+            1,
+            0.5476145090245443,
+            -0.5089964780663047,
+            -0.5489295977185487,
+            -0.3462518521105234,
+            -0.43382292890733065,
+            0.0008868127131130039,
+            0.1222967409480564,
+            -0.010834277342810655,
+            -0.5421562048479633,
+            -0.3936295209611914,
+            -0.28534453717135927,
+            -0.006166266945124316,
+            -0.4872702830105161,
+            -0.4841674507113101,
+            0.6392173797227271,
+            0.2932851128684718,
+            0.3469534874797117,
+            -0.3306724261492788,
+            -0.5043898267454913,
+            -0.07705190485677779,
+            -0.6160245096287029,
+            -0.010852408051310871
+          ],
+          [
+            -0.23134299916252238,
+            0.3448263252421285,
+            0.5476145090245443,
+            1,
+            -0.4286792304520043,
+            -0.443068316602739,
+            -0.37036454062661806,
+            -0.43642303395711785,
+            0.19453166078975992,
+            0.12812368145671035,
+            0.05886892066566875,
+            -0.4924267222283159,
+            -0.19411889255024348,
+            -0.3424929769971798,
+            0.3009906190712883,
+            -0.511192753391155,
+            -0.4698823258747212,
+            0.8281454581324867,
+            0.20452585469061957,
+            0.46269850300182797,
+            -0.25866068548057825,
+            -0.4471245719246141,
+            -0.1251513402112893,
+            -0.4292217970896363,
+            0.07589605832544649
+          ],
+          [
+            0.34779413939096665,
+            -0.07140010584462271,
+            -0.5089964780663047,
+            -0.4286792304520043,
+            1,
+            0.5729143623563865,
+            0.46572697148232733,
+            0.7203477994286525,
+            -0.025050763103720758,
+            0.038403979294207594,
+            0.22999959699690029,
+            0.5759934423351597,
+            0.1177115352741419,
+            0.37616390938755245,
+            -0.033511603985746985,
+            0.6386200899698412,
+            0.5607490143481845,
+            -0.4492140229542581,
+            -0.261611926555233,
+            -0.18935329446208884,
+            0.4386972799235453,
+            0.7625807202101526,
+            0.13847407464432013,
+            0.5948088277818899,
+            0.12192779212473835
+          ],
+          [
+            0.46171076691043644,
+            -0.00455349142000212,
+            -0.5489295977185487,
+            -0.443068316602739,
+            0.5729143623563865,
+            1,
+            0.5763999241400367,
+            0.7735918452726164,
+            0.16189968068719165,
+            0.22357101847784222,
+            0.12415012479008213,
+            0.6289326485517289,
+            0.35937511247240705,
+            0.4326969508106947,
+            0.1711047757238626,
+            0.6713583080112585,
+            0.7554527174213288,
+            -0.4738570125660978,
+            -0.45225638804570284,
+            -0.007190646216092285,
+            0.6384331149231031,
+            0.6677632682154376,
+            0.045737232982190026,
+            0.7205809878297855,
+            0.08400321297633927
+          ],
+          [
+            0.5100441161942123,
+            -0.004909796315903109,
+            -0.3462518521105234,
+            -0.37036454062661806,
+            0.46572697148232733,
+            0.5763999241400367,
+            1,
+            0.6645731644856067,
+            0.1070523727442623,
+            0.3064637525958969,
+            0.22876414726128663,
+            0.49639856479266903,
+            0.331055957211579,
+            0.12483399184574262,
+            0.11108632954384152,
+            0.5825993583096513,
+            0.5021073675116949,
+            -0.2959334513933357,
+            -0.3069678368733562,
+            0.07906677684419132,
+            0.46714103856272354,
+            0.6001680758412001,
+            0.0946260377303616,
+            0.4944746417242059,
+            0.19730055859506285
+          ],
+          [
+            0.49321391192873426,
+            -0.06908116629333218,
+            -0.43382292890733065,
+            -0.43642303395711785,
+            0.7203477994286525,
+            0.7735918452726164,
+            0.6645731644856067,
+            1,
+            0.1243464141435579,
+            0.19543188325894786,
+            0.12093479892074442,
+            0.6031423164504703,
+            0.2574905568315694,
+            0.4930364149066662,
+            0.23546732683187757,
+            0.7214463454417708,
+            0.6532331132323672,
+            -0.3573412731737969,
+            -0.40398620090178705,
+            0.0036654295045984563,
+            0.5476904550438838,
+            0.7717487150887425,
+            0.13937702785199785,
+            0.7020173445262651,
+            0.13002192775997876
+          ],
+          [
+            -0.01985053916674576,
+            0.40655872770862195,
+            0.0008868127131130039,
+            0.19453166078975992,
+            -0.025050763103720758,
+            0.16189968068719165,
+            0.1070523727442623,
+            0.1243464141435579,
+            1,
+            0.3816142344826505,
+            0.2840995693126721,
+            0.1484513842017715,
+            0.1754608836399743,
+            0.20742586133868773,
+            0.5964753071767556,
+            -0.05909103623626694,
+            -0.0474491967611486,
+            0.13703869556514103,
+            -0.392265972389321,
+            0.11927479012896888,
+            0.31442477164381744,
+            0.018467347683593538,
+            0.16332537287949125,
+            0.02634946804736979,
+            0.7208371608216451
+          ],
+          [
+            0.25531887716416835,
+            0.2106782302393688,
+            0.1222967409480564,
+            0.12812368145671035,
+            0.038403979294207594,
+            0.22357101847784222,
+            0.3064637525958969,
+            0.19543188325894786,
+            0.3816142344826505,
+            1,
+            0.13170785100180663,
+            0.10396509914336505,
+            0.15348171948763162,
+            -0.17163851093085222,
+            0.35486103367117827,
+            0.18338359023477735,
+            0.05873686200905395,
+            0.20874691372619417,
+            -0.42381512198127796,
+            0.3255539774009335,
+            0.2843878058119388,
+            0.10895895640131026,
+            0.2418397234529752,
+            0.06514661790118612,
+            0.3407504300865288
+          ],
+          [
+            0.11961994346826067,
+            0.25922165919169016,
+            -0.010834277342810655,
+            0.05886892066566875,
+            0.22999959699690029,
+            0.12415012479008213,
+            0.22876414726128663,
+            0.12093479892074442,
+            0.2840995693126721,
+            0.13170785100180663,
+            1,
+            0.07780550290591813,
+            0.24157303194358015,
+            0.1445235428173359,
+            0.04360395448265525,
+            0.15956487379582943,
+            0.12289012932933628,
+            0.06933958016504536,
+            0.035739456859886755,
+            0.1289570685196116,
+            0.0650451553398377,
+            0.1508073912741294,
+            0.1722041008352502,
+            0.0332738912727063,
+            0.1929932894451624
+          ],
+          [
+            0.4306267692478458,
+            -0.006998443453457392,
+            -0.5421562048479633,
+            -0.4924267222283159,
+            0.5759934423351597,
+            0.6289326485517289,
+            0.49639856479266903,
+            0.6031423164504703,
+            0.1484513842017715,
+            0.10396509914336505,
+            0.07780550290591813,
+            1,
+            0.22678689178248493,
+            0.4538756910497232,
+            0.10002653425518747,
+            0.6347801338052546,
+            0.657637125124653,
+            -0.46722568558614086,
+            -0.42970367626147077,
+            -0.13245640639535106,
+            0.5421234744199527,
+            0.6806360970108682,
+            0.14011605887232303,
+            0.629437865308301,
+            0.19842627518722136
+          ],
+          [
+            0.43798206027702014,
+            0.0029860578550702085,
+            -0.3936295209611914,
+            -0.19411889255024348,
+            0.1177115352741419,
+            0.35937511247240705,
+            0.331055957211579,
+            0.2574905568315694,
+            0.1754608836399743,
+            0.15348171948763162,
+            0.24157303194358015,
+            0.22678689178248493,
+            1,
+            0.0478171929919617,
+            -0.013511706870611536,
+            0.3681569907572833,
+            0.24132151306081986,
+            -0.24596907491467082,
+            -0.0175455570391455,
+            -0.042308804859493745,
+            0.1669136156641845,
+            0.12826557659382376,
+            0.16154976648374608,
+            0.35980275152561786,
+            -0.07460871302424876
+          ],
+          [
+            0.017770758125875332,
+            0.1250652353395886,
+            -0.28534453717135927,
+            -0.3424929769971798,
+            0.37616390938755245,
+            0.4326969508106947,
+            0.12483399184574262,
+            0.4930364149066662,
+            0.20742586133868773,
+            -0.17163851093085222,
+            0.1445235428173359,
+            0.4538756910497232,
+            0.0478171929919617,
+            1,
+            0.10311621795388587,
+            0.3498479652721073,
+            0.3768367971227604,
+            -0.3566089586757575,
+            -0.2668650421303266,
+            -0.31993078552512433,
+            0.43081618885378087,
+            0.4691119709156522,
+            0.058866658209145425,
+            0.37093138952531696,
+            0.02926284854725484
+          ],
+          [
+            0.21835810644303175,
+            0.1782428283319187,
+            -0.006166266945124316,
+            0.3009906190712883,
+            -0.033511603985746985,
+            0.1711047757238626,
+            0.11108632954384152,
+            0.23546732683187757,
+            0.5964753071767556,
+            0.35486103367117827,
+            0.04360395448265525,
+            0.10002653425518747,
+            -0.013511706870611536,
+            0.10311621795388587,
+            1,
+            0.11163647809489503,
+            0.015983778053329796,
+            0.3171879326912506,
+            -0.3996044322347567,
+            0.43452270849849656,
+            0.32410332788918705,
+            0.13799330334864005,
+            0.18212697860662957,
+            0.2312116133601894,
+            0.40313422169142865
+          ],
+          [
+            0.7830185757501771,
+            -0.09956007304629452,
+            -0.4872702830105161,
+            -0.511192753391155,
+            0.6386200899698412,
+            0.6713583080112585,
+            0.5825993583096513,
+            0.7214463454417708,
+            -0.05909103623626694,
+            0.18338359023477735,
+            0.15956487379582943,
+            0.6347801338052546,
+            0.3681569907572833,
+            0.3498479652721073,
+            0.11163647809489503,
+            1,
+            0.5874509645982077,
+            -0.4213173533420673,
+            -0.17653495576624562,
+            -0.05860233874700191,
+            0.5890413463815375,
+            0.7000674812664006,
+            0.16760915124491263,
+            0.8382241935343646,
+            -0.08356124762759713
+          ],
+          [
+            0.45990821859514985,
+            -0.1069929671501308,
+            -0.4841674507113101,
+            -0.4698823258747212,
+            0.5607490143481845,
+            0.7554527174213288,
+            0.5021073675116949,
+            0.6532331132323672,
+            -0.0474491967611486,
+            0.05873686200905395,
+            0.12289012932933628,
+            0.657637125124653,
+            0.24132151306081986,
+            0.3768367971227604,
+            0.015983778053329796,
+            0.5874509645982077,
+            1,
+            -0.4236510713914831,
+            -0.3938127655218826,
+            0.04075918976016037,
+            0.44347792046584533,
+            0.6819586277734456,
+            -0.05313838917469055,
+            0.5772940106211368,
+            -0.041481945870507506
+          ],
+          [
+            -0.1329310101857641,
+            0.20481927235195377,
+            0.6392173797227271,
+            0.8281454581324867,
+            -0.4492140229542581,
+            -0.4738570125660978,
+            -0.2959334513933357,
+            -0.3573412731737969,
+            0.13703869556514103,
+            0.20874691372619417,
+            0.06933958016504536,
+            -0.46722568558614086,
+            -0.24596907491467082,
+            -0.3566089586757575,
+            0.3171879326912506,
+            -0.4213173533420673,
+            -0.4236510713914831,
+            1,
+            0.2339729224754316,
+            0.6368339873686183,
+            -0.21767396157198673,
+            -0.435718013023402,
+            -0.08048017725362172,
+            -0.40398611684152247,
+            0.0662161574804571
+          ],
+          [
+            -0.11742961843132636,
+            -0.10754172502907913,
+            0.2932851128684718,
+            0.20452585469061957,
+            -0.261611926555233,
+            -0.45225638804570284,
+            -0.3069678368733562,
+            -0.40398620090178705,
+            -0.392265972389321,
+            -0.42381512198127796,
+            0.035739456859886755,
+            -0.42970367626147077,
+            -0.0175455570391455,
+            -0.2668650421303266,
+            -0.3996044322347567,
+            -0.17653495576624562,
+            -0.3938127655218826,
+            0.2339729224754316,
+            1,
+            -0.06224385811723035,
+            -0.3025835158893326,
+            -0.42181914458157094,
+            -0.30929403552214996,
+            -0.33534203827003733,
+            -0.40977381926026885
+          ],
+          [
+            0.26758756147230073,
+            0.10117721640416844,
+            0.3469534874797117,
+            0.46269850300182797,
+            -0.18935329446208884,
+            -0.007190646216092285,
+            0.07906677684419132,
+            0.0036654295045984563,
+            0.11927479012896888,
+            0.3255539774009335,
+            0.1289570685196116,
+            -0.13245640639535106,
+            -0.042308804859493745,
+            -0.31993078552512433,
+            0.43452270849849656,
+            -0.05860233874700191,
+            0.04075918976016037,
+            0.6368339873686183,
+            -0.06224385811723035,
+            1,
+            0.09140976775923727,
+            -0.028839860222814765,
+            -0.04108696105290646,
+            0.031999921876758486,
+            0.03481227137013798
+          ],
+          [
+            0.40950137019012833,
+            0.19966899597942497,
+            -0.3306724261492788,
+            -0.25866068548057825,
+            0.4386972799235453,
+            0.6384331149231031,
+            0.46714103856272354,
+            0.5476904550438838,
+            0.31442477164381744,
+            0.2843878058119388,
+            0.0650451553398377,
+            0.5421234744199527,
+            0.1669136156641845,
+            0.43081618885378087,
+            0.32410332788918705,
+            0.5890413463815375,
+            0.44347792046584533,
+            -0.21767396157198673,
+            -0.3025835158893326,
+            0.09140976775923727,
+            1,
+            0.6035386752822244,
+            0.0886857212874868,
+            0.5943486164783822,
+            0.07455666254092046
+          ],
+          [
+            0.4617566053939258,
+            -0.09372393117586095,
+            -0.5043898267454913,
+            -0.4471245719246141,
+            0.7625807202101526,
+            0.6677632682154376,
+            0.6001680758412001,
+            0.7717487150887425,
+            0.018467347683593538,
+            0.10895895640131026,
+            0.1508073912741294,
+            0.6806360970108682,
+            0.12826557659382376,
+            0.4691119709156522,
+            0.13799330334864005,
+            0.7000674812664006,
+            0.6819586277734456,
+            -0.435718013023402,
+            -0.42181914458157094,
+            -0.028839860222814765,
+            0.6035386752822244,
+            1,
+            0.0799762614248911,
+            0.7100382457268662,
+            0.08710427095330202
+          ],
+          [
+            0.09930270321273366,
+            -0.0576419765706353,
+            -0.07705190485677779,
+            -0.1251513402112893,
+            0.13847407464432013,
+            0.045737232982190026,
+            0.0946260377303616,
+            0.13937702785199785,
+            0.16332537287949125,
+            0.2418397234529752,
+            0.1722041008352502,
+            0.14011605887232303,
+            0.16154976648374608,
+            0.058866658209145425,
+            0.18212697860662957,
+            0.16760915124491263,
+            -0.05313838917469055,
+            -0.08048017725362172,
+            -0.30929403552214996,
+            -0.04108696105290646,
+            0.0886857212874868,
+            0.0799762614248911,
+            1,
+            0.08110595186450628,
+            0.24448742042365468
+          ],
+          [
+            0.6417132344018941,
+            -0.22659784322587867,
+            -0.6160245096287029,
+            -0.4292217970896363,
+            0.5948088277818899,
+            0.7205809878297855,
+            0.4944746417242059,
+            0.7020173445262651,
+            0.02634946804736979,
+            0.06514661790118612,
+            0.0332738912727063,
+            0.629437865308301,
+            0.35980275152561786,
+            0.37093138952531696,
+            0.2312116133601894,
+            0.8382241935343646,
+            0.5772940106211368,
+            -0.40398611684152247,
+            -0.33534203827003733,
+            0.031999921876758486,
+            0.5943486164783822,
+            0.7100382457268662,
+            0.08110595186450628,
+            1,
+            0.007873520979833999
+          ],
+          [
+            -0.012015590733859377,
+            0.0986041805640028,
+            -0.010852408051310871,
+            0.07589605832544649,
+            0.12192779212473835,
+            0.08400321297633927,
+            0.19730055859506285,
+            0.13002192775997876,
+            0.7208371608216451,
+            0.3407504300865288,
+            0.1929932894451624,
+            0.19842627518722136,
+            -0.07460871302424876,
+            0.02926284854725484,
+            0.40313422169142865,
+            -0.08356124762759713,
+            -0.041481945870507506,
+            0.0662161574804571,
+            -0.40977381926026885,
+            0.03481227137013798,
+            0.07455666254092046,
+            0.08710427095330202,
+            0.24448742042365468,
+            0.007873520979833999,
+            1
+          ]
+        ],
+        "window": 5,
+        "obs": 49,
+        "source": "yahoo",
+        "missing": []
+      },
+      "rebalance_command": {
+        "type": "place_orders",
+        "broker": "ibkr",
+        "trd_env": "SIMULATE",
+        "orders": [
+          {
+            "code": "AMBA",
+            "side": "SELL",
+            "qty": 193,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "MDT",
+            "side": "SELL",
+            "qty": 54,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "NOW",
+            "side": "SELL",
+            "qty": 43,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "NOK",
+            "side": "SELL",
+            "qty": 446,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "HUBS",
+            "side": "SELL",
+            "qty": 16,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "ACN",
+            "side": "SELL",
+            "qty": 17,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "ISRG",
+            "side": "SELL",
+            "qty": 7,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "CEG",
+            "side": "SELL",
+            "qty": 8,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "ADBE",
+            "side": "SELL",
+            "qty": 8,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "INTC",
+            "side": "SELL",
+            "qty": 21,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "V",
+            "side": "SELL",
+            "qty": 4,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "ETN",
+            "side": "SELL",
+            "qty": 4,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "FUTU",
+            "side": "SELL",
+            "qty": 16,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "CRM",
+            "side": "SELL",
+            "qty": 9,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "GOOGL",
+            "side": "SELL",
+            "qty": 4,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "TYL",
+            "side": "SELL",
+            "qty": 4,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "ADI",
+            "side": "SELL",
+            "qty": 4,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "PDD",
+            "side": "SELL",
+            "qty": 16,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "CHYM",
+            "side": "SELL",
+            "qty": 63,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "NVDA",
+            "side": "SELL",
+            "qty": 6,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "PM",
+            "side": "SELL",
+            "qty": 6,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "ON",
+            "side": "SELL",
+            "qty": 14,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "TTD",
+            "side": "SELL",
+            "qty": 64,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "MU",
+            "side": "SELL",
+            "qty": 1,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "TEAM",
+            "side": "SELL",
+            "qty": 11,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "BABA",
+            "side": "SELL",
+            "qty": 9,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "TSM",
+            "side": "SELL",
+            "qty": 2,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "CVX",
+            "side": "SELL",
+            "qty": 5,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "UBER",
+            "side": "SELL",
+            "qty": 14,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "HPQ",
+            "side": "SELL",
+            "qty": 35,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "SNOW",
+            "side": "SELL",
+            "qty": 3,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "POET",
+            "side": "SELL",
+            "qty": 130,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "HOOD",
+            "side": "SELL",
+            "qty": 8,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "PLTR",
+            "side": "SELL",
+            "qty": 6,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "STX",
+            "side": "SELL",
+            "qty": 1,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "AAPL",
+            "side": "SELL",
+            "qty": 2,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "MDB",
+            "side": "SELL",
+            "qty": 2,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "GLW",
+            "side": "SELL",
+            "qty": 4,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "APP",
+            "side": "SELL",
+            "qty": 1,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "COHR",
+            "side": "SELL",
+            "qty": 2,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "SMR",
+            "side": "SELL",
+            "qty": 74,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "XE",
+            "side": "SELL",
+            "qty": 43,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "OKLO",
+            "side": "SELL",
+            "qty": 14,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "AMD",
+            "side": "SELL",
+            "qty": 1,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "AMZN",
+            "side": "SELL",
+            "qty": 2,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "MSFT",
+            "side": "SELL",
+            "qty": 1,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "NBIS",
+            "side": "SELL",
+            "qty": 2,
+            "order_type": "NORMAL"
+          },
+          {
+            "code": "IBM",
+            "side": "BUY",
+            "qty": 9,
+            "order_type": "NORMAL"
+          }
+        ],
+        "skipped": [
+          {
+            "ticker": "NKE",
+            "current_weight": 0.02550807908626978,
+            "target_weight": 0.02912145354441054,
+            "delta_value": 148.98678075665703,
+            "reason": "below_no_trade_threshold"
+          },
+          {
+            "ticker": "DDOG",
+            "current_weight": 0.02430925393843587,
+            "target_weight": 0.016850046667390275,
+            "delta_value": -307.5582924448845,
+            "reason": "below_no_trade_threshold"
+          },
+          {
+            "ticker": "UUUU",
+            "current_weight": 0.01601497491137297,
+            "target_weight": 0.012612477487364182,
+            "delta_value": -140.2918915845562,
+            "reason": "below_no_trade_threshold"
+          },
+          {
+            "ticker": "META",
+            "current_weight": 0.014606240160979837,
+            "target_weight": 0.00982492284489485,
+            "delta_value": -197.1434411107502,
+            "reason": "below_no_trade_threshold"
+          },
+          {
+            "ticker": "AAOI",
+            "current_weight": 0.008984276507456883,
+            "target_weight": 0.0090721095432769,
+            "delta_value": 3.621534773797464,
+            "reason": "below_no_trade_threshold"
+          },
+          {
+            "ticker": "MRVL",
+            "current_weight": 0.01333598996640567,
+            "target_weight": 0.0082289500148168,
+            "delta_value": -210.57364809468612,
+            "reason": "below_no_trade_threshold"
+          },
+          {
+            "ticker": "ALAB",
+            "current_weight": 0.006548733344886864,
+            "target_weight": 0.008013375979257772,
+            "delta_value": 60.39019580775778,
+            "reason": "below_no_trade_threshold"
+          },
+          {
+            "ticker": "LITE",
+            "current_weight": 0,
+            "target_weight": 0.007038616978141528,
+            "delta_value": 290.2164989266122,
+            "reason": "below_no_trade_threshold"
+          },
+          {
+            "ticker": "CRDO",
+            "current_weight": 0.01439463284933001,
+            "target_weight": 0.006597136501015227,
+            "delta_value": -321.5066393907502,
+            "reason": "below_no_trade_threshold"
+          },
+          {
+            "ticker": "SKHY",
+            "current_weight": 0,
+            "target_weight": 0.006307077080571802,
+            "delta_value": 260.0536205433825,
+            "reason": "below_no_trade_threshold"
+          },
+          {
+            "ticker": "UNH",
+            "current_weight": 0.010124894486470212,
+            "target_weight": 0.004039930956869863,
+            "delta_value": -250.8954269199368,
+            "reason": "below_no_trade_threshold"
+          },
+          {
+            "ticker": "TSLA",
+            "current_weight": 0,
+            "target_weight": 0.002663792577105696,
+            "delta_value": 109.83358776235546,
+            "reason": "below_no_trade_threshold"
+          },
+          {
+            "ticker": "SNDK",
+            "current_weight": 0,
+            "target_weight": 0.001523097055146649,
+            "delta_value": 62.80039050893296,
+            "reason": "below_no_trade_threshold"
+          },
+          {
+            "ticker": "ONDS",
+            "current_weight": 0.007387217312942155,
+            "target_weight": 0,
+            "delta_value": -304.59,
+            "reason": "below_no_trade_threshold"
+          },
+          {
+            "ticker": "000660.KS",
+            "current_weight": 0,
+            "target_weight": 0,
+            "delta_value": 0,
+            "reason": "no_price"
+          }
+        ],
+        "note": "Preview only. Place via your connected Futu/IBKR MCP after confirming; paper-first (SIMULATE) unless you explicitly switch to REAL."
+      },
+      "warnings": [
+        "BE excluded — negative edge — do not buy.",
+        "CBRS excluded — bull target must exceed current price.",
+        "CVX excluded — bull target must exceed current price.",
+        "ENPH excluded — negative edge — do not buy.",
+        "IFNNY excluded — negative edge — do not buy.",
+        "NET excluded — negative edge — do not buy.",
+        "ONDS excluded — negative edge — do not buy.",
+        "RDDT excluded — bull target must exceed current price.",
+        "STX excluded — bull target must exceed current price.",
+        "TER excluded — negative edge — do not buy.",
+        "000660.KS: no current price available — order skipped."
+      ]
+    }
+  },
+  "fills": [
+    {
+      "ticker": "MSFT",
+      "target_weight": 0.1412,
+      "raw_kelly": 5.0118,
+      "flag": "haircut",
+      "current_weight": 0.1516,
+      "action": "SELL",
+      "delta_value": -429,
+      "qty": 1,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 386.84
+    },
+    {
+      "ticker": "IBM",
+      "target_weight": 0.0759,
+      "raw_kelly": 2.7138,
+      "flag": "haircut",
+      "current_weight": 0.0264,
+      "action": "BUY",
+      "delta_value": 2039,
+      "qty": 9,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 220.18
+    },
+    {
+      "ticker": "ADBE",
+      "target_weight": 0.0555,
+      "raw_kelly": 1.9506,
+      "flag": "haircut",
+      "current_weight": 0.104,
+      "action": "SELL",
+      "delta_value": -2000,
+      "qty": 8,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 235.75
+    },
+    {
+      "ticker": "V",
+      "target_weight": 0.0546,
+      "raw_kelly": 1.9565,
+      "flag": "haircut",
+      "current_weight": 0.0968,
+      "action": "SELL",
+      "delta_value": -1741,
+      "qty": 4,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 359.24
+    },
+    {
+      "ticker": "NOW",
+      "target_weight": 0.0419,
+      "raw_kelly": 1.5033,
+      "flag": "haircut",
+      "current_weight": 0.1495,
+      "action": "SELL",
+      "delta_value": -4437,
+      "qty": 43,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 101.69
+    },
+    {
+      "ticker": "MDT",
+      "target_weight": 0.0313,
+      "raw_kelly": 1.1263,
+      "flag": "haircut",
+      "current_weight": 0.1444,
+      "action": "SELL",
+      "delta_value": -4662,
+      "qty": 54,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 84.21
+    },
+    {
+      "ticker": "ETN",
+      "target_weight": 0.0248,
+      "raw_kelly": 0.9026,
+      "flag": "haircut",
+      "current_weight": 0.0661,
+      "action": "SELL",
+      "delta_value": -1704,
+      "qty": 4,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 385.64
+    },
+    {
+      "ticker": "HUBS",
+      "target_weight": 0.0237,
+      "raw_kelly": 0.8535,
+      "flag": "haircut",
+      "current_weight": 0.1126,
+      "action": "SELL",
+      "delta_value": -3666,
+      "qty": 16,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 218.93
+    },
+    {
+      "ticker": "MDB",
+      "target_weight": 0.0204,
+      "raw_kelly": 0.7359,
+      "flag": "haircut",
+      "current_weight": 0.0376,
+      "action": "SELL",
+      "delta_value": -709,
+      "qty": 2,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 307.23
+    },
+    {
+      "ticker": "POET",
+      "target_weight": 0.0197,
+      "raw_kelly": 0.7096,
+      "flag": "haircut",
+      "current_weight": 0.0413,
+      "action": "SELL",
+      "delta_value": -889,
+      "qty": 130,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 6.77
+    },
+    {
+      "ticker": "CEG",
+      "target_weight": 0.0194,
+      "raw_kelly": 0.6732,
+      "flag": "haircut",
+      "current_weight": 0.0722,
+      "action": "SELL",
+      "delta_value": -2179,
+      "qty": 8,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 268.02
+    },
+    {
+      "ticker": "TYL",
+      "target_weight": 0.0178,
+      "raw_kelly": 0.6393,
+      "flag": "haircut",
+      "current_weight": 0.054,
+      "action": "SELL",
+      "delta_value": -1493,
+      "qty": 4,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 314.65
+    },
+    {
+      "ticker": "TEAM",
+      "target_weight": 0.0174,
+      "raw_kelly": 0.6266,
+      "flag": "haircut",
+      "current_weight": 0.0435,
+      "action": "SELL",
+      "delta_value": -1074,
+      "qty": 11,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 93.36
+    },
+    {
+      "ticker": "AMBA",
+      "target_weight": 0.0171,
+      "raw_kelly": 0.617,
+      "flag": "haircut",
+      "current_weight": 0.3152,
+      "action": "SELL",
+      "delta_value": -12290,
+      "qty": 193,
+      "lot_size": 1,
+      "status": "Submitted",
+      "limit": 62.77
+    },
+    {
+      "ticker": "SNOW",
+      "target_weight": 0.0169,
+      "raw_kelly": 0.6084,
+      "flag": "haircut",
+      "current_weight": 0.0389,
+      "action": "SELL",
+      "delta_value": -908,
+      "qty": 3,
+      "lot_size": 1,
+      "status": "Submitted",
+      "limit": 264.69
+    },
+    {
+      "ticker": "ADI",
+      "target_weight": 0.0168,
+      "raw_kelly": 0.5991,
+      "flag": "haircut",
+      "current_weight": 0.0528,
+      "action": "SELL",
+      "delta_value": -1485,
+      "qty": 4,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 359.34
+    },
+    {
+      "ticker": "GLW",
+      "target_weight": 0.0168,
+      "raw_kelly": 0.5944,
+      "flag": "haircut",
+      "current_weight": 0.0332,
+      "action": "SELL",
+      "delta_value": -678,
+      "qty": 4,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 135.63
+    },
+    {
+      "ticker": "ISRG",
+      "target_weight": 0.0167,
+      "raw_kelly": 0.6001,
+      "flag": "haircut",
+      "current_weight": 0.0777,
+      "action": "SELL",
+      "delta_value": -2517,
+      "qty": 7,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 352.39
+    },
+    {
+      "ticker": "UBER",
+      "target_weight": 0.0161,
+      "raw_kelly": 0.5781,
+      "flag": "haircut",
+      "current_weight": 0.0387,
+      "action": "SELL",
+      "delta_value": -934,
+      "qty": 14,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 65.83
+    },
+    {
+      "ticker": "NVDA",
+      "target_weight": 0.0159,
+      "raw_kelly": 0.5727,
+      "flag": "haircut",
+      "current_weight": 0.0482,
+      "action": "SELL",
+      "delta_value": -1332,
+      "qty": 6,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 196.8
+    },
+    {
+      "ticker": "CHYM",
+      "target_weight": 0.0151,
+      "raw_kelly": 0.5549,
+      "flag": "haircut",
+      "current_weight": 0.048,
+      "action": "SELL",
+      "delta_value": -1354,
+      "qty": 63,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 21.06
+    },
+    {
+      "ticker": "INTC",
+      "target_weight": 0.0149,
+      "raw_kelly": 0.5381,
+      "flag": "haircut",
+      "current_weight": 0.0615,
+      "action": "SELL",
+      "delta_value": -1918,
+      "qty": 21,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 86.51
+    },
+    {
+      "ticker": "MU",
+      "target_weight": 0.014,
+      "raw_kelly": 0.5044,
+      "flag": "haircut",
+      "current_weight": 0.0415,
+      "action": "SELL",
+      "delta_value": -1134,
+      "qty": 1,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 846.91
+    },
+    {
+      "ticker": "TSM",
+      "target_weight": 0.0132,
+      "raw_kelly": 0.4748,
+      "flag": "haircut",
+      "current_weight": 0.0378,
+      "action": "SELL",
+      "delta_value": -1014,
+      "qty": 2,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 385.51
+    },
+    {
+      "ticker": "BABA",
+      "target_weight": 0.0124,
+      "raw_kelly": 0.4423,
+      "flag": "haircut",
+      "current_weight": 0.0384,
+      "action": "SELL",
+      "delta_value": -1070,
+      "qty": 9,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 111.83
+    },
+    {
+      "ticker": "HOOD",
+      "target_weight": 0.0121,
+      "raw_kelly": 0.4368,
+      "flag": "haircut",
+      "current_weight": 0.0318,
+      "action": "SELL",
+      "delta_value": -811,
+      "qty": 8,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 92.68
+    },
+    {
+      "ticker": "FUTU",
+      "target_weight": 0.0116,
+      "raw_kelly": 0.398,
+      "flag": "haircut",
+      "current_weight": 0.0522,
+      "action": "SELL",
+      "delta_value": -1675,
+      "qty": 16,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 101.48
+    },
+    {
+      "ticker": "AMD",
+      "target_weight": 0.0109,
+      "raw_kelly": 0.4029,
+      "flag": "haircut",
+      "current_weight": 0.0232,
+      "action": "SELL",
+      "delta_value": -510,
+      "qty": 1,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 474.45
+    },
+    {
+      "ticker": "AMZN",
+      "target_weight": 0.0109,
+      "raw_kelly": 0.3969,
+      "flag": "haircut",
+      "current_weight": 0.0227,
+      "action": "SELL",
+      "delta_value": -489,
+      "qty": 2,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 231.75
+    },
+    {
+      "ticker": "CRM",
+      "target_weight": 0.0102,
+      "raw_kelly": 0.3765,
+      "flag": "haircut",
+      "current_weight": 0.0504,
+      "action": "SELL",
+      "delta_value": -1655,
+      "qty": 9,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 171.3
+    },
+    {
+      "ticker": "COHR",
+      "target_weight": 0.0098,
+      "raw_kelly": 0.3504,
+      "flag": "haircut",
+      "current_weight": 0.025,
+      "action": "SELL",
+      "delta_value": -624,
+      "qty": 2,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 254.93
+    },
+    {
+      "ticker": "ACN",
+      "target_weight": 0.0098,
+      "raw_kelly": 0.347,
+      "flag": "haircut",
+      "current_weight": 0.0749,
+      "action": "SELL",
+      "delta_value": -2684,
+      "qty": 17,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 152.82
+    },
+    {
+      "ticker": "OKLO",
+      "target_weight": 0.0086,
+      "raw_kelly": 0.3114,
+      "flag": "haircut",
+      "current_weight": 0.0226,
+      "action": "SELL",
+      "delta_value": -574,
+      "qty": 14,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 40.06
+    },
+    {
+      "ticker": "GOOGL",
+      "target_weight": 0.0085,
+      "raw_kelly": 0.3038,
+      "flag": "haircut",
+      "current_weight": 0.0474,
+      "action": "SELL",
+      "delta_value": -1602,
+      "qty": 4,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 322.3
+    },
+    {
+      "ticker": "TTD",
+      "target_weight": 0.0081,
+      "raw_kelly": 0.2935,
+      "flag": "haircut",
+      "current_weight": 0.036,
+      "action": "SELL",
+      "delta_value": -1148,
+      "qty": 64,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 17.69
+    },
+    {
+      "ticker": "NOK",
+      "target_weight": 0.007,
+      "raw_kelly": 0.2506,
+      "flag": "haircut",
+      "current_weight": 0.1037,
+      "action": "SELL",
+      "delta_value": -3991,
+      "qty": 446,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 8.84
+    },
+    {
+      "ticker": "AAPL",
+      "target_weight": 0.0065,
+      "raw_kelly": 0.2356,
+      "flag": "haircut",
+      "current_weight": 0.0246,
+      "action": "SELL",
+      "delta_value": -747,
+      "qty": 2,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 334.31
+    },
+    {
+      "ticker": "ON",
+      "target_weight": 0.0062,
+      "raw_kelly": 0.2228,
+      "flag": "haircut",
+      "current_weight": 0.0351,
+      "action": "SELL",
+      "delta_value": -1192,
+      "qty": 14,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 84.25
+    },
+    {
+      "ticker": "PM",
+      "target_weight": 0.0058,
+      "raw_kelly": 0.2093,
+      "flag": "haircut",
+      "current_weight": 0.0381,
+      "action": "SELL",
+      "delta_value": -1330,
+      "qty": 6,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 194.19
+    },
+    {
+      "ticker": "XE",
+      "target_weight": 0.0052,
+      "raw_kelly": 0.1891,
+      "flag": "haircut",
+      "current_weight": 0.0199,
+      "action": "SELL",
+      "delta_value": -603,
+      "qty": 43,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 13.75
+    },
+    {
+      "ticker": "PDD",
+      "target_weight": 0.0042,
+      "raw_kelly": 0.1504,
+      "flag": "haircut",
+      "current_weight": 0.0389,
+      "action": "SELL",
+      "delta_value": -1431,
+      "qty": 16,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 83.5
+    },
+    {
+      "ticker": "APP",
+      "target_weight": 0.0041,
+      "raw_kelly": 0.1516,
+      "flag": "haircut",
+      "current_weight": 0.0196,
+      "action": "SELL",
+      "delta_value": -638,
+      "qty": 1,
+      "lot_size": 1,
+      "status": "Submitted",
+      "limit": 399.04
+    },
+    {
+      "ticker": "NBIS",
+      "target_weight": 0.0033,
+      "raw_kelly": 0.1199,
+      "flag": "haircut",
+      "current_weight": 0.0135,
+      "action": "SELL",
+      "delta_value": -418,
+      "qty": 2,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 183.3
+    },
+    {
+      "ticker": "PLTR",
+      "target_weight": 0.0023,
+      "raw_kelly": 0.0815,
+      "flag": "haircut",
+      "current_weight": 0.0216,
+      "action": "SELL",
+      "delta_value": -796,
+      "qty": 6,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 125.79
+    },
+    {
+      "ticker": "HPQ",
+      "target_weight": 0.002,
+      "raw_kelly": 0.0732,
+      "flag": "haircut",
+      "current_weight": 0.0246,
+      "action": "SELL",
+      "delta_value": -932,
+      "qty": 35,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 25.79
+    },
+    {
+      "ticker": "SMR",
+      "target_weight": 0.0016,
+      "raw_kelly": 0.057,
+      "flag": "haircut",
+      "current_weight": 0.0162,
+      "action": "SELL",
+      "delta_value": -604,
+      "qty": 74,
+      "lot_size": 1,
+      "status": "Filled",
+      "limit": 8.08
+    },
+    {
+      "ticker": "SKHY",
+      "action": "BUY",
+      "qty": 1,
+      "target_weight": 0.0063,
+      "deadband_exempt": "new_position",
+      "status": "Filled",
+      "limit": 142.17
+    }
+  ]
+}

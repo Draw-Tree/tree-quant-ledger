@@ -1,6 +1,6 @@
 {
   "date": "2026-07-27",
-  "source_commit": "1ac820f7f8ca0da556302e33d929aed701b443a0",
+  "source_commit": "04cc06b6e8e24bca6e3038fb21da58a8e1504238",
   "algo": "sha256",
   "trees": {
     "005930.KS": {
@@ -1263,6 +1263,27 @@
       "hypotheses/D2.json": "c9df73d4b468ff6127f0d179782b6d625730b41a64c8cca3b7314d57a7cf1ea7",
       "hypotheses/D3.json": "200b3bac5ee6f4883a317f5d962cbac5eaab7fcd949550a65027d3e42e84ce34",
       "hypotheses/D4.json": "752083287655ee67658cd7e696fb600f6d44a382ef15285ccdc47d6b85ff6505"
+    },
+    "RKLB": {
+      "hypothesis_zero.yaml": "fecd3058331312840f377c024280a237c68a63c8ea759aa22fd07f12bdc3d47b",
+      "branches.yaml": "f99edf6f3bdd2422aa07b9013967a30348bebbd7cb858f44cbb5fdc3a6d053a4",
+      "valuation.yaml": "f0ab03e3a2d54e5cd4144e96728e874d74ba29520b45e2e7633ab7c933e71678",
+      "consensus.md": "623ea923037bd91561b8b41d0c7b98dfa7e854dc1090ce801e6a4abe267ba162",
+      "report.md": "3714747a167d930005beaf4281fb30ea67ec292c03961fa8498848aa8fa82e54",
+      "triggers_redflags.yaml": "372d9adbca54b7a6a429615461a66a3cac6316a7caf71fef652bf9714aaa017d",
+      "valuation_history.yaml": "440a5ae9c295823b5f37e826f99223c7305b3f903f45ee9088a30c1414a5109a",
+      "hypotheses/A1.json": "81ab3ceb445ffc886934d5dd6c5aaa38a3f86e1f69564bc071bce1a9952fcefa",
+      "hypotheses/A2.json": "aabfe90e315afa140ea8fea0fbb5978eecec5de62cf3c77d4ab8b3905f5e2edc",
+      "hypotheses/A3.json": "9217bce541a49c0585ef1c3a9814af069593b98931bf81393e778cfdc9801092",
+      "hypotheses/B1.json": "4bf7171adafc68e7c14c86eaef257ed73837d084a6d8923f3f3246bb2184127b",
+      "hypotheses/B2.json": "152541163d5b71a514769a939d9a2c4aa2058d568a3dd9dbdba97e3feebcc5eb",
+      "hypotheses/B3.json": "0f3206423482d9a3e5b7bcb069e8d4ae8369e3896ce2a3a01e161dd9dfd6b8c4",
+      "hypotheses/C1.json": "4429c12e2ca5ab16bf0a9e84d34970f4e7e1aaa81544424a5c93efcea36f1c39",
+      "hypotheses/C2.json": "5a236712c642fe34acec57afd4364e62017c1d4986748729348f63ed96138206",
+      "hypotheses/C3.json": "3b182e10c5918c8f04c8a7fade404305c8ac29cbcb7358eb3f7171f7295d300c",
+      "hypotheses/D1.json": "85f7e526678f5c6b9f3d525a48ff503e9461fb1a37b74f23554ce591b445d6aa",
+      "hypotheses/D2.json": "5d93df4ea0a4754585974ef89d0d19e213d1e993a2bab29136b9632e766abaa4",
+      "hypotheses/D3.json": "430f589efb86de8bb37e6e6964bb8e704f6d30d06ec0aee1a935f0248056e2a1"
     },
     "SKHY": {
       "hypothesis_zero.yaml": "61c5bfdda6b6d3902381e0524a49091b6a61b65f44a42bede88a04cb635a90c5",
