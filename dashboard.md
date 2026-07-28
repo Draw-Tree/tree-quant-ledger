@@ -4,13 +4,13 @@
 
 ## 一眼看完
 
-**2026-07-26 名單**（非正式，不入正式比分：名單早於預登記正式起始日）：74 棵樹掃完 → 🔺 升級 3 檔、🔻 降級 3 檔、⚖️ 混合 1 檔不入名單。
-其中 **3 檔證據不過關、劃走不建倉**（[逐檔裁定](portfolio/EXCLUSIONS.md)），實際落注 **3 檔**。
+**2026-07-26 名單**（非正式，不入正式比分：名單早於預登記正式起始日）：74 棵樹掃描完成 → 🔺 升級 3 檔、🔻 降級 3 檔、⚖️ 混合 1 檔不入名單。
+其中 **3 檔證據未達標準、剔除不建倉**（[逐檔裁定](portfolio/EXCLUSIONS.md)），實際下注 **3 檔**。
 全部訊號**尚未開錶**，首個讀數 2026-08-02。
 
 [![訊號生命線](dashboard.svg?v=2026-07-28)](dashboard.svg)
 
-一行＝一個訊號。虛線左邊＝判定改變**之前**一週股價點郁（披露而已，不計分）；右邊＝**之後**逐週相對全池中位，🟩 跑贏、🟥 跑輸、⚡ 判定再翻轉即訊號完結。**降級應該紅、升級應該綠**——啱定錯，一眼睇完。
+一行＝一個訊號。虛線左邊＝判定改變**之前**一週的股價變動（披露而已，不計分）；右邊＝**之後**逐週相對全池中位，🟩 跑贏、🟥 跑輸、⚡ 判定再翻轉即訊號完結。**降級應為紅、升級應為綠**——預測正確與否，一眼看完。
 
 ## 本週名單
 
@@ -19,9 +19,9 @@
 | 🔻 **[PLTR](trees/PLTR/verdict_transitions.jsonl)** -1.6・重創 | B2 接近證偽→已證偽 | -7.1% | — | ⏳ 尚未開錶 |
 | 🔺 **[AMD](trees/AMD/verdict_transitions.jsonl)** +0.9・明顯受損 | D3 轉強→已確認 | ⚠ +5.3% | — | ⏳ 尚未開錶 |
 | 🔻 **[ISRG](trees/ISRG/verdict_transitions.jsonl)** -0.9・明顯受損 | B1 轉弱→接近證偽 | -2.3% | — | ⏳ 尚未開錶 |
-| 🚫 ~~**[CEG](trees/CEG/verdict_transitions.jsonl)** +2.5・致命~~ | ~~C2 轉弱→已確認~~ | ⚠ +8.7% | — | `07-27` 劃走・[唯一支撐證據不可查證](portfolio/EXCLUSIONS.md#ceg-20260726) |
-| 🚫 ~~**[NET](trees/NET/verdict_transitions.jsonl)** -2.5・致命~~ | ~~A3 接近證偽→已證偽~~ | -5.6% | — | `07-27` 劃走・[同一單證據推兩次降級](portfolio/EXCLUSIONS.md#net-20260726) |
-| 🚫 ~~**[IFNNY](trees/IFNNY/verdict_transitions.jsonl)** +1.6・重創~~ | ~~C3 轉強→已確認~~ | — | — | `07-27` 劃走・[改判引用帳本無的來源](portfolio/EXCLUSIONS.md#ifnny-20260726) |
+| 🚫 ~~**[CEG](trees/CEG/verdict_transitions.jsonl)** +2.5・致命~~ | ~~C2 轉弱→已確認~~ | ⚠ +8.7% | — | `07-27` 剔除・[唯一支撐證據不可查證](portfolio/EXCLUSIONS.md#ceg-20260726) |
+| 🚫 ~~**[NET](trees/NET/verdict_transitions.jsonl)** -2.5・致命~~ | ~~A3 接近證偽→已證偽~~ | -5.6% | — | `07-27` 剔除・[同一項證據推動兩次降級](portfolio/EXCLUSIONS.md#net-20260726) |
+| 🚫 ~~**[IFNNY](trees/IFNNY/verdict_transitions.jsonl)** +1.6・重創~~ | ~~C3 轉強→已確認~~ | — | — | `07-27` 剔除・[改判引用帳本中不存在的來源](portfolio/EXCLUSIONS.md#ifnny-20260726) |
 
 <details>
 <summary>📈 逐週數字明細（+1…+8 週，可複製）</summary>
@@ -42,5 +42,5 @@ _每行的 +N 週相對該行自己的名單日；不同名單日的同一欄並
 ## 讀法
 
 - **超額**＝該股一週回報 − 全池中位。⚠＝訊號發出前已朝同方向走過（升 >+5%／跌 <-8%），或已被市場計入；披露而已，不影響入選。
-- **劃走**只影響實際建倉，計分板仍按原名單計分——訊號準唔準，與我哋有無照單全收，分開計。
+- **剔除**只影響實際建倉，計分板仍按原名單計分：訊號是否準確，與我們有否照單全收，分開計算。
 - 名單先公開、後對答案（append-only）；混合週不入名單；財報觸發以事件日收盤開錶。規則見 [`calibration/SPEC.md`](calibration/SPEC.md)，原始名單見 [`portfolio/verdict_watch.jsonl`](portfolio/verdict_watch.jsonl)。
