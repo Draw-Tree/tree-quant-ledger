@@ -1,80 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="926" height="254" font-family="system-ui,-apple-system,sans-serif" font-size="12">
-<rect width="926" height="254" fill="#ffffff"/>
-<text x="10" y="20" font-size="15" font-weight="bold" fill="#111827">訊號生命線：名單公開後逐週表現（相對全池中位），行到判定翻轉為止</text>
-<text x="10" y="34" font-size="11" fill="#6b7280">每行的 +N 週相對該行自己的名單日；不同名單日的同一欄並非同一個日曆週</text>
-<text x="291.0" y="50" text-anchor="middle" fill="#6b7280">+1週</text>
-<text x="353.0" y="50" text-anchor="middle" fill="#6b7280">+2週</text>
-<text x="415.0" y="50" text-anchor="middle" fill="#6b7280">+3週</text>
-<text x="477.0" y="50" text-anchor="middle" fill="#6b7280">+4週</text>
-<text x="539.0" y="50" text-anchor="middle" fill="#6b7280">+5週</text>
-<text x="601.0" y="50" text-anchor="middle" fill="#6b7280">+6週</text>
-<text x="663.0" y="50" text-anchor="middle" fill="#6b7280">+7週</text>
-<text x="725.0" y="50" text-anchor="middle" fill="#6b7280">+8週</text>
-<text x="768" y="50" fill="#6b7280">結局</text>
-<text x="10" y="78" fill="#111827" font-weight="bold">🔺 AMD +0.9</text>
-<text x="246" y="78" text-anchor="end" fill="#6b7280" font-size="11">名單 2026-07-26</text>
-<rect x="262" y="62" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="324" y="62" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="386" y="62" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="448" y="62" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="510" y="62" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="572" y="62" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="634" y="62" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="696" y="62" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<text x="768" y="78" fill="#6b7280">⏳ 尚未開錶</text>
-<text x="10" y="108" fill="#111827" font-weight="bold">🔻 ISRG -0.9</text>
-<text x="246" y="108" text-anchor="end" fill="#6b7280" font-size="11">名單 2026-07-26</text>
-<rect x="262" y="92" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="324" y="92" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="386" y="92" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="448" y="92" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="510" y="92" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="572" y="92" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="634" y="92" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="696" y="92" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<text x="768" y="108" fill="#6b7280">⏳ 尚未開錶</text>
-<text x="10" y="138" fill="#111827" font-weight="bold">🔺 IFNNY +1.6</text>
-<text x="246" y="138" text-anchor="end" fill="#6b7280" font-size="11">名單 2026-07-26</text>
-<rect x="262" y="122" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="324" y="122" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="386" y="122" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="448" y="122" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="510" y="122" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="572" y="122" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="634" y="122" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="696" y="122" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<text x="768" y="138" fill="#6b7280">⏳ 尚未開錶</text>
-<text x="10" y="168" fill="#111827" font-weight="bold">🔻 PLTR -1.6</text>
-<text x="246" y="168" text-anchor="end" fill="#6b7280" font-size="11">名單 2026-07-26</text>
-<rect x="262" y="152" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="324" y="152" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="386" y="152" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="448" y="152" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="510" y="152" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="572" y="152" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="634" y="152" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="696" y="152" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<text x="768" y="168" fill="#6b7280">⏳ 尚未開錶</text>
-<text x="10" y="198" fill="#111827" font-weight="bold">🔺 CEG +2.5</text>
-<text x="246" y="198" text-anchor="end" fill="#6b7280" font-size="11">名單 2026-07-26</text>
-<rect x="262" y="182" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="324" y="182" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="386" y="182" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="448" y="182" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="510" y="182" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="572" y="182" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="634" y="182" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="696" y="182" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<text x="768" y="198" fill="#6b7280">⏳ 尚未開錶</text>
-<text x="10" y="228" fill="#111827" font-weight="bold">🔻 NET -2.5</text>
-<text x="246" y="228" text-anchor="end" fill="#6b7280" font-size="11">名單 2026-07-26</text>
-<rect x="262" y="212" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="324" y="212" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="386" y="212" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="448" y="212" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="510" y="212" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="572" y="212" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="634" y="212" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<rect x="696" y="212" width="58" height="22" rx="4" fill="#e5e7eb"/>
-<text x="768" y="228" fill="#6b7280">⏳ 尚未開錶</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="992" height="302" viewBox="0 0 992 302" font-family="system-ui,-apple-system,'Noto Sans TC','PingFang TC',sans-serif" font-size="12">
+<style>
+.bg{fill:#ffffff}.fg{fill:#111827}.mut{fill:#6b7280}.dim{fill:#9ca3af}
+.hair{stroke:#e5e7eb}.blank{fill:#f3f4f6}.ok{fill:#16a34a}.bad{fill:#dc2626}
+@media (prefers-color-scheme:dark){
+.bg{fill:#0d1117}.fg{fill:#e6edf3}.mut{fill:#9198a1}.dim{fill:#6e7681}
+.hair{stroke:#30363d}.blank{fill:#21262d}.ok{fill:#3fb950}.bad{fill:#f85149}}
+</style>
+<rect width="992" height="302" class="bg"/>
+<text x="12" y="25" font-size="16" font-weight="bold" class="fg">訊號生命線 — 判定改變之後，股價如何變動</text>
+<text x="12" y="45" font-size="12" class="mut">3 個訊號在跑　3 檔已剔除　✓ 符合 0　✗ 反向 0　更新 2026-07-28</text>
+<text x="12" y="64" font-size="11" class="dim">每格＝該週回報 − 全池中位　🟩 方向正確　🟥 方向相反　色深＝幅度　⚡ 判定再翻轉，訊號完結　第 0 週＝訊號前一週（灰，不計分）</text>
+<line x1="12" y1="74" x2="980" y2="74" class="hair"/>
+<line x1="385.0" y1="74" x2="385.0" y2="292" class="hair" stroke-dasharray="3 3"/>
+<text x="337.0" y="90" text-anchor="middle" font-size="11" class="mut">第 0 週</text>
+<text x="420.0" y="90" text-anchor="middle" font-size="11" class="mut">+1週</text>
+<text x="472.0" y="90" text-anchor="middle" font-size="11" class="mut">+2週</text>
+<text x="524.0" y="90" text-anchor="middle" font-size="11" class="mut">+3週</text>
+<text x="576.0" y="90" text-anchor="middle" font-size="11" class="mut">+4週</text>
+<text x="628.0" y="90" text-anchor="middle" font-size="11" class="mut">+5週</text>
+<text x="680.0" y="90" text-anchor="middle" font-size="11" class="mut">+6週</text>
+<text x="732.0" y="90" text-anchor="middle" font-size="11" class="mut">+7週</text>
+<text x="784.0" y="90" text-anchor="middle" font-size="11" class="mut">+8週</text>
+<text x="822" y="90" font-size="11" class="mut">結局</text>
+<text x="12" y="121" opacity="0.42"><tspan class="fg" font-weight="bold" text-decoration="line-through">🔺 CEG +2.5</tspan><tspan class="mut" font-size="11" dx="8">致命</tspan></text>
+<text x="286" y="121" text-anchor="end" class="dim" font-size="10" opacity="0.42">2026-07-26</text>
+<rect x="300" y="105" width="74" height="22" rx="4" class="blank" opacity="0.42"/>
+<text x="337.0" y="121" text-anchor="middle" class="mut" font-size="11" opacity="0.42">⚠+8.7%</text>
+<rect x="396" y="105" width="412" height="22" rx="4" class="blank" opacity="0.42"/>
+<text x="600.0" y="121" text-anchor="middle" class="mut" font-size="11">🚫 07-27 剔除：唯一支撐證據不可查證</text>
+<text x="12" y="153" opacity="0.42"><tspan class="fg" font-weight="bold" text-decoration="line-through">🔺 IFNNY +1.6</tspan><tspan class="mut" font-size="11" dx="8">重創</tspan></text>
+<text x="286" y="153" text-anchor="end" class="dim" font-size="10" opacity="0.42">2026-07-26</text>
+<rect x="300" y="137" width="74" height="22" rx="4" class="blank" opacity="0.42"/>
+<text x="337.0" y="153" text-anchor="middle" class="dim" font-size="11" opacity="0.42">—</text>
+<rect x="396" y="137" width="412" height="22" rx="4" class="blank" opacity="0.42"/>
+<text x="600.0" y="153" text-anchor="middle" class="mut" font-size="11">🚫 07-27 剔除：改判引用帳本中不存在的來源</text>
+<text x="12" y="185"><tspan class="fg" font-weight="bold">🔺 AMD +0.9</tspan><tspan class="mut" font-size="11" dx="8">明顯受損</tspan></text>
+<text x="286" y="185" text-anchor="end" class="dim" font-size="10">2026-07-26</text>
+<rect x="300" y="169" width="74" height="22" rx="4" class="blank"/>
+<text x="337.0" y="185" text-anchor="middle" class="mut" font-size="11">⚠+5.3%</text>
+<rect x="396" y="169" width="412" height="22" rx="4" class="blank"/>
+<text x="600.0" y="185" text-anchor="middle" class="dim" font-size="11">⏳ 未開錶　首個讀數 2026-08-02</text>
+<text x="12" y="217"><tspan class="fg" font-weight="bold">🔻 ISRG -0.9</tspan><tspan class="mut" font-size="11" dx="8">明顯受損</tspan></text>
+<text x="286" y="217" text-anchor="end" class="dim" font-size="10">2026-07-26</text>
+<rect x="300" y="201" width="74" height="22" rx="4" class="blank"/>
+<text x="337.0" y="217" text-anchor="middle" class="mut" font-size="11">-2.3%</text>
+<rect x="396" y="201" width="412" height="22" rx="4" class="blank"/>
+<text x="600.0" y="217" text-anchor="middle" class="dim" font-size="11">⏳ 未開錶　首個讀數 2026-08-02</text>
+<text x="12" y="249"><tspan class="fg" font-weight="bold">🔻 PLTR -1.6</tspan><tspan class="mut" font-size="11" dx="8">重創</tspan></text>
+<text x="286" y="249" text-anchor="end" class="dim" font-size="10">2026-07-26</text>
+<rect x="300" y="233" width="74" height="22" rx="4" class="blank"/>
+<text x="337.0" y="249" text-anchor="middle" class="mut" font-size="11">-7.1%</text>
+<rect x="396" y="233" width="412" height="22" rx="4" class="blank"/>
+<text x="600.0" y="249" text-anchor="middle" class="dim" font-size="11">⏳ 未開錶　首個讀數 2026-08-02</text>
+<text x="12" y="281" opacity="0.42"><tspan class="fg" font-weight="bold" text-decoration="line-through">🔻 NET -2.5</tspan><tspan class="mut" font-size="11" dx="8">致命</tspan></text>
+<text x="286" y="281" text-anchor="end" class="dim" font-size="10" opacity="0.42">2026-07-26</text>
+<rect x="300" y="265" width="74" height="22" rx="4" class="blank" opacity="0.42"/>
+<text x="337.0" y="281" text-anchor="middle" class="mut" font-size="11" opacity="0.42">-5.6%</text>
+<rect x="396" y="265" width="412" height="22" rx="4" class="blank" opacity="0.42"/>
+<text x="600.0" y="281" text-anchor="middle" class="mut" font-size="11">🚫 07-27 剔除：同一項證據推動兩次降級</text>
 </svg>
