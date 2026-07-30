@@ -4,17 +4,15 @@
 
 倉位由樹的信念（conviction）經 fractional Kelly 決定——樹愈有把握、注碼愈大；判定轉弱，下週自動減倉。
 
-## 目前持倉（截至 2026-07-27｜Sleeve NLV $41,232｜60 檔）
+## 目前持倉（IBKR 實倉快照 2026-07-30 09:03 UTC｜Sleeve NLV $41,232｜59 檔）
 
 | 股票 | 股數 | 快照價 | 市值（USD） | 佔比 | 信念 | 牛／熊目標 |
 |---|---:|---:|---:|---:|---:|---|
-| [AMBA](../trees/AMBA/quant_history.jsonl) | 205 | USD 63.40 | 12,997 | 31.5% | 0.62 | 118／40 |
 | [MSFT](../trees/MSFT/quant_history.jsonl) | 15 | USD 390.75 | 5,861 | 14.2% | 0.60 | 587／369 |
 | [IBM](../trees/IBM/quant_history.jsonl) | 14 | USD 218.00 | 3,052 | 7.4% | 0.32 | 381／207 |
 | [V](../trees/V/quant_history.jsonl) | 7 | USD 362.87 | 2,540 | 6.2% | 0.73 | 491／306 |
 | [ADBE](../trees/ADBE/quant_history.jsonl) | 10 | USD 238.13 | 2,381 | 5.8% | 0.71 | 375／200 |
 | [NOW](../trees/NOW/quant_history.jsonl) | 17 | USD 102.72 | 1,746 | 4.2% | 0.63 | 179／84 |
-| [SNOW](../trees/SNOW/quant_history.jsonl) | 6 | USD 267.36 | 1,604 | 3.9% | 0.68 | 400／168 |
 | [MDT](../trees/MDT/quant_history.jsonl) | 16 | USD 85.06 | 1,361 | 3.3% | 0.41 | 130／75 |
 | [ETN](../trees/ETN/quant_history.jsonl) | 3 | USD 389.54 | 1,169 | 2.8% | 0.78 | 496／272 |
 | [HUBS](../trees/HUBS/quant_history.jsonl) | 5 | USD 221.14 | 1,106 | 2.7% | 0.30 | 653／189 |
@@ -27,10 +25,11 @@
 | [GLW](../trees/GLW/quant_history.jsonl) | 6 | USD 137.00 | 822 | 2.0% | 0.79 | 250／61 |
 | [POET](../trees/POET/quant_history.jsonl) | 119 | USD 6.83 | 813 | 2.0% | 0.44 | 16／5 |
 | [CEG](../trees/CEG/quant_history.jsonl) | 3 | USD 270.73 | 812 | 2.0% | 0.71 | 406／171 |
-| [APP](../trees/APP/quant_history.jsonl) | 2 | USD 403.07 | 806 | 2.0% | 0.33 | 922／242 |
+| [SNOW](../trees/SNOW/quant_history.jsonl) | 3 | USD 267.36 | 802 | 1.9% | 0.68 | 400／168 |
 | [NVDA](../trees/NVDA/quant_history.jsonl) | 4 | USD 198.79 | 795 | 1.9% | 0.38 | 418／154 |
 | [STX](../trees/STX/quant_history.jsonl) | 1 | USD 781.17 | 781 | 1.9% | 0.49 | 447／78 |
 | [TSM](../trees/TSM/quant_history.jsonl) | 2 | USD 389.40 | 779 | 1.9% | 0.69 | 611／210 |
+| [AMBA](../trees/AMBA/quant_history.jsonl) | 12 | USD 63.40 | 761 | 1.8% | 0.62 | 118／40 |
 | [TEAM](../trees/TEAM/quant_history.jsonl) | 8 | USD 94.31 | 754 | 1.8% | 0.70 | 200／51 |
 | [ADI](../trees/ADI/quant_history.jsonl) | 2 | USD 362.97 | 726 | 1.8% | 0.67 | 624／215 |
 | [ISRG](../trees/ISRG/quant_history.jsonl) | 2 | USD 355.95 | 712 | 1.7% | 0.67 | 608／212 |
@@ -51,6 +50,7 @@
 | [AMZN](../trees/AMZN/quant_history.jsonl) | 2 | USD 234.09 | 468 | 1.1% | 0.51 | 346／170 |
 | [ACN](../trees/ACN/quant_history.jsonl) | 3 | USD 154.36 | 463 | 1.1% | 0.48 | 258／104 |
 | [UNH](../trees/UNH/quant_history.jsonl) | 1 | USD 417.47 | 417 | 1.0% | 0.73 | 504／225 |
+| [APP](../trees/APP/quant_history.jsonl) | 1 | USD 403.07 | 403 | 1.0% | 0.33 | 922／242 |
 | [PM](../trees/PM/quant_history.jsonl) | 2 | USD 196.16 | 392 | 1.0% | 0.41 | 262／159 |
 | [AAOI](../trees/AAOI/quant_history.jsonl) | 4 | USD 92.61 | 370 | 0.9% | 0.58 | 185／43 |
 | [OKLO](../trees/OKLO/quant_history.jsonl) | 9 | USD 40.46 | 364 | 0.9% | 0.37 | 126／24 |
@@ -63,19 +63,12 @@
 | [PDD](../trees/PDD/quant_history.jsonl) | 3 | USD 84.34 | 253 | 0.6% | 0.28 | 154／64 |
 | [XE](../trees/XE/quant_history.jsonl) | 16 | USD 13.88 | 222 | 0.5% | 0.44 | 25／8 |
 | [NBIS](../trees/NBIS/quant_history.jsonl) | 1 | USD 185.16 | 185 | 0.4% | 0.33 | 741／52 |
-| [SKHY](../trees/SKHY/quant_history.jsonl) | 1 | USD 140.76 | 141 | 0.3% | 0.69 | 259／22 |
 | [PLTR](../trees/PLTR/quant_history.jsonl) | 1 | USD 127.06 | 127 | 0.3% | 0.64 | 176／53 |
 | [HPQ](../trees/HPQ/quant_history.jsonl) | 4 | USD 26.05 | 104 | 0.3% | 0.33 | 40／20 |
 | [SMR](../trees/SMR/quant_history.jsonl) | 8 | USD 8.16 | 65 | 0.2% | 0.30 | 22／4 |
-| [000660.KS](../trees/000660.KS/quant_history.jsonl) | 25 | — | — | — | — | — |
+| [000660.KS](../trees/000660.KS/quant_history.jsonl) | 26 | — | — | — | — | — |
 
-持倉市值合計 ≈ $60,959（另有現金；快照價為名單日收市，未逐日重估）。無快照價者為當週不在名單內的存倉。
-
-**未成交掛單**（下單時未即時成交，成交後持倉隨之改變）：
-
-- 賣出 AMBA 193 股 @ 62.77（Submitted）
-- 賣出 SNOW 3 股 @ 264.69（Submitted）
-- 賣出 APP 1 股 @ 399.04（Submitted）
+持倉市值合計 ≈ $47,377（另有現金；快照價為名單日收市，未逐日重估）。無快照價者為當週不在名單內的存倉。
 
 ## 交易日記（新在前）
 
