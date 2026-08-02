@@ -27,3 +27,4 @@
 {"id": "A2", "date": "2026-07-18", "from": "Trending negative", "to": "Falsified"}
 {"id": "A3", "date": "2026-07-18", "from": "Validated", "to": "Trending negative"}
 {"id": "B1", "date": "2026-07-18", "from": "Validated", "to": "Trending positive"}
+{"id": "C2", "date": "2026-07-31", "from": "Trending positive", "to": "Validated"}

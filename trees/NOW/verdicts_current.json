@@ -1,7 +1,7 @@
 [
   {
     "id": "A1",
-    "verdict": "Trending negative"
+    "verdict": "Falsified"
   },
   {
     "id": "A2",
@@ -17,7 +17,7 @@
   },
   {
     "id": "B2",
-    "verdict": "Validated"
+    "verdict": "Approaching falsification"
   },
   {
     "id": "B3",
