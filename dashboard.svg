@@ -8,7 +8,7 @@
 </style>
 <rect width="992" height="542" class="bg"/>
 <text x="12" y="25" font-size="16" font-weight="bold" class="fg">訊號生命線 — 判定改變之後，股價如何變動</text>
-<text x="12" y="45" font-size="12" class="mut">9 個訊號在跑　4 檔已剔除　✓ 符合 1　✗ 反向 5　更新 2026-08-02</text>
+<text x="12" y="45" font-size="12" class="mut">9 個訊號在跑　4 檔已剔除　✓ 符合 1　✗ 反向 2　更新 2026-08-02</text>
 <text x="12" y="64" font-size="11" class="dim">每格＝該週回報 − 全池中位　🟩 方向正確　🟥 方向相反　色深＝幅度　⚡ 判定再翻轉，訊號完結　第 0 週＝訊號前一週（灰，不計分）</text>
 <line x1="12" y1="74" x2="980" y2="74" class="hair"/>
 <line x1="385.0" y1="74" x2="385.0" y2="516" class="hair" stroke-dasharray="3 3"/>
