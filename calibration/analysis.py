@@ -36,7 +36,24 @@ PERM_N = 20000
 PERM_SEED = 42  # 固定種子：同一份數據永遠得同一個 p 值（可重現）
 
 GRADE_WEIGHTS = {"致命": 2.5, "重創": 1.6, "明顯受損": 0.9, "輕微": 0.4, "邊緣": 0.15}
-GRADE_ORDER = ["致命", "重創", "明顯受損", "輕微", "邊緣"]
+GRADE_ORDER = ["致命", "重創", "明顯受損", "輕微", "邊緣"]   # 儲存鍵，永不改
+
+
+def _glabel(key: str) -> str:
+    """儲存鍵 → 讀者顯示標籤「●●●●● 極高」。事實源 _lib/tree_quant.py。
+
+    公開的 calibration/CALIBRATION.md 由本檔生成，等級欄從前直接印儲存鍵
+    （致命／重創／明顯受損），與訊號板、Slack 的重要度刻度各講一套。
+    """
+    try:
+        import sys as _sys
+        _d = str(Path(__file__).resolve().parent)
+        if _d not in _sys.path:
+            _sys.path.insert(0, _d)
+        from tree_quant import grade_label
+        return grade_label(key)
+    except Exception:  # noqa: BLE001
+        return str(key or "")
 
 
 def _pdate(s):
@@ -378,9 +395,9 @@ def branch_audit_section(events: list[dict]) -> list:
     for e in pts:
         key = (e.get("ticker"), e.get("branch") or "?", e.get("impact_grade") or "—")
         by_branch.setdefault(key, []).append(e)
-    out = ["", "### 分支審計（§8：實現衝擊 vs 聲明等級；兩層 shrinkage "
+    out = ["", "### 分支審計（§8：實現衝擊 vs 聲明重要度；兩層 shrinkage "
            f"k_branch={K_BRANCH}／k_grade={K_GRADE}；旗＝n≥3 且 |t|≥{T_HURDLE:g}）",
-           "", "| 分支 | 等級 | n | 原始超額均值 | shrunk 估計 | 事前超額 | 旗 |",
+           "", "| 分支 | 重要度 | n | 原始超額均值 | shrunk 估計 | 事前超額 | 旗 |",
            "|---|---|---|---|---|---|---|"]
     rows = []
     for (t, b, g), evs in by_branch.items():
@@ -396,20 +413,20 @@ def branch_audit_section(events: list[dict]) -> list:
             tstat = raw / (sd / n ** 0.5) if sd else None
             if tstat is not None and abs(tstat) >= T_HURDLE:
                 if raw > 0 and g in ("致命", "重創"):
-                    flag = "⚠️ 重等級無負反應（降級候選）"
+                    flag = "⚠️ 高重要度無負反應（降級候選）"
                 elif raw < -0.03 and g in ("輕微", "邊緣"):
-                    flag = "⬆️ 輕等級強反應（升級候選）"
+                    flag = "⬆️ 低重要度強反應（升級候選）"
         pre_m = statistics.mean(pre) if pre else None
         if flag.startswith("⚠️") and pre_m is not None and pre_m < -0.02:
-            flag += "｜事前已大幅負向——疑屬市場先行，非等級錯"
+            flag += "｜事前已大幅負向——疑屬市場先行，非重要度評錯"
         nh = sum(1 for e in evs if e.get("price_era") == "hist_backfill")
         ncell = f"{n}（回補{nh}）" if nh else str(n)
         rows.append((f"{t}:{b}", g, ncell, raw, shrunk, pre_m, flag))
     for name, g, n, raw, shrunk, pre_m, flag in sorted(rows, key=lambda x: x[4]):
-        out.append(f"| {name} | {g} | {n} | {_pct(raw)} | {_pct(shrunk)} | "
+        out.append(f"| {name} | {_glabel(g)} | {n} | {_pct(raw)} | {_pct(shrunk)} | "
                    f"{_pct(pre_m) if pre_m is not None else '—'} | {flag} |")
     out += ["", f"全域降級超額均值 {_pct(glob_mean)}＝shrinkage 最外層先驗。"
-            "審計**只 flag 不自動改**：等級改動須人手重答「證偽後跌到哪」並記 "
+            "審計**只 flag 不自動改**：重要度改動須人手重答「證偽後跌到哪」並記 "
             "grade_history（§8）；t≥3 為 Harvey–Liu 多重檢定門檻。"]
     return out
 
@@ -623,12 +640,13 @@ def markdown_tables(events: list[dict], clusters: list[dict],
         grp = [e for e in events if e.get("direction") == dr]
         out.append(f"| {zh} | {len(grp)} | {_curve_cells(grp, 'fwd_h', cl_of)} |")
 
-    out += ["", "### 降級事件 × 衝擊等級（超額口徑）", ""]
-    out += ["| 衝擊等級 | 事件數 | " + head[2:], "|---|---|" + sep[1:]]
+    out += ["", "### 降級事件 × 重要度（超額口徑）", ""]
+    out += ["| 重要度 | 事件數 | " + head[2:], "|---|---|" + sep[1:]]
     downs = [e for e in events if e.get("direction") == "downgrade"]
     for g in GRADE_ORDER:
         grp = [e for e in downs if (e.get("impact_grade") or "") == g]
-        out.append(f"| {g} | {len(grp)} | {_curve_cells(grp, 'excess_h', cl_of)} |")
+        out.append(f"| {_glabel(g)} | {len(grp)} | "
+                   f"{_curve_cells(grp, 'excess_h', cl_of)} |")
 
     # 訊號純度（H-purity）：同週淨方向——純降／混合／純升，逐類對照。
     out += ["", "### 訊號純度 × 結果（假說 H-purity：同週有升有降＝訊號抵銷，"
