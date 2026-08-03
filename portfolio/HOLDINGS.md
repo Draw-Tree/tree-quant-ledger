@@ -4,75 +4,91 @@
 
 倉位由樹的信念（conviction）經 fractional Kelly 決定——樹愈有把握、注碼愈大；判定轉弱，下週自動減倉。
 
-## 目前持倉（IBKR 實倉快照 2026-07-30 09:03 UTC｜Sleeve NLV $41,232｜59 檔）
+## 目前持倉（截至 2026-08-03，帳簿推算｜Sleeve NLV $42,371｜62 檔）
 
 | 股票 | 股數 | 快照價 | 市值（USD） | 佔比 | 信念 | 牛／熊目標 |
 |---|---:|---:|---:|---:|---:|---|
-| [MSFT](../trees/MSFT/quant_history.jsonl) | 15 | USD 390.75 | 5,861 | 14.2% | 0.60 | 587／369 |
-| [IBM](../trees/IBM/quant_history.jsonl) | 14 | USD 218.00 | 3,052 | 7.4% | 0.32 | 381／207 |
-| [V](../trees/V/quant_history.jsonl) | 7 | USD 362.87 | 2,540 | 6.2% | 0.73 | 491／306 |
-| [ADBE](../trees/ADBE/quant_history.jsonl) | 10 | USD 238.13 | 2,381 | 5.8% | 0.71 | 375／200 |
-| [NOW](../trees/NOW/quant_history.jsonl) | 17 | USD 102.72 | 1,746 | 4.2% | 0.63 | 179／84 |
-| [MDT](../trees/MDT/quant_history.jsonl) | 16 | USD 85.06 | 1,361 | 3.3% | 0.41 | 130／75 |
-| [ETN](../trees/ETN/quant_history.jsonl) | 3 | USD 389.54 | 1,169 | 2.8% | 0.78 | 496／272 |
-| [HUBS](../trees/HUBS/quant_history.jsonl) | 5 | USD 221.14 | 1,106 | 2.7% | 0.30 | 653／189 |
-| [NKE](../trees/NKE/quant_history.jsonl) | 25 | USD 42.07 | 1,052 | 2.6% | 0.59 | 57／34 |
-| [DDOG](../trees/DDOG/quant_history.jsonl) | 4 | USD 250.58 | 1,002 | 2.4% | 0.77 | 317／159 |
-| [CVX](../trees/CVX/quant_history.jsonl) | 5 | USD 192.02 | 960 | 2.3% | 0.47 | 192／98 |
-| [TYL](../trees/TYL/quant_history.jsonl) | 3 | USD 317.83 | 953 | 2.3% | 0.44 | 526／252 |
-| [MDB](../trees/MDB/quant_history.jsonl) | 3 | USD 310.33 | 931 | 2.3% | 0.75 | 501／187 |
-| [MU](../trees/MU/quant_history.jsonl) | 1 | USD 855.46 | 855 | 2.1% | 0.71 | 1,937／367 |
-| [GLW](../trees/GLW/quant_history.jsonl) | 6 | USD 137.00 | 822 | 2.0% | 0.79 | 250／61 |
-| [POET](../trees/POET/quant_history.jsonl) | 119 | USD 6.83 | 813 | 2.0% | 0.44 | 16／5 |
-| [CEG](../trees/CEG/quant_history.jsonl) | 3 | USD 270.73 | 812 | 2.0% | 0.71 | 406／171 |
-| [SNOW](../trees/SNOW/quant_history.jsonl) | 3 | USD 267.36 | 802 | 1.9% | 0.68 | 400／168 |
-| [NVDA](../trees/NVDA/quant_history.jsonl) | 4 | USD 198.79 | 795 | 1.9% | 0.38 | 418／154 |
-| [STX](../trees/STX/quant_history.jsonl) | 1 | USD 781.17 | 781 | 1.9% | 0.49 | 447／78 |
-| [TSM](../trees/TSM/quant_history.jsonl) | 2 | USD 389.40 | 779 | 1.9% | 0.69 | 611／210 |
-| [AMBA](../trees/AMBA/quant_history.jsonl) | 12 | USD 63.40 | 761 | 1.8% | 0.62 | 118／40 |
-| [TEAM](../trees/TEAM/quant_history.jsonl) | 8 | USD 94.31 | 754 | 1.8% | 0.70 | 200／51 |
-| [ADI](../trees/ADI/quant_history.jsonl) | 2 | USD 362.97 | 726 | 1.8% | 0.67 | 624／215 |
-| [ISRG](../trees/ISRG/quant_history.jsonl) | 2 | USD 355.95 | 712 | 1.7% | 0.67 | 608／212 |
-| [INTC](../trees/INTC/quant_history.jsonl) | 8 | USD 87.38 | 699 | 1.7% | 0.74 | 186／38 |
-| [UBER](../trees/UBER/quant_history.jsonl) | 10 | USD 66.49 | 665 | 1.6% | 0.30 | 123／56 |
-| [UUUU](../trees/UUUU/quant_history.jsonl) | 58 | USD 11.38 | 660 | 1.6% | 0.57 | 20／7 |
-| [GOOGL](../trees/GOOGL/quant_history.jsonl) | 2 | USD 325.56 | 651 | 1.6% | 0.29 | 501／276 |
-| [CHYM](../trees/CHYM/quant_history.jsonl) | 30 | USD 21.27 | 638 | 1.5% | 0.58 | 39／14 |
-| [META](../trees/META/quant_history.jsonl) | 1 | USD 602.25 | 602 | 1.5% | 0.69 | 918／286 |
-| [CRDO](../trees/CRDO/quant_history.jsonl) | 3 | USD 197.84 | 594 | 1.4% | 0.45 | 469／94 |
-| [BABA](../trees/BABA/quant_history.jsonl) | 5 | USD 112.96 | 565 | 1.4% | 0.68 | 176／61 |
-| [HOOD](../trees/HOOD/quant_history.jsonl) | 6 | USD 93.62 | 562 | 1.4% | 0.85 | 125／33 |
-| [MRVL](../trees/MRVL/quant_history.jsonl) | 3 | USD 183.29 | 550 | 1.3% | 0.62 | 298／88 |
-| [CRM](../trees/CRM/quant_history.jsonl) | 3 | USD 173.03 | 519 | 1.3% | 0.45 | 261／131 |
-| [COHR](../trees/COHR/quant_history.jsonl) | 2 | USD 257.51 | 515 | 1.2% | 0.60 | 478／124 |
-| [FUTU](../trees/FUTU/quant_history.jsonl) | 5 | USD 102.51 | 513 | 1.2% | 0.51 | 177／67 |
-| [AMD](../trees/AMD/quant_history.jsonl) | 1 | USD 479.24 | 479 | 1.2% | 0.65 | 960／210 |
-| [AMZN](../trees/AMZN/quant_history.jsonl) | 2 | USD 234.09 | 468 | 1.1% | 0.51 | 346／170 |
-| [ACN](../trees/ACN/quant_history.jsonl) | 3 | USD 154.36 | 463 | 1.1% | 0.48 | 258／104 |
-| [UNH](../trees/UNH/quant_history.jsonl) | 1 | USD 417.47 | 417 | 1.0% | 0.73 | 504／225 |
-| [APP](../trees/APP/quant_history.jsonl) | 1 | USD 403.07 | 403 | 1.0% | 0.33 | 922／242 |
-| [PM](../trees/PM/quant_history.jsonl) | 2 | USD 196.16 | 392 | 1.0% | 0.41 | 262／159 |
-| [AAOI](../trees/AAOI/quant_history.jsonl) | 4 | USD 92.61 | 370 | 0.9% | 0.58 | 185／43 |
-| [OKLO](../trees/OKLO/quant_history.jsonl) | 9 | USD 40.46 | 364 | 0.9% | 0.37 | 126／24 |
-| [TTD](../trees/TTD/quant_history.jsonl) | 19 | USD 17.87 | 340 | 0.8% | 0.26 | 46／13 |
-| [AAPL](../trees/AAPL/quant_history.jsonl) | 1 | USD 337.69 | 338 | 0.8% | 0.79 | 391／187 |
-| [ONDS](../trees/ONDS/quant_history.jsonl) | 39 | USD 7.81 | 305 | 0.7% | 0.68 | 8／3 |
-| [NOK](../trees/NOK/quant_history.jsonl) | 33 | USD 8.93 | 295 | 0.7% | 0.38 | 33／4 |
-| [ALAB](../trees/ALAB/quant_history.jsonl) | 1 | USD 270.02 | 270 | 0.7% | 0.59 | 493／123 |
-| [ON](../trees/ON/quant_history.jsonl) | 3 | USD 85.11 | 255 | 0.6% | 0.60 | 123／48 |
-| [PDD](../trees/PDD/quant_history.jsonl) | 3 | USD 84.34 | 253 | 0.6% | 0.28 | 154／64 |
-| [XE](../trees/XE/quant_history.jsonl) | 16 | USD 13.88 | 222 | 0.5% | 0.44 | 25／8 |
-| [NBIS](../trees/NBIS/quant_history.jsonl) | 1 | USD 185.16 | 185 | 0.4% | 0.33 | 741／52 |
-| [PLTR](../trees/PLTR/quant_history.jsonl) | 1 | USD 127.06 | 127 | 0.3% | 0.64 | 176／53 |
-| [HPQ](../trees/HPQ/quant_history.jsonl) | 4 | USD 26.05 | 104 | 0.3% | 0.33 | 40／20 |
-| [SMR](../trees/SMR/quant_history.jsonl) | 8 | USD 8.16 | 65 | 0.2% | 0.30 | 22／4 |
+| [IBM](../trees/IBM/quant_history.jsonl) | 14 | USD 225.51 | 3,157 | 7.5% | 0.32 | 381／211 |
+| [V](../trees/V/quant_history.jsonl) | 7 | USD 368.29 | 2,578 | 6.1% | 0.74 | 491／306 |
+| [ADBE](../trees/ADBE/quant_history.jsonl) | 10 | USD 253.67 | 2,537 | 6.0% | 0.74 | 375／200 |
+| [NKE](../trees/NKE/quant_history.jsonl) | 37 | USD 42.42 | 1,570 | 3.7% | 0.59 | 57／34 |
+| [MSFT](../trees/MSFT/quant_history.jsonl) | 3 | USD 486.81 | 1,460 | 3.4% | 0.68 | 587／369 |
+| [MDT](../trees/MDT/quant_history.jsonl) | 16 | USD 86.21 | 1,379 | 3.3% | 0.42 | 130／75 |
+| [ETN](../trees/ETN/quant_history.jsonl) | 3 | USD 432.09 | 1,296 | 3.1% | 0.84 | 496／272 |
+| [HUBS](../trees/HUBS/quant_history.jsonl) | 5 | USD 245.03 | 1,225 | 2.9% | 0.33 | 653／189 |
+| [DDOG](../trees/DDOG/quant_history.jsonl) | 4 | USD 274.13 | 1,097 | 2.6% | 0.83 | 317／159 |
+| [VST](../trees/VST/quant_history.jsonl) | 7 | USD 151.70 | 1,062 | 2.5% | 0.34 | 261／129 |
+| [MDB](../trees/MDB/quant_history.jsonl) | 3 | USD 349.98 | 1,050 | 2.5% | 0.79 | 501／187 |
+| [CVX](../trees/CVX/quant_history.jsonl) | 5 | USD 194.33 | 972 | 2.3% | 0.49 | 192／98 |
+| [SNOW](../trees/SNOW/quant_history.jsonl) | 3 | USD 311.26 | 934 | 2.2% | 0.75 | 400／168 |
+| [TYL](../trees/TYL/quant_history.jsonl) | 3 | USD 311.03 | 933 | 2.2% | 0.43 | 526／252 |
+| [GLW](../trees/GLW/quant_history.jsonl) | 6 | USD 143.75 | 862 | 2.0% | 0.81 | 250／61 |
+| [POET](../trees/POET/quant_history.jsonl) | 119 | USD 7.20 | 856 | 2.0% | 0.45 | 16／5 |
+| [TEAM](../trees/TEAM/quant_history.jsonl) | 8 | USD 103.84 | 831 | 2.0% | 0.72 | 200／51 |
+| [NVDA](../trees/NVDA/quant_history.jsonl) | 4 | USD 206.11 | 824 | 1.9% | 0.40 | 418／154 |
+| [STX](../trees/STX/quant_history.jsonl) | 1 | USD 820.29 | 820 | 1.9% | 0.49 | 447／78 |
+| [MU](../trees/MU/quant_history.jsonl) | 1 | USD 816.51 | 817 | 1.9% | 0.70 | 1,937／367 |
+| [NOW](../trees/NOW/quant_history.jsonl) | 7 | USD 115.98 | 812 | 1.9% | 0.52 | 179／84 |
+| [CEG](../trees/CEG/quant_history.jsonl) | 3 | USD 270.13 | 810 | 1.9% | 0.71 | 406／171 |
+| [TSM](../trees/TSM/quant_history.jsonl) | 2 | USD 404.08 | 808 | 1.9% | 0.70 | 611／210 |
+| [ISRG](../trees/ISRG/quant_history.jsonl) | 2 | USD 371.34 | 743 | 1.8% | 0.68 | 608／212 |
+| [GOOGL](../trees/GOOGL/quant_history.jsonl) | 2 | USD 368.09 | 736 | 1.7% | 0.37 | 501／276 |
+| [ADI](../trees/ADI/quant_history.jsonl) | 2 | USD 362.10 | 724 | 1.7% | 0.67 | 624／215 |
+| [INTC](../trees/INTC/quant_history.jsonl) | 8 | USD 89.96 | 720 | 1.7% | 0.75 | 186／38 |
+| [CHYM](../trees/CHYM/quant_history.jsonl) | 30 | USD 23.86 | 716 | 1.7% | 0.62 | 39／14 |
+| [UBER](../trees/UBER/quant_history.jsonl) | 10 | USD 71.37 | 714 | 1.7% | 0.33 | 123／56 |
+| [UUUU](../trees/UUUU/quant_history.jsonl) | 58 | USD 11.88 | 689 | 1.6% | 0.59 | 20／7 |
+| [BABA](../trees/BABA/quant_history.jsonl) | 5 | USD 128.01 | 640 | 1.5% | 0.72 | 176／61 |
+| [CRDO](../trees/CRDO/quant_history.jsonl) | 3 | USD 207.55 | 623 | 1.5% | 0.46 | 469／94 |
+| [AAPL](../trees/AAPL/quant_history.jsonl) | 2 | USD 305.68 | 611 | 1.4% | 0.74 | 391／187 |
+| [AMBA](../trees/AMBA/quant_history.jsonl) | 7 | USD 84.11 | 589 | 1.4% | 0.72 | 118／40 |
+| [META](../trees/META/quant_history.jsonl) | 1 | USD 585.50 | 586 | 1.4% | 0.68 | 918／286 |
+| [AMZN](../trees/AMZN/quant_history.jsonl) | 2 | USD 285.26 | 571 | 1.3% | 0.60 | 346／170 |
+| [COHR](../trees/COHR/quant_history.jsonl) | 2 | USD 284.88 | 570 | 1.3% | 0.57 | 478／124 |
+| [CRM](../trees/CRM/quant_history.jsonl) | 3 | USD 189.01 | 567 | 1.3% | 0.51 | 261／131 |
+| [MRVL](../trees/MRVL/quant_history.jsonl) | 3 | USD 188.67 | 566 | 1.3% | 0.63 | 298／88 |
+| [HOOD](../trees/HOOD/quant_history.jsonl) | 6 | USD 90.70 | 544 | 1.3% | 0.84 | 125／33 |
+| [FUTU](../trees/FUTU/quant_history.jsonl) | 5 | USD 105.19 | 526 | 1.2% | 0.52 | 177／67 |
+| [ACN](../trees/ACN/quant_history.jsonl) | 3 | USD 167.03 | 501 | 1.2% | 0.52 | 258／104 |
+| [AMD](../trees/AMD/quant_history.jsonl) | 1 | USD 479.53 | 480 | 1.1% | 0.65 | 960／210 |
+| [AAOI](../trees/AAOI/quant_history.jsonl) | 4 | USD 104.98 | 420 | 1.0% | 0.61 | 185／43 |
+| [UNH](../trees/UNH/quant_history.jsonl) | 1 | USD 416.20 | 416 | 1.0% | 0.73 | 504／225 |
+| [APP](../trees/APP/quant_history.jsonl) | 1 | USD 405.50 | 406 | 1.0% | 0.33 | 922／242 |
+| [PM](../trees/PM/quant_history.jsonl) | 2 | USD 189.89 | 380 | 0.9% | 0.38 | 262／159 |
+| [OKLO](../trees/OKLO/quant_history.jsonl) | 9 | USD 41.13 | 370 | 0.9% | 0.37 | 126／24 |
+| [TTD](../trees/TTD/quant_history.jsonl) | 19 | USD 18.45 | 351 | 0.8% | 0.27 | 46／13 |
+| [ONDS](../trees/ONDS/quant_history.jsonl) | 39 | USD 8.12 | 317 | 0.7% | 0.70 | 8／3 |
+| [ALAB](../trees/ALAB/quant_history.jsonl) | 1 | USD 310.26 | 310 | 0.7% | 0.63 | 493／123 |
+| [NOK](../trees/NOK/quant_history.jsonl) | 33 | USD 9.20 | 304 | 0.7% | 0.38 | 33／4 |
+| [QCOM](../trees/QCOM/quant_history.jsonl) | 2 | USD 148.40 | 297 | 0.7% | 0.28 | 281／118 |
+| [XE](../trees/XE/quant_history.jsonl) | 16 | USD 17.82 | 285 | 0.7% | 0.57 | 25／8 |
+| [SKHY](../trees/SKHY/quant_history.jsonl) | 2 | USD 139.10 | 278 | 0.7% | 0.69 | 259／22 |
+| [PDD](../trees/PDD/quant_history.jsonl) | 3 | USD 89.57 | 269 | 0.6% | 0.31 | 154／64 |
+| [ON](../trees/ON/quant_history.jsonl) | 3 | USD 82.22 | 247 | 0.6% | 0.57 | 123／48 |
+| [NBIS](../trees/NBIS/quant_history.jsonl) | 1 | USD 208.56 | 209 | 0.5% | 0.35 | 741／52 |
+| [PLTR](../trees/PLTR/quant_history.jsonl) | 1 | USD 125.29 | 125 | 0.3% | 0.63 | 176／53 |
+| [HPQ](../trees/HPQ/quant_history.jsonl) | 4 | USD 27.21 | 109 | 0.3% | 0.35 | 40／20 |
+| [SMR](../trees/SMR/quant_history.jsonl) | 8 | USD 8.95 | 72 | 0.2% | 0.31 | 22／4 |
 | [000660.KS](../trees/000660.KS/quant_history.jsonl) | 26 | — | — | — | — | — |
 
-持倉市值合計 ≈ $47,377（另有現金；快照價為名單日收市，未逐日重估）。無快照價者為當週不在名單內的存倉。
+持倉市值合計 ≈ $46,267（另有現金；快照價為名單日收市，未逐日重估）。無快照價者為當週不在名單內的存倉。
 
 ## 交易日記（新在前）
 
 旗標說明：λ 折減＝原始 Kelly 注碼按規則折減；上限封頂＝觸及單一持倉上限；低於交易門檻＝目標與現況差距太小，不動。
+
+### 2026-08-03（NLV $42,371｜Kelly 分數 0.5｜單倉上限 0.33）
+
+| 動作 | 股票 | 股數 | 限價 | 金額（USD） | 目標權重 | 信念 | 旗標 | 狀態 |
+|---|---|---:|---:|---:|---:|---:|---|---|
+| 🟢 買入 | NKE | 12 | 42.84 | 533 | 3.8% | 0.59 | λ 折減 | Filled |
+| 🟢 買入 | VST | 7 | 153.22 | 1,113 | 2.6% | 0.34 | λ 折減 | Filled |
+| 🔴 賣出 | MSFT | 12 | 481.94 | 6,285 | 2.4% | 0.68 | λ 折減 | Filled |
+| 🟢 買入 | AAPL | 1 | 308.74 | 509 | 1.9% | 0.74 | λ 折減 | Filled |
+| 🔴 賣出 | NOW | 10 | 114.82 | 1,168 | 1.9% | 0.52 | λ 折減 | Filled |
+| 🔴 賣出 | AMBA | 5 | 83.26 | 466 | 1.3% | 0.72 | λ 折減 | Filled |
+| 🟢 買入 | QCOM | 2 | 149.88 | 427 | 1.0% | 0.28 | λ 折減 | Filled |
+| 🟢 買入 | SKHY | 2 | 140.49 | 0 | 0.9% | 0.69 | — | Filled |
 
 ### 2026-07-27（NLV $41,232｜Kelly 分數 0.5｜單倉上限 0.33）
 
