@@ -87,11 +87,21 @@ _🚫 **訊號成立、但本週不建倉**：[MSFT](portfolio/EXCLUSIONS.md#msf
 | **B：Alpha 長短倉** | 33% | 買入純升級、沽空純降級（等權、市場中性） | 主假說的實際執行——實現值與理論值相差多遠？ |
 | **C：期權配對** | 33% | 升級 call＋降級 put、delta 平衡 | 相對 alpha 能否被凸性放大？ |
 
-### Sleeve A 表現：**實際成交**（B／C 08-03 首次執行，屆時併入）
+### 三倉表現：**實際成交**
 
 _此段是真金白銀（模擬帳戶）的賺蝕，按實際成交價計，含滑價與手續費，被剔除的檔不建倉。上方訊號板則是**理論讀數**（開市價入場、收市價離場、剔除者照計）——兩者量的是不同東西，數字不同屬正常。_
 
-截至 **2026-08-02**（三指數自 2026-07-14 起 base 100，指數對指數、貨幣中性；單週為 noise，須看累積）：
+截至 **2026-08-02**（各倉指數自其追蹤起點 base 100，指數對指數、貨幣中性；單週為 noise，須看累積）：
+
+| 分倉 | 指數 | 狀態 |
+|---|---|---|
+| **A｜Kelly 定倉（34%）** | **101.28**（+1.28%） | vs 等權 +4.29 點｜vs SPY +1.95 點 |
+| **B｜多空配對（33%）** | 100.00（尚未結算） | 持倉讀數 +0.06%（未實現） |
+| **C｜期權疊加（33%）** | 未建倉（100.00） | 建倉閘未通過，零倉位 |
+
+_三條倉結算節奏不同（A 每週六 mark、B／C 每週一平倉後才前進），指數不可互相加總。**未結算**與**未建倉**如實標明——那是「未有數據」，不是「沒有變化」。_
+
+**Sleeve A 的三條基準指數**
 
 | 指數 | 水平 | 累計 |
 |---|---|---|
@@ -99,7 +109,7 @@ _此段是真金白銀（模擬帳戶）的賺蝕，按實際成交價計，含�
 | 等權同池（真正的對手） | 96.99 | −3.01% |
 | SPY（大盤參照） | 99.33 | −0.67% |
 
-**相對等權（sizing 淨貢獻）：+4.29 點**｜相對 SPY：+1.95 點。逐週表 [`portfolio/PERFORMANCE.md`](portfolio/PERFORMANCE.md)，分倉規則 [`portfolio/STRATEGY_SLEEVES_20260723.md`](portfolio/STRATEGY_SLEEVES_20260723.md)。
+**相對等權（sizing 淨貢獻）：+4.29 點**｜相對 SPY：+1.95 點。逐倉逐週表 [`portfolio/PERFORMANCE.md`](portfolio/PERFORMANCE.md)，分倉規則 [`portfolio/STRATEGY_SLEEVES_20260723.md`](portfolio/STRATEGY_SLEEVES_20260723.md)。
 
 ## 📖 背景
 
@@ -147,7 +157,7 @@ commit，fork/watch 即可偵測任何歷史改寫。規則全文見
 | 看哪幾檔被剔除、為什麼 | [`portfolio/EXCLUSIONS.md`](portfolio/EXCLUSIONS.md) |
 | 看開賽前的底數（不入比分） | [`portfolio/PILOT.md`](portfolio/PILOT.md) |
 | 看判定變化有無預測力 | [`calibration/CALIBRATION.md`](calibration/CALIBRATION.md)——降級×重要度前向回報表；自行重算見〈自己驗證〉第 3 條 |
-| 看組合逐週淨值 | [`portfolio/PERFORMANCE.md`](portfolio/PERFORMANCE.md) |
+| 看三條分倉的逐週淨值 | [`portfolio/PERFORMANCE.md`](portfolio/PERFORMANCE.md)——A Kelly 定倉／B 多空配對／C 期權疊加，各自獨立記帳 |
 | 了解系統如何運作 | [`portfolio/RELEASES.md`](portfolio/RELEASES.md)〈設計全貌〉＋ [`portfolio/PROTOCOL.md`](portfolio/PROTOCOL.md) |
 | 挑戰我們 | [`portfolio/OPEN_QUESTIONS.md`](portfolio/OPEN_QUESTIONS.md)（公開掛帳的方法論爭議） |
 
@@ -167,8 +177,10 @@ commit，fork/watch 即可偵測任何歷史改寫。規則全文見
 
 **組合實驗（`portfolio/`）**
 - `HOLDINGS.md` — Kelly 持倉全表＋逐週交易日記（人可讀版，與 weekly/*.json 同源）
-- `PERFORMANCE.md` — 每週淨值對比基準：組合／等權同池／SPY 皆 base 100，
-  逐週回報＋累計、相對等權（sizing 淨貢獻）與相對 SPY 領先點數
+- `PERFORMANCE.md` — 三條分倉的每週淨值，各自獨立記帳：A（Kelly 定倉，
+  對比等權同池與 SPY，三指數皆 base 100，含 sizing 淨貢獻點數）、
+  B（多空配對，逐腿入場／現價／回報，未結算者標明未實現）、
+  C（期權疊加，含建倉閘讀數與逐檔不落注原因）
 - `EXCLUSIONS.md` — 列入名單但不入建倉籃的個案：日期、裁定人、原因、鑑證明細
 - `PILOT.md` — 開賽前的底數：歷史校準資料集＋先導兩週逐股成績。全屬事後回顧，不入正式比分，留檔可查
 - `PROTOCOL.md` — 〈一個投資組合，究竟是如何形成的？〉＋預登記實驗協議
