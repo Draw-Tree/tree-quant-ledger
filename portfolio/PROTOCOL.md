@@ -391,12 +391,22 @@ sizing 必然落後，比較不再公平。因此修訂如下：
 ```
 六（HKT）  樹 cron 更新 verdicts + snapshots（既有；含附錄 A 之破位鎖存）
 日 04:00 UTC  fleet-audit：全部樹 --check + 外部市值 sanity gate + 破位/死線鎖存複掃
-一 13:45 UTC  GitHub Actions：
+一 11:00 UTC  GitHub Actions（paper-portfolio，**開市前**）：
    1. 拉取 main 最新樹數據 → 建構 ideas（§3 規則，含破位隔離）
    2. POST engine（§2 參數）→ target weights + IBKR 訂單
-   3. IB Gateway（paper）：讀取 NLV/持倉 → 提交 marketable-limit 訂單
-   4. Journal：ideas / engine request+response / 訂單 / fills / NAV → append-only commit
-   5. Slack：模擬組合週報（附研究免責聲明）
+   3. IB Gateway（paper）：讀取 NLV/持倉 → 提交 **MOO**（MKT + tif=OPG）
+      訂單，成交於開市競價 ⇒ 實際入場價＝計分口徑的入場價
+      （見 _lib/SCORING_WINDOW_SPEC.md）
+   4. Sleeve B 同流：先平上週腿、再依名單建新倉，同用 MOO
+   5. Journal：ideas / engine request+response / 訂單 / fills / NAV → append-only commit
+   6. Slack：模擬組合週報（附研究免責聲明）
+一 13:45 UTC  GitHub Actions（sleeve-c，**開市後 15 分鐘**）：
+   期權沒有盤前報價，故 C 不能與上一流同時跑。開市後有真實報價才取價、
+   過閘、落限價單；行情未到位時如實寫下「取不到期權行情」一筆。
+
+   排程時點註：MOO 有截止時間（Nasdaq 09:28 ET 前入單），而本庫的排程
+   實測長期遲 48–55 分鐘開跑。11:00 UTC（07:00 ET）留約 2.5 小時緩衝，
+   即使遲兩小時仍趕得及，不會靜默錯過整週建倉。
 ```
 
 ## 5. 紀錄（append-only，與 quant_history 同一紀律）

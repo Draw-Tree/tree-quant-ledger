@@ -1,10 +1,10 @@
 # 💼 Kelly 持倉與交易日記（Sleeve A）
 
-更新 2026-08-03｜數據源＝[`weekly/*.json`](weekly/)（IBKR 模擬帳戶每週journal，本頁由同一檔案確定性生成，人手零落數）｜規則見 [`STRATEGY_SLEEVES_20260723.md`](STRATEGY_SLEEVES_20260723.md)｜研究用途，非投資建議。
+更新 2026-08-04｜數據源＝[`weekly/*.json`](weekly/)（IBKR 模擬帳戶每週journal，本頁由同一檔案確定性生成，人手零落數）｜規則見 [`STRATEGY_SLEEVES_20260723.md`](STRATEGY_SLEEVES_20260723.md)｜研究用途，非投資建議。
 
 倉位由樹的信念（conviction）經 fractional Kelly 決定——樹愈有把握、注碼愈大；判定轉弱，下週自動減倉。
 
-## 目前持倉（截至 2026-08-03，帳簿推算｜Sleeve NLV $42,371｜62 檔）
+## 目前持倉（IBKR 實倉快照 2026-08-03 16:17 UTC｜Sleeve NLV $42,371｜61 檔）
 
 | 股票 | 股數 | 快照價 | 市值（USD） | 佔比 | 信念 | 牛／熊目標 |
 |---|---:|---:|---:|---:|---:|---|
@@ -62,16 +62,15 @@
 | [NOK](../trees/NOK/quant_history.jsonl) | 33 | USD 9.20 | 304 | 0.7% | 0.38 | 33／4 |
 | [QCOM](../trees/QCOM/quant_history.jsonl) | 2 | USD 148.40 | 297 | 0.7% | 0.28 | 281／118 |
 | [XE](../trees/XE/quant_history.jsonl) | 16 | USD 17.82 | 285 | 0.7% | 0.57 | 25／8 |
-| [SKHY](../trees/SKHY/quant_history.jsonl) | 2 | USD 139.10 | 278 | 0.7% | 0.69 | 259／22 |
 | [PDD](../trees/PDD/quant_history.jsonl) | 3 | USD 89.57 | 269 | 0.6% | 0.31 | 154／64 |
 | [ON](../trees/ON/quant_history.jsonl) | 3 | USD 82.22 | 247 | 0.6% | 0.57 | 123／48 |
 | [NBIS](../trees/NBIS/quant_history.jsonl) | 1 | USD 208.56 | 209 | 0.5% | 0.35 | 741／52 |
 | [PLTR](../trees/PLTR/quant_history.jsonl) | 1 | USD 125.29 | 125 | 0.3% | 0.63 | 176／53 |
 | [HPQ](../trees/HPQ/quant_history.jsonl) | 4 | USD 27.21 | 109 | 0.3% | 0.35 | 40／20 |
 | [SMR](../trees/SMR/quant_history.jsonl) | 8 | USD 8.95 | 72 | 0.2% | 0.31 | 22／4 |
-| [000660.KS](../trees/000660.KS/quant_history.jsonl) | 26 | — | — | — | — | — |
+| [000660.KS](../trees/000660.KS/quant_history.jsonl) | 28 | — | — | — | — | — |
 
-持倉市值合計 ≈ $46,267（另有現金；快照價為名單日收市，未逐日重估）。無快照價者為當週不在名單內的存倉。
+持倉市值合計 ≈ $45,989（另有現金；快照價為名單日收市，未逐日重估）。無快照價者為當週不在名單內的存倉。
 
 ## 交易日記（新在前）
 
