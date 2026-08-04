@@ -63,13 +63,14 @@ _🚫 **訊號成立、但本週不建倉**：[MSFT](portfolio/EXCLUSIONS.md#msf
 
 | 細假說 | 主張 | 由 2026-07-26 起累積的實際結果 |
 |---|---|---|
-| **H-grade** | 重要度愈高，效應愈強 | 降級 +1 週超額：極高 +4.7%（1）｜高 -2.1%（1）｜中 +3.1%（1）｜低 —（0）｜極低 —（0） |
+| **H-grade** | 重要度愈高，效應愈強 | 降級 +1 週超額：極高 +4.7%（1）｜高 -2.1%（1）｜中 +3.1%（1）｜低 —（0）｜極低 —（0）｜判準進度 極高級 2/15 |
 | **H-breadth** | 同週愈多葉齊降，效應愈強；含必要葉更甚 | 降級 +1 週超額：1 葉 +1.9%（3）｜2–3 葉 —（0）｜≥4 葉 —（0）｜含必要葉 —（0） |
 | **H-purity** | 同股同週有升有降＝訊號抵銷，不入比分 | +1 週超額：純降級 +1.9%（3）｜純升級 -5.4%（3）（混合週依 H-purity 不入名單，故無讀數） |
 | **H-trigger** | 週掃描與財報後裁定分兩層計 | +1 週超額：週掃描 -1.7%（6）｜財報後 —（0） |
 | **H-horizon** | 效應持續多於一週，+1..+4 週累計超額持續走闊 | 降級 +1 +1.9%（3） → +2 —（0） → +3 —（0） → +4 —（0） |
 | **H-spread** | 逐週策略回報序列均值 >0 | 正式 0 週入帳（未開賽） |
 | **H-priced-in** | 判定若在股價已沿訊號方向走過之後才出現，其預測力較弱 | +1 週超額：事前已同向走過 -4.4%（1）｜其餘 -1.2%（5） |
+| **H-lead** | 判定早於市場傳播；領先愈多，訊號愈有預測力（本系統 edge 主張的直接檢驗；詳見 [`calibration/H_LEAD.md`](calibration/H_LEAD.md)） | 中位領先主流媒體 -6 日｜領先 1/4｜freshness 走漏 0｜判準進度 4/20 |
 | **H-age** | 論點有時效——樹齡愈大、條件愈接近過期，訊號愈弱 | 待正式名單累積足夠出生日分散的樣本 |
 | **Sleeve A（Kelly 定倉）‡** | 按樹信念大小下注，勝過同池等權 | 相對等權（sizing 淨貢獻）**+4.42 點**（截至 2026-08-03，2026-07-14 起 base 100） |
 
@@ -156,6 +157,7 @@ commit，fork/watch 即可偵測任何歷史改寫。規則全文見
 | 看本週名單與成績 | 頁頂〈本週訊號板〉；逐檔詳情 [dashboard.md](dashboard.md) |
 | 看哪幾檔被剔除、為什麼 | [`portfolio/EXCLUSIONS.md`](portfolio/EXCLUSIONS.md) |
 | 看開賽前的底數（不入比分） | [`portfolio/PILOT.md`](portfolio/PILOT.md) |
+| 看我們是否真的早過市場 | [`calibration/H_LEAD.md`](calibration/H_LEAD.md)——訊號時序逐週讀數＋預登記判準 |
 | 看判定變化有無預測力 | [`calibration/CALIBRATION.md`](calibration/CALIBRATION.md)——降級×重要度前向回報表；自行重算見〈自己驗證〉第 3 條 |
 | 看三條分倉的逐週淨值 | [`portfolio/PERFORMANCE.md`](portfolio/PERFORMANCE.md)——A Kelly 定倉／B 多空配對／C 期權疊加，各自獨立記帳 |
 | 了解系統如何運作 | [`portfolio/RELEASES.md`](portfolio/RELEASES.md)〈設計全貌〉＋ [`portfolio/PROTOCOL.md`](portfolio/PROTOCOL.md) |
