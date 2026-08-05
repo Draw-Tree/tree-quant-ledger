@@ -23,12 +23,10 @@
     },
     {
       "id": "B",
-      "weight": 2.5,
-      "impact_grade": "致命",
+      "weight": 1.6,
+      "impact_grade": "重創",
       "aggregation": "portfolio",
-      "necessity_leaves": [
-        "B2"
-      ],
+      "necessity_leaves": [],
       "leaf_weights": {},
       "leaves": [
         "B1",
@@ -38,21 +36,22 @@
     },
     {
       "id": "C",
-      "weight": 0.9,
-      "impact_grade": "明顯受損",
+      "weight": 2.5,
+      "impact_grade": "致命",
       "aggregation": "portfolio",
       "necessity_leaves": [],
       "leaf_weights": {},
       "leaves": [
         "C1",
         "C2",
-        "C3"
+        "C3",
+        "C4"
       ]
     },
     {
       "id": "D",
-      "weight": 0.4,
-      "impact_grade": "輕微",
+      "weight": 2.5,
+      "impact_grade": "致命",
       "aggregation": "portfolio",
       "necessity_leaves": [],
       "leaf_weights": {},
