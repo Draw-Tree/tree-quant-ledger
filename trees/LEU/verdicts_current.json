@@ -21,7 +21,7 @@
   },
   {
     "id": "B3",
-    "verdict": "Falsified"
+    "verdict": "Validated"
   },
   {
     "id": "C1",
@@ -45,6 +45,6 @@
   },
   {
     "id": "D3",
-    "verdict": "Inconclusive"
+    "verdict": "Trending positive"
   }
 ]
