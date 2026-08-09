@@ -1,6 +1,6 @@
 {
   "date": "2026-08-09",
-  "source_commit": "699b086be5d3c901b7cf5dc4e4abf13c596c9aa6",
+  "source_commit": "9fe1874a5ff341ede7990e220cc2d83bf840239d",
   "algo": "sha256",
   "trees": {
     "005930.KS": {
@@ -436,13 +436,13 @@
     "CHYM": {
       "hypothesis_zero.yaml": "1858ec6f566cc37063d42d9fe899d848da8588a4671bba331f454bdce8a902e5",
       "branches.yaml": "823f723307dfed75dc32b06282ac626b0c171ec8afa65b597f10fb26ddfc9a56",
-      "valuation.yaml": "1b03ced6fa068b80f843c504cd8c6947608851dbb8b279939260419778bf3b08",
+      "valuation.yaml": "5ca51b730af03880d28d8cf299b8866563a8a60f47e345a8b4c5bf12603f777e",
       "consensus.md": "24d5b5ee1f938ebea569d9002adee7798e9cd22d524842d3813dd97f0335a306",
       "report.md": "346013d4cd60661ed696e4b09b043acf2d01e95d034c38cc4de15d78cd96da69",
       "triggers_redflags.yaml": "e7efdf1d6a5bc3a2c3744f59466218582c6a15cede066c694b8c9be2fc067487",
       "narrative_history.yaml": "1a601514541a889084a2042fdfbf9d504aff24da8d9ce8d07ae9dc139af15070",
       "valuation_history.yaml": "07bb170934266d78816c2130b8760885a8f0332f00b6fb431a591dd60a025dd2",
-      "hypotheses/A1.json": "f22168d6861898d69d2227840417b3ad0c86c2ad8bfc741a030bbf839f25db60",
+      "hypotheses/A1.json": "45f5ffed0d4c2a59b6203fa0d3f848842735ec2bda2b4de3e248d16cbf7f0719",
       "hypotheses/A2.json": "2805deb9868825a1d1818010eae117001cf572b227ce9eadcfa7f176050f9945",
       "hypotheses/A3.json": "597248511abb965624237173fabd9ee86a835963f2bdf1d3f3d90b3ca0ff9d9f",
       "hypotheses/A4.json": "9edf1cb751b252daa4a9f541b05ccd2142a5efd376aa337b6dbb04e594874e69",
@@ -463,7 +463,7 @@
       "valuation_history.yaml": "a7fb30849a728006d6c671ea6a597f6d34f2b2cd27fe505217499c08f239948e",
       "hypotheses/A1.json": "7540936e037896fb72b0476a1a64fd5d0aef482601c562ea88bae85eb8a52d98",
       "hypotheses/A2.json": "e421d4510a9a20057ab0f2dc05f30a7015f57daff50721eaf5209cacb6dc6a65",
-      "hypotheses/A3.json": "305010cf0b68e916ceea6aaa5e799a07feebbb168d04e8fc628d8ce90e191ab6",
+      "hypotheses/A3.json": "9a8ded56d3b82504d812c4514caa4dac6df5fba9dc7566ab500b1058c7b0da6c",
       "hypotheses/B1.json": "31c4759f2ddc6c347d843333be7b1be89568825afa87d8f1ed9db0971a19ecc2",
       "hypotheses/B2.json": "048044fba76f04a055293aa45669814c009e73471b535af0fe4fe99e1b3238d2",
       "hypotheses/B3.json": "b3d0ee711c0d002f8c236bd1687d6641c0018bb260085615f3d54d5de81d5083",
@@ -610,14 +610,14 @@
     "ETN": {
       "hypothesis_zero.yaml": "da949f6b65c2e64c51aa413daff5a35e1439a626b53620c46c2c21f4f04a65f0",
       "branches.yaml": "d3f9baabac618fa0c559920c0765c7840be90f5900510000793123022d464d7e",
-      "valuation.yaml": "36bb22493251c7128fdd133a12d55b09e20d164e70b617b92ae66fd4a161f3c7",
+      "valuation.yaml": "c39a5aa0de99c94410e94b5821fd9fddbfe87771dd51c961d3ebf543a08cecd1",
       "consensus.md": "7ba630d91a2d5473b5069ada7ca045a2dac571d9a73686176758aed690f1e694",
       "report.md": "febc951cae5d59a96250a285b208d656da1be805c21aa7dd64fee39f77e92e69",
       "triggers_redflags.yaml": "3b7c892cc3972b266395f4836f6e113e8880efe7fc05a8e4badf0a73921fbf50",
       "narrative_history.yaml": "1f2c5cd9f3b13c67ada4b317593fa90ff1edcf09241b2175d57d69d3b1b1f309",
       "valuation_history.yaml": "26d1c40ebd685d7627e65fdb4e05faf57c791bb4e7499e17ea12e2b560f40286",
       "hypotheses/A1.json": "26e1cc5867bb16802c2cafa887747c345c310c98951b2bae517d241047cad178",
-      "hypotheses/A2.json": "1ccc6d47d45eab983432c3971802b6fc497574506075222ac9f4e127279c1b74",
+      "hypotheses/A2.json": "01fc03b800f4278cd742bcfef0cf540b1416ce450b2063bda0a7962d79834fa9",
       "hypotheses/A3.json": "39ed5209428dda5ef2f38e980934df8b655b14f044b0ea65551613b3f212cb5c",
       "hypotheses/B1.json": "81cac91ddb72b6e7d4eb21db973948c96a5f207abb7c9f2f3595f55f794ba4ea",
       "hypotheses/B2.json": "7823b8c41f1a616fb6a6a59d795bdebb2d872a451a1e2d2351afc4470fd0c8c4",
@@ -894,7 +894,7 @@
       "hypotheses/A3.json": "efff9056e5398e46dd29d56bbaba22509576e7e6a0c8624eab2bf6e8997dc6bd",
       "hypotheses/B1.json": "a8cd879d0f0911654c1e506c41da52e33fe489bce6e95d9eeb0ed603f37b521f",
       "hypotheses/B2.json": "5c067ad065c207ca41ff0e0f37ccdcb707850735f3b76b114a6e4cb3626ec98b",
-      "hypotheses/B3.json": "db23c0ac7c17f073b49a94ed71eb7855b2dec3d003ed917afe94a1865af7ad17",
+      "hypotheses/B3.json": "9ae56f1728543a8ede50b391897dd327e2b21c065f1714c5417a0d1ca8158c6c",
       "hypotheses/C1.json": "86c8d7052ae701dde544e7f07a7ccb754d32482b69bcb6997538877132fed4b2",
       "hypotheses/C2.json": "492c041d16f9a6a0c27fef8bdef0cc91d04707195719f8159cf2e2f41635f07c",
       "hypotheses/C3.json": "ccbe7308f211506e9f0fa3b1cdc3c3898834e2d21cb83015d2e7cc282438bc2c",
@@ -1761,7 +1761,7 @@
       "hypotheses/C2.json": "c957fe3e46cdd5be80ccb52a7967565d0e3cfb35faef01ec962e4392b22e6245",
       "hypotheses/C3.json": "fbeb5b3608cbfbac4276ccc82a3e6e662ad5f150b44cf7fd56206b68a35a617f",
       "hypotheses/D1.json": "d0f8fd13df7833d1ec592d512f8c36aa3bce6218f5291f864a62bfe83699581c",
-      "hypotheses/D2.json": "ade439110fb371c2e0ce7985758391e593b05cf5d8878bc0d6e2d00eed7a9cbf",
+      "hypotheses/D2.json": "a6a519652ad183ca9eb1c94f9c27de510425b1baf68f7ea2fda81427f9432277",
       "hypotheses/D3.json": "906326b0a4642462b4073d42bce7be978ac2c307d6087d36ef42d02d59ef8547"
     },
     "UUUU": {
