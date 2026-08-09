@@ -11,6 +11,7 @@
 
 | 版本 | 日期 | 一句話 |
 |---|---|---|
+| R17 | 08-09 | 成本裁定：全環節（P2/P3.5/P4/查核者）轉 deepseek-v4-flash-0731 並直連 DeepSeek API（OpenRouter 保留做回退）；週日 model-ab 自動評測停用。**知情代價**：flash 判定自我一致性 90%（A/B 實測，G1/G2 不過關）——補償防線 HLT-9 改判量噪音警報＋每週覆核照掃；回退路徑保留 |
 | R16 | 08-07 | 財報背離帳（SPEC v3.16）：「價格大動×判定無動」逐單入帳，H-drift（PEAD）對 H-fade（樹論點）對立假說預登記；原型 RDDT——管線讀齊 32 條好數證據、零改判、超額 −21.8%；首掃另捉 4 單管線疑漏（BE/NBIS/NOK/NOW）交工程 |
 | R15 | 08-06 | 因子符號暴露表＋傳播事件研究預登記（SPEC v3.15）：每個（股票×因子）對的方向由證據帳改判史確定性讀出（NOW −Anthropic、COHR −光互連、AAOI ＋光互連）；「盲點樹下週按符號同向」為可證偽命題，n≥30 先初讀、n≥60 先檢定，讀數達標前不驅動任何注碼 |
 | R14 | 08-06 | 跨樹事件板：上週因子快照裁定為候選盲點的樹，Pass 2 查詢規劃獲餵他樹已核實事件（僅事實＋日期＋URL，不含他樹判定方向），由本樹自行裁定相關性——判定管線本身就是過濾器，餵事實不製造羊群；每週報注入反應率 |
@@ -26,6 +27,44 @@
 | R3 | 07-18 | 信念曲線重新校準；估值加同業百分位閘 |
 | R2 | 07-13 | 執行 universe 限縮至美股上市工具 |
 | R1 | 07-12 | 證據帳與破位鎖存：判定不再只看當週新聞 |
+
+---
+
+## R17（2026-08-09）——成本裁定：全環節 flash＋直連 DeepSeek
+
+**緣起。** 維護者裁定 OpenRouter 開支不可持續，指示：全部環節轉
+deepseek-v4-flash、停週日 model-ab 自動評測、直連 DeepSeek API。
+
+**實施**：
+- 判讀管線兩個 LLM 入口（結構化 call＋通用 chat）加直連路徑：
+  `DEEPSEEK_API_KEY` 已設且模型屬 deepseek 系 → api.deepseek.com
+  （OpenAI 相容）；直連任何故障即回退 OpenRouter，換供應商不停擺。
+  直連無 json_schema strict mode——降級 json_object＋schema 內嵌，
+  本地 parse 驗證，不合法即回退；
+- `DEFAULT_PIPELINE_MODEL`（P4）與 `VERIFIER_MODEL_DEFAULT` 由
+  grok-4.3／claude-opus-5 改為 deepseek-v4-flash-0731（P2/P3.5 原已
+  flash）；兩個 workflow 的硬編碼模型 pin 同步改；
+- 週日 model-ab cron 停用（手動 dispatch 保留）。
+
+**知情代價（如實記錄，非追認）**：flash 判定自我一致性 90%
+（36 對×5 A/B 實測、G1/G2 不過關；v4-pro 95% 年代已每週產生 ~28 個
+純噪音轉變）。維護者知悉此數據後以成本優先裁定。**補償防線**：
+1. HLT-9 改判量噪音警報——本週改判數 > max(20, 過去四週中位 ×2)
+   即 Slack 警告（人手更正與設樹覆核不計入）；
+2. 每週覆核 R 旗照掃、判準預登記不變——噪音改判仍須逐項過清單；
+3. **改判確認投票（R17b，同日追加）**——一致性噪音係隨機的，同一份
+   輸入重跑會自己露底：僅對「提議改判」重跑同一 judge 兩次，多數決
+   （≥2/3）方落實，散票維持原判。單次 10% 假改判 → 三取二後 ~3%，
+   接近 grok 年代水平；不改判的 ~450 葉不重跑，額外成本每週僅數十個
+   flash call。票數入 run log 供覆核；CONSISTENCY_VOTES=0 停用；
+4. 回退路徑完整保留：環境變數（PIPELINE_P2_MODEL／VERIFIER_MODEL／
+   OPENROUTER_MODEL）即場覆寫，或 revert 本 release。
+
+**成本預估**：由約 $25–30／週（P4 grok 佔大頭）＋每週 A/B 評測，降至
+約 $3–5／週。查核者（R17c 同日修訂）：維護者裁定用返 opus-5，且**直連 Anthropic
+官方 API**（ANTHROPIC_API_KEY；未設或故障回退 OpenRouter）——每週僅約
+8 個 case 成本幾近零，referee bench 滿分紀錄屬 opus-5，此位不慳；
+fail-open 設計不變。
 
 ---
 
