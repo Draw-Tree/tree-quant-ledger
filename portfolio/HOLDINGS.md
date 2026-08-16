@@ -1,10 +1,10 @@
 # 💼 Kelly 持倉與交易日記（Sleeve A）
 
-更新 2026-08-10｜數據源＝[`weekly/*.json`](weekly/)（IBKR 模擬帳戶每週journal，本頁由同一檔案確定性生成，人手零落數）｜規則見 [`STRATEGY_SLEEVES_20260723.md`](STRATEGY_SLEEVES_20260723.md)｜研究用途，非投資建議。
+更新 2026-08-16｜數據源＝[`weekly/*.json`](weekly/)（IBKR 模擬帳戶每週journal，本頁由同一檔案確定性生成，人手零落數）｜規則見 [`STRATEGY_SLEEVES_20260723.md`](STRATEGY_SLEEVES_20260723.md)｜研究用途，非投資建議。
 
 倉位由樹的信念（conviction）經 fractional Kelly 決定——樹愈有把握、注碼愈大；判定轉弱，下週自動減倉。
 
-## 目前持倉（截至 2026-08-10，帳簿推算｜Sleeve NLV $42,416｜61 檔）
+## 目前持倉（IBKR 實倉快照 2026-08-10 15:48 UTC｜Sleeve NLV $42,416｜61 檔）
 
 | 股票 | 股數 | 快照價 | 市值（USD） | 佔比 | 信念 | 牛／熊目標 |
 |---|---:|---:|---:|---:|---:|---|
@@ -71,30 +71,6 @@
 | [COHR](../trees/COHR/quant_history.jsonl) | -16 | USD 379.13 | -6,066 | -14.3% | 0.65 | 478／124 |
 
 持倉市值合計 ≈ $51,749（另有現金；快照價為名單日收市，未逐日重估）。無快照價者為當週不在名單內的存倉。
-
-**未成交掛單**（下單時未即時成交，成交後持倉隨之改變）：
-
-- 買入 VST 15 股 @ 0.00（PreSubmitted）
-- 買入 V 1 股 @ 0.00（PreSubmitted）
-- 買入 TTD 198 股 @ 0.00（PreSubmitted）
-- 買入 HUBS 6 股 @ 0.00（PreSubmitted）
-- 賣出 ADBE 2 股 @ 0.00（PreSubmitted）
-- 賣出 IBM 6 股 @ 0.00（PreSubmitted）
-- 賣出 DDOG 22 股 @ 0.00（PreSubmitted）
-- 賣出 MSFT 1 股 @ 0.00（PreSubmitted）
-- 買入 BRK-B 1 股 @ 0.00（Cancelled）
-- 賣出 TEAM 4 股 @ 0.00（PreSubmitted）
-- 買入 NOW 4 股 @ 0.00（PreSubmitted）
-- 賣出 POET 63 股 @ 0.00（PreSubmitted）
-- 賣出 SNOW 1 股 @ 0.00（PreSubmitted）
-- 賣出 CHYM 18 股 @ 0.00（PreSubmitted）
-- 賣出 UUUU 36 股 @ 0.00（PreSubmitted）
-- 賣出 CRDO 2 股 @ 0.00（PreSubmitted）
-- 賣出 MRVL 1 股 @ 0.00（PreSubmitted）
-- 賣出 AAOI 3 股 @ 0.00（PreSubmitted）
-- 賣出 GOOGL 1 股 @ 0.00（PreSubmitted）
-- 買入 SKHY 2 股 @ 0.00（PreSubmitted）
-- 買入 AMKR 6 股 @ 0.00（PreSubmitted）
 
 ## 交易日記（新在前）
 

@@ -11,6 +11,10 @@
 
 | 版本 | 日期 | 一句話 |
 |---|---|---|
+| R22 | 08-14 | M2 傳染條件化（SPEC v3.17 預登記）：每個名單訊號拍兩張傳播快照（名單日 t0＋對答案日 t+7 嘅獨立媒體域名數）加驅動新聞首報日期，落四格——🟢 傳播中×新資訊（Hong-Stein 擴散預測續行）／🔴 翻炒尖峰（Tetlock 舊聞注意力預測回轉）／🟡 未擴散／⚪ 死水。Slack 週日名單出「傳染初讀」（⚠️ 舊聞翻炒候選即時有旗）、對答案日出「傳染結算」；公開板 calibration/CONTAGION.md 四格戰績自動累計。回溯存照：股票級粗代理 652 樹週回測全 null——正因兩個 regime 方向相反相消，分流係命門；n=7 echo 截面「零傳播訊號 3 中 0」僅屬軼事。讀數達標前不驅動注碼 |
+| R21 | 08-14 | 死亡報告 P2-P4 落地：②CIY 信息增量儀錶（改判 bits＝−log2 艦隊經驗轉移機率——罕見改判自動值錢、日常無變化自動唔值錢，防刷分定價；按查詢類別×A/B 臂分報，+28 日耐久確認先入正錶，只描述不驅動決策）③權威源混合臂 A/B（82 樹分層隨機 43 hybrid／39 open、4 週交叉；hybrid＝照舊全輪「另加」一條 include_domains 直取查詢——開放廣搜只加不減，33% 改判無固定源 driver 係白名單嘅紅線）④月度蒸餾 job（單一 LLM call 讀 82 playbook 聚合計數器→機器規則 domain_block／query_pattern_retire，90 日 TTL，確定性護欄：driver 域名／權威地圖／通用固定層一律唔准封，只施於精準輪） |
+| R20 | 08-14 | 死亡報告接線（P1，全零 LLM）：仿 Anthropic 數學研究「失敗記錄→蒸餾→改進」迴路，五項全部接現有線——①時機閘（24.6% 查詢文本自帶未來日期照搜、命中率 14% 全艦隊最低，未到期唔跑）②死因分類（_filter_stats 由計完即棄改落 postmortems 欄：engine_empty／filtered_out／unmapped——1,034 條 gaps 零條自我歸因嘅缺口）③負面域名帳（「邊啲網站冇意思」首次有數）④watch_next 加 due 欄（唔會比自己指向嘅事件早七週過期）＋死路復活事件錨定 ⑤discovery share 儀錶＋HLT-10 探索熄火警報（對沖六股收窄力）；順手修 R19 cap 鈍刀（先過閘後 cap） |
+| R19 | 08-14 | 搜索成本三刀：Tavily 週六管線 ~18k credits/週、7,704 條 logged 查詢 80% 零命中、僅 0.8% 曾產生判定 driver——①死路閘擴展至常設／P2 層（28 日復活試探）②P2 目標查詢 cap 4→2（73% 查詢字串每週新生成，cap 係唯一制得住新字串工廠嘅掣）③精準輪 advanced→basic（每條慳半 credit；P1 廣搜／H0 深研／財報材料照舊 advanced）。全部 env 可回退；merge 前以 A/B harness 真跑對比（見 `_lib/_ab_results/`） |
 | R18 | 08-09 | 三線研究落地：股價／敘事／判定三線掃描（145 個大動週、41% 兩線俱靜）裁定「不設獨立三線 factor，故事線降格為 E2 瞄準鏡」——SPEC v3.16a 預登記 `narrative_changed` 次要分層（敘事已轉＝drift 危險區；無轉＝大額資金流嫌疑，方向命題押 fade）＋殘差歸因紀律（price_only 標未解釋，歸因資金流須附 Form 4／13D 實據）；公開板加白話導讀（法官／輿論／市場三線比喻）＋ THREE_LINES.md 存照 |
 | R17 | 08-09 | 成本裁定：全環節（P2/P3.5/P4/查核者）轉 deepseek-v4-flash-0731 並直連 DeepSeek API（OpenRouter 保留做回退）；週日 model-ab 自動評測停用。**知情代價**：flash 判定自我一致性 90%（A/B 實測，G1/G2 不過關）——補償防線 HLT-9 改判量噪音警報＋每週覆核照掃；回退路徑保留 |
 | R16 | 08-07 | 財報背離帳（SPEC v3.16）：「價格大動×判定無動」逐單入帳，H-drift（PEAD）對 H-fade（樹論點）對立假說預登記；原型 RDDT——管線讀齊 32 條好數證據、零改判、超額 −21.8%；首掃另捉 4 單管線疑漏（BE/NBIS/NOK/NOW）交工程 |
@@ -30,6 +34,133 @@
 | R1 | 07-12 | 證據帳與破位鎖存：判定不再只看當週新聞 |
 
 ---
+
+## R21（2026-08-14）——死亡報告 P2-P4：量錶、實驗、蒸餾
+
+**承 R20。** 維護者裁定 P2／P3／P4 全數落地。
+
+**② CIY 信息增量儀錶**（`_lib/info_yield.py`，週日 weekly-nav 加步，
+零 LLM）：
+- 核心定價：判定係點估計、冇正統機率分佈——以艦隊經驗轉移統計做
+  先驗，每宗改判實現信息量＝ −log2 P̂(v_t|v_{t−1})。日常無變化自動
+  唔值錢、罕見遷移自動值 5–8 bits，定價本身防 Goodhart；
+- 歸因鏈：改判 driver 證據 → playbook 新欄 `attribution_log`（R21，
+  逐條 mapped URL 記產出查詢／類別／driver 旗）→ 查詢類別
+  （p1_broad／standing／playbook／p2_model／auth_direct）；
+- 頭條指標 CIY＝bits per 1000 credits，按類別×A/B 臂分報；
+- 紀律：+28 日無翻烙餅先轉「確認分」（首航實測：累計確認 466.8
+  bits／48 宗，10 宗翻烙餅出局）；本錶只描述，不接任何自動決策；
+- 條件解決 bits 以週度快照 diff 計（`_paper/info_yield_conditions
+  .jsonl`），首航建快照零讀數；估計申報寫入儀錶本文。
+
+**③ 權威源混合臂 A/B**（`_lib/auth_source_map.py` 生成兩檔）：
+- 地圖 `auth_source_map.json`：逐樹學習域名（driver 域 ×3 權、IR 型
+  域 ×2、scout_domains ×2；substack／社交一律唔入——自家迴音
+  66 hits／0 driver 有前科）；通用固定層（yahoo／stocktitan／
+  statementdog／sec.gov 等八域）碼喺執行層；
+- 分臂 `search_ab_assignment.json`：82 樹按 playbook 活躍度三分位
+  分層、seed=42 確定性隨機——43 hybrid／39 open，4 週交叉由執行層
+  按 start 日期自動計；
+- hybrid 臂＝照舊全部輪次**另加**一條 include_domains 直取查詢
+  （round P1A，basic）——開放廣搜只加不減：67% 改判命中固定源係
+  地圖嘅立論，33% 改判完全冇固定源 driver 係佢嘅紅線；
+- 讀數以 CIY per-arm 行（簡化自完整 interleaving 設計，如實申報）。
+
+**④ 月度蒸餾 job**（`_lib/search_distill.py`＋`search-distill.yml`，
+每月第一個週日）：
+- 單一 LLM call（claude-opus-5 直連）讀 82 個 playbook 聚合計數器
+  （postmortems 死因分佈／domain_negatives 無用域名／查詢類別統計
+  ／死路樣本／discovery share），輸出機器規則落
+  `_lib/search_rules.json`——唔係散文塞 prompt；
+- 規則兩類：domain_block（只施於精準輪）／query_pattern_retire
+  （regex）；每條帶 reason＋evidence＋90 日 revalidate_after，過期
+  自動失效；
+- 確定性護欄（validate 步，LLM 講乜都要過呢關）：權威源地圖域、
+  通用固定層、全艦隊任何 driver_hits>0 域名一律唔准封；上限 30 條；
+  SEARCH_RULES=0 全域停用。
+
+## R20（2026-08-14）——死亡報告接線：個系統一直有寫死因，只係冇人讀
+
+**緣起。** 維護者引 Anthropic 數學研究（Riemann zeta 下界 41.6%→67.2%）
+嘅工作方式——650 個失敗 idea 全部記錄、由失敗堆蒸餾知識、可對已知
+零點自我驗證——問可否為搜索層起同款 feedback loop，並要求設計信息
+增量 metric、驗證「有冇特定網站已有數據可證明／證偽假說」。
+
+**研究（五 agent 全艦隊實數，存 workflow 記錄）**：
+- 現制 playbook 已係半個死亡報告，但四條線未接：只記「死咗」唔記
+  「點解死」（_filter_stats 逐 call 計完即棄）；1,034 條 gaps 文本
+  零條自我歸因（永遠怪世界，唔怪搜索自己）；蒸餾冇推理步（線性公式
+  ＋字串拼接）；前瞻迴路盲目——watch_next 99.3% 照抄執行，但 62%
+  自帶未來日期即刻去搜（命中率 14.5%），35 日 TTL 令佢比自己指向
+  嘅事件早七個禮拜過期（「太早搜，又太早忘」）；
+- 死因分佈：~60% 係時機問題（數據未出，等就得）、~33% 係世上根本
+  冇呢個數據（條件設計問題，搜極都嘥錢）、換詞可修屬少數——死亡
+  報告嘅最大價值係教個系統幾時唔好搜；
+- 權威源假說（189 個 driver 事件實測）：67% 改判至少一個 driver 嚟自
+  可預知固定源（transcript 平台／yahoo／stocktitan 等二手固定管道
+  最高效，SEC 反而得 1 次）；**但 33% 改判完全冇固定源 driver、57%
+  driver 域名係單樹單次，證偽級改判最常嚟自雜源**——權威源地圖
+  只可做混合臂，純白名單會封殺個系統存在嘅理由；
+- 對抗檢視：六股收窄力（前饋／死路閘／digest 偏好／時機閘／黑名單
+  ／蒸餾）冇一股負責探索，必須配探索保護；每葉每週 LLM 寫報告會
+  將 R19 慳嘅錢倒轉使突（39% 葉零證據、71% 結論「無新」）——
+  零 LLM 分類覆蓋八成價值。
+
+**落地（P1 接線，全零 LLM，全部可回退）**：
+1. **時機閘**（`TIMING_GATE`）：精準輪查詢文本自帶未來完整日期
+   （>3 日後）即本週唔跑；只認完整年月日，年份／季度字眼唔算；
+   P1 廣搜永不入閘（受保護探索）；
+2. **死因分類**：逐查詢 _filter_stats 落 playbook `postmortems` 欄
+   （engine_empty／filtered_out／unmapped／timing_gate／dead_gate，
+   8 週 ring buffer）；
+3. **負面域名帳** `domain_negatives`（seen/mapped）：學「邊啲網站
+   冇意思」首次有數可依；
+4. **watch_next `due` 欄**：入列時抽未來日期；due−3 日先開閘、
+   due＋14 日窗閂先過期；死路閘復活由純 28 日改埋事件錨定
+   （事件週一律放行——季度指標喺季中必然累積合法 misses）；
+5. **discovery share 儀錶＋HLT-10**：近 14 日 mapped 證據中首見
+   域名佔比，艦隊層面跌穿 5% 即警報「探索熄火」。
+   順手修 R19 cap 鈍刀：P2 查詢先過閘再取前 N，名額唔俾廢查詢佔。
+
+**後續（已設計未落地，另行拍板）**：P2 CIY metric（bits per 1000
+credits，艦隊經驗轉移矩陣定價）；P3 權威源地圖混合臂 A/B；P4 月度
+艦隊級蒸餾（輸出機器規則，唔係散文）。
+
+## R19（2026-08-14）——搜索成本三刀：八成查詢搵唔到嘢，點解仲要俾雙倍價錢
+
+**緣起。** 維護者發現 Tavily 用量失控，指示清查冗餘並評估 Map／Crawl。
+清查（playbook 全艦隊實數）：週六管線 ~18k credits/週，佔總用量 95%+；
+上週六 7,704 條 logged 查詢 80% 零命中、19% 有命中但從未產生判定
+driver、僅 0.8%（63 條）真正驅動過判定；73% 查詢字串生命長度＝1 週
+（flash P2 每週生成新字串）；全部搜索一律 advanced（雙倍 credit）。
+
+**三刀（全部 env 開關可回退）**：
+- **①死路閘擴展**（`DEAD_QUERY_GATE`）：常設／P2 查詢零命中且
+  misses≥4 唔再跑，28 日放行一次復活試探。申報：playbook 07-29 先
+  上線，離線重播斬 0 條——歷史未夠長，本閘由第 4 週起先開始有力，
+  對字串穩定嘅常設查詢（86% 零命中）長期最有效；
+- **②P2 cap 4→2**（`TWOPASS_P2_CAP`）：死路閘閘唔住每週新生成嘅
+  字串，cap 係唯一即時制得住呢個工廠嘅掣；
+- **③精準輪 basic**（`PRECISION_SEARCH_DEPTH`）：P1S／P1P／P2 查詢
+  字串本身已窄，advanced 深度提取增值有限；P1 廣搜、H0 深研、財報
+  材料、查核抽查照舊 advanced。
+
+**Map／Crawl 評估**：發現式新聞搜索係 Search 本業，Map/Crawl 代替
+唔到，唔係慳錢工具；窄位有用——Extract 抽已知 URL（查核覆核、
+factor board 注入源）、Crawl 掃固定 IR domain（財報材料，佔用量
+<1%，屬覆蓋率改善）；filings 類將來直接用 SEC EDGAR 免費 API。
+
+**驗證（08-14 A/B 實測，30 葉×6 票）**：兩臂共用 P1 池與同一張 P2
+計劃，只對比精準輪執行。精準輪 credits 512→196（**−62%**）；URL
+保留率 77%。損失歸因係本次實驗最有用嘅發現：**depth 轉 basic 只損失
+1 條 URL（幾乎免費）**；254 條損失全部嚟自 cap（P2 第 3–4 條查詢），
+其中 34 條落喺歷史高產域名——細看全部係財報材料（earnings call
+transcript／shareholder letter／10-Q），即事件週先出現嘅料。
+**R19b 修訂（數據裁定）**：14 日內有已過追蹤事件嘅葉 P2 照舊 4 條
+（事件週豁免），其餘週先食 cap=2——高價值損失集中修復，事件週僅佔
+tree-週約 8%，成本影響輕微。報告全文
+`_lib/_ab_results/search_costcut_2026-08-14.md`。監察：下個週六觀察
+零證據葉比例與 HLT-9 改判量警報，異常即回退對應開關。
 
 ## R18（2026-08-09）——三條平行線：研究、裁定與落地
 
