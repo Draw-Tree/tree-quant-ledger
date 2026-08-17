@@ -1,6 +1,6 @@
 # 🧪 校準結果：判定轉變 × 前向回報 × cascade
 
-> 出口日期 2026-08-16。本頁全部數字由 [`analysis.py`](analysis.py) 對[`events.csv`](events.csv)／[`clusters.csv`](clusters.csv) 重算生成（固定種子，完全可重現）；欄位字典、有效性規則、預登記協議與 artifact 案底見 [`SPEC.md`](SPEC.md)。方法論重新編碼（recode）已於源頭剔除。
+> 出口日期 2026-08-17。本頁全部數字由 [`analysis.py`](analysis.py) 對[`events.csv`](events.csv)／[`clusters.csv`](clusters.csv) 重算生成（固定種子，完全可重現）；欄位字典、有效性規則、預登記協議與 artifact 案底見 [`SPEC.md`](SPEC.md)。方法論重新編碼（recode）已於源頭剔除。
 
 > **2026-07-28 資料重述**：本層自 2026-07-24 起凍結，今日解凍並改回每次出口重算。兩項口徑改動令已公開數字改變：①**state 持有規則**——窗口跨越同一假說下一次判定轉變的格屬於下一個 state 的行情，予以剔除，`events.csv`／`clusters.csv` 因而縮短；②**歷史價回補**——5 至 7 月缺價段以 Yahoo 歷史日線回補（逐行 `backfilled_hist` 標記，不寫入 quant_history），+4..+8 週首次有讀數，降級側 +1 週的獨立 cluster 由 10 個增至 32 個。凍結期的舊快照完整保留於 git 歷史，可自行 diff 覆核。改動令結論**更不利**於主假說（見下），照樣公開。
 
