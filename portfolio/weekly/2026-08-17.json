@@ -6074,7 +6074,10 @@
       "order_type": "MOO",
       "order_id": 16,
       "perm_id": 1418914841,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 362.86,
+      "verified_shares": 2.0
     },
     {
       "ticker": "TTD",
@@ -6090,7 +6093,10 @@
       "order_type": "MOO",
       "order_id": 18,
       "perm_id": 1418914842,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 13.74,
+      "verified_shares": 216.0
     },
     {
       "ticker": "NKE",
@@ -6106,7 +6112,10 @@
       "order_type": "MOO",
       "order_id": 20,
       "perm_id": 1418914843,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 40.36,
+      "verified_shares": 20.0
     },
     {
       "ticker": "IBM",
@@ -6122,7 +6131,10 @@
       "order_type": "MOO",
       "order_id": 22,
       "perm_id": 1418914844,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 231.64,
+      "verified_shares": 4.0
     },
     {
       "ticker": "VST",
@@ -6138,7 +6150,10 @@
       "order_type": "MOO",
       "order_id": 24,
       "perm_id": 1418914845,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 149.99,
+      "verified_shares": 7.0
     },
     {
       "ticker": "DDOG",
@@ -6154,7 +6169,10 @@
       "order_type": "MOO",
       "order_id": 26,
       "perm_id": 1418914846,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 250.05,
+      "verified_shares": 23.0
     },
     {
       "ticker": "BRK-B",
@@ -6186,7 +6204,10 @@
       "order_type": "MOO",
       "order_id": 30,
       "perm_id": 1418914847,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 491.65,
+      "verified_shares": 1.0
     },
     {
       "ticker": "TXN",
@@ -6202,7 +6223,10 @@
       "order_type": "MOO",
       "order_id": 32,
       "perm_id": 1418914848,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 280.68,
+      "verified_shares": 2.0
     },
     {
       "ticker": "NOW",
@@ -6218,7 +6242,10 @@
       "order_type": "MOO",
       "order_id": 34,
       "perm_id": 1418914849,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 122.31,
+      "verified_shares": 4.0
     },
     {
       "ticker": "MDB",
@@ -6234,7 +6261,10 @@
       "order_type": "MOO",
       "order_id": 36,
       "perm_id": 1418914850,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 453.11,
+      "verified_shares": 1.0
     },
     {
       "ticker": "TEAM",
@@ -6250,7 +6280,10 @@
       "order_type": "MOO",
       "order_id": 38,
       "perm_id": 1418914851,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 158.11,
+      "verified_shares": 4.0
     },
     {
       "ticker": "SNOW",
@@ -6266,7 +6299,10 @@
       "order_type": "MOO",
       "order_id": 40,
       "perm_id": 1418914852,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 328.32,
+      "verified_shares": 1.0
     },
     {
       "ticker": "UNH",
@@ -6282,7 +6318,10 @@
       "order_type": "MOO",
       "order_id": 42,
       "perm_id": 1418914853,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 397.76,
+      "verified_shares": 15.0
     },
     {
       "ticker": "POET",
@@ -6298,7 +6337,10 @@
       "order_type": "MOO",
       "order_id": 44,
       "perm_id": 1418914854,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 9.78,
+      "verified_shares": 73.0
     },
     {
       "ticker": "UBER",
@@ -6314,7 +6356,10 @@
       "order_type": "MOO",
       "order_id": 46,
       "perm_id": 1418914855,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 76.9,
+      "verified_shares": 5.0
     },
     {
       "ticker": "CRDO",
@@ -6330,7 +6375,10 @@
       "order_type": "MOO",
       "order_id": 48,
       "perm_id": 1418914856,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 276.72,
+      "verified_shares": 2.0
     },
     {
       "ticker": "GOOGL",
@@ -6346,7 +6394,10 @@
       "order_type": "MOO",
       "order_id": 50,
       "perm_id": 1418914857,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 346.7,
+      "verified_shares": 1.0
     },
     {
       "ticker": "UUUU",
@@ -6362,7 +6413,10 @@
       "order_type": "MOO",
       "order_id": 52,
       "perm_id": 1418914858,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 14.95,
+      "verified_shares": 46.0
     },
     {
       "ticker": "CHYM",
@@ -6378,7 +6432,10 @@
       "order_type": "MOO",
       "order_id": 54,
       "perm_id": 1418914859,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 31.7,
+      "verified_shares": 26.0
     },
     {
       "ticker": "SKHY",
@@ -6390,7 +6447,10 @@
       "order_type": "MOO",
       "order_id": 56,
       "perm_id": 1418914860,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 173.85,
+      "verified_shares": 1.0
     },
     {
       "ticker": "AMKR",
@@ -6402,7 +6462,11 @@
       "order_type": "MOO",
       "order_id": 58,
       "perm_id": 1418914861,
-      "limit": null
+      "limit": null,
+      "verified_status": "Filled",
+      "verified_avg_price": 60.05,
+      "verified_shares": 4.0
     }
-  ]
+  ],
+  "fills_verified_at": "2026-08-17 13:59 UTC"
 }
