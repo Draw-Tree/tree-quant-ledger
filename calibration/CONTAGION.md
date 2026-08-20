@@ -85,4 +85,4 @@ _「訊息齡」＝驅動新聞首報距判定日數（≥14 日＝舊聞）；�
 
 ——
 
-帳本源：`_paper/echo_t0/`｜`_paper/contagion.jsonl`｜`_paper/svi/`（私庫，append-only 首掃凍結）。判準原文：`CALIBRATION_SPEC` v3.17；觀察層草案 v3.18／v3.19。*研究用途，非投資建議。*
+帳本源：`_paper/echo_t0/`｜`_paper/contagion.jsonl`｜`_paper/svi/`（私庫，append-only 首掃凍結）。判準原文：`CALIBRATION_SPEC` v3.17；觀察層草案 v3.18／v3.19／v3.20（`P擴散`＝生命週期機率，見 [MARKOV](MARKOV.md)）。*研究用途，非投資建議。*
