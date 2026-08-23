@@ -29,3 +29,5 @@
 {"id": "D2", "date": "2026-07-10", "from": "Validated", "to": "Approaching falsification"}
 {"id": "D3", "date": "2026-07-10", "from": "Validated", "to": "Inconclusive"}
 {"id": "D3", "date": "2026-07-18", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "A2", "date": "2026-08-22", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "D2", "date": "2026-08-22", "from": "Approaching falsification", "to": "Falsified"}
