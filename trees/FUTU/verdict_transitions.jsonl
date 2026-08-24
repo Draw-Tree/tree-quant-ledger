@@ -1,2 +1,6 @@
 {"id": "B1", "date": "2026-06-06", "from": "Inconclusive", "to": "Falsified"}
 {"id": "B3", "date": "2026-06-20", "from": "Inconclusive", "to": "Falsified"}
+{"id": "A1", "date": "2026-08-23", "from": "Inconclusive", "to": "Trending positive"}
+{"id": "A2", "date": "2026-08-23", "from": "Trending positive", "to": "Approaching falsification"}
+{"id": "A2", "date": "2026-08-23", "from": "Approaching falsification", "to": "Trending positive"}
+{"id": "D3", "date": "2026-08-23", "from": "Inconclusive", "to": "Approaching falsification"}

@@ -1,7 +1,7 @@
 [
   {
     "id": "A1",
-    "verdict": "Inconclusive"
+    "verdict": "Trending positive"
   },
   {
     "id": "A2",
@@ -45,6 +45,6 @@
   },
   {
     "id": "D3",
-    "verdict": "Inconclusive"
+    "verdict": "Approaching falsification"
   }
 ]
