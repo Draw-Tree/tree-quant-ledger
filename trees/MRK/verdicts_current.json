@@ -1,0 +1,66 @@
+[
+  {
+    "id": "A1",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "A2",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "A3",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "A4",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "B1",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "B2",
+    "verdict": "Trending positive"
+  },
+  {
+    "id": "B3",
+    "verdict": "Approaching falsification"
+  },
+  {
+    "id": "B4",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "C1",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "C2",
+    "verdict": "Trending negative"
+  },
+  {
+    "id": "C3",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "C4",
+    "verdict": "Approaching falsification"
+  },
+  {
+    "id": "D1",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "D2",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "D3",
+    "verdict": "Inconclusive"
+  },
+  {
+    "id": "D4",
+    "verdict": "Inconclusive"
+  }
+]
