@@ -36,3 +36,4 @@
 {"id": "E4", "date": "2026-05-16", "from": "Inconclusive", "to": "Trending positive"}
 {"id": "C1", "date": "2026-05-30", "from": "Trending negative", "to": "Approaching falsification"}
 {"id": "E1", "date": "2026-07-22", "from": "Trending negative", "to": "Trending negative", "recode": true}
+{"id": "E3", "date": "2026-08-30", "from": "Trending positive", "to": "Inconclusive"}
