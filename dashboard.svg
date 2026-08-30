@@ -8,7 +8,7 @@
 </style>
 <rect width="992" height="1438" class="bg"/>
 <text x="12" y="25" font-size="16" font-weight="bold" class="fg">訊號生命線 — 判定改變之後，股價如何變動</text>
-<text x="12" y="45" font-size="12" class="mut">25 個訊號在跑　16 檔已剔除　✓ 符合 12　✗ 反向 18　更新 2026-08-30</text>
+<text x="12" y="45" font-size="12" class="mut">25 個訊號在跑　16 檔已剔除　✓ 符合 13　✗ 反向 21　更新 2026-08-30</text>
 <text x="12" y="64" font-size="11" class="dim">每格＝該週回報 − 全池中位　🟩 方向正確　🟥 方向相反　色深＝幅度　⚡ 判定再翻轉，訊號完結　第 0 週＝訊號前一週（灰，不計分）</text>
 <line x1="12" y1="74" x2="980" y2="74" class="hair"/>
 <line x1="385.0" y1="74" x2="385.0" y2="1412" class="hair" stroke-dasharray="3 3"/>
@@ -131,7 +131,8 @@
 <text x="472.0" y="345" text-anchor="middle" fill="#111827">+6.5%</text>
 <rect x="500" y="329" width="48" height="22" rx="4" fill="#86efac"/>
 <text x="524.0" y="345" text-anchor="middle" fill="#111827">+4.1%</text>
-<rect x="552" y="329" width="48" height="22" rx="4" class="blank"/>
+<rect x="552" y="329" width="48" height="22" rx="4" fill="#fee2e2"/>
+<text x="576.0" y="345" text-anchor="middle" fill="#111827">-2.2%</text>
 <rect x="604" y="329" width="48" height="22" rx="4" class="blank"/>
 <rect x="656" y="329" width="48" height="22" rx="4" class="blank"/>
 <rect x="708" y="329" width="48" height="22" rx="4" class="blank"/>
@@ -147,7 +148,8 @@
 <text x="472.0" y="377" text-anchor="middle" fill="#111827">+7.5%</text>
 <rect x="500" y="361" width="48" height="22" rx="4" fill="#f87171"/>
 <text x="524.0" y="377" text-anchor="middle" fill="#111827">-5.9%</text>
-<rect x="552" y="361" width="48" height="22" rx="4" class="blank"/>
+<rect x="552" y="361" width="48" height="22" rx="4" fill="#dcfce7"/>
+<text x="576.0" y="377" text-anchor="middle" fill="#111827">+0.0%</text>
 <rect x="604" y="361" width="48" height="22" rx="4" class="blank"/>
 <rect x="656" y="361" width="48" height="22" rx="4" class="blank"/>
 <rect x="708" y="361" width="48" height="22" rx="4" class="blank"/>
@@ -262,7 +264,8 @@
 <text x="420.0" y="665" text-anchor="middle" fill="#111827">-5.3%</text>
 <rect x="448" y="649" width="48" height="22" rx="4" fill="#16a34a"/>
 <text x="472.0" y="665" text-anchor="middle" fill="#111827">-9.5%</text>
-<rect x="500" y="649" width="48" height="22" rx="4" class="blank"/>
+<rect x="500" y="649" width="48" height="22" rx="4" fill="#fee2e2"/>
+<text x="524.0" y="665" text-anchor="middle" fill="#111827">+0.9%</text>
 <rect x="552" y="649" width="48" height="22" rx="4" class="blank"/>
 <rect x="604" y="649" width="48" height="22" rx="4" class="blank"/>
 <rect x="656" y="649" width="48" height="22" rx="4" class="blank"/>
@@ -285,7 +288,8 @@
 <text x="420.0" y="729" text-anchor="middle" fill="#111827">-1.0%</text>
 <rect x="448" y="713" width="48" height="22" rx="4" fill="#4ade80"/>
 <text x="472.0" y="729" text-anchor="middle" fill="#111827">-5.7%</text>
-<rect x="500" y="713" width="48" height="22" rx="4" class="blank"/>
+<rect x="500" y="713" width="48" height="22" rx="4" fill="#86efac"/>
+<text x="524.0" y="729" text-anchor="middle" fill="#111827">-4.1%</text>
 <rect x="552" y="713" width="48" height="22" rx="4" class="blank"/>
 <rect x="604" y="713" width="48" height="22" rx="4" class="blank"/>
 <rect x="656" y="713" width="48" height="22" rx="4" class="blank"/>
@@ -298,7 +302,8 @@
 <text x="337.0" y="761" text-anchor="middle" class="mut" font-size="11" opacity="0.42">⚠+7.8%</text>
 <rect x="396" y="745" width="48" height="22" rx="4" fill="#f87171" opacity="0.42"/>
 <text x="420.0" y="761" text-anchor="middle" fill="#111827" opacity="0.42">-6.6%</text>
-<rect x="448" y="745" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<rect x="448" y="745" width="48" height="22" rx="4" fill="#fee2e2" opacity="0.42"/>
+<text x="472.0" y="761" text-anchor="middle" fill="#111827" opacity="0.42">-2.0%</text>
 <rect x="500" y="745" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
 <rect x="552" y="745" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
 <rect x="604" y="745" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
@@ -312,21 +317,16 @@
 <text x="337.0" y="793" text-anchor="middle" class="mut" font-size="11">-3.8%</text>
 <rect x="396" y="777" width="48" height="22" rx="4" fill="#dc2626"/>
 <text x="420.0" y="793" text-anchor="middle" fill="#111827">-11.1%</text>
-<rect x="448" y="777" width="48" height="22" rx="4" class="blank"/>
-<rect x="500" y="777" width="48" height="22" rx="4" class="blank"/>
-<rect x="552" y="777" width="48" height="22" rx="4" class="blank"/>
-<rect x="604" y="777" width="48" height="22" rx="4" class="blank"/>
-<rect x="656" y="777" width="48" height="22" rx="4" class="blank"/>
-<rect x="708" y="777" width="48" height="22" rx="4" class="blank"/>
-<rect x="760" y="777" width="48" height="22" rx="4" class="blank"/>
-<text x="822" y="793" class="bad">✗ 暫時反向</text>
+<text x="472.0" y="793" text-anchor="middle" font-size="14">⚡</text>
+<text x="822" y="793" class="bad">✗ 反向・已翻轉</text>
 <text x="12" y="825"><tspan class="fg" font-weight="bold">🔺 COHR 高</tspan><tspan class="mut" font-size="11" dx="8">●●●●</tspan></text>
 <text x="286" y="825" text-anchor="end" class="dim" font-size="10">2026-08-16</text>
 <rect x="300" y="809" width="74" height="22" rx="4" class="blank"/>
 <text x="337.0" y="825" text-anchor="middle" class="mut" font-size="11">-15.0%</text>
 <rect x="396" y="809" width="48" height="22" rx="4" fill="#dc2626"/>
 <text x="420.0" y="825" text-anchor="middle" fill="#111827">-11.8%</text>
-<rect x="448" y="809" width="48" height="22" rx="4" class="blank"/>
+<rect x="448" y="809" width="48" height="22" rx="4" fill="#fca5a5"/>
+<text x="472.0" y="825" text-anchor="middle" fill="#111827">-3.6%</text>
 <rect x="500" y="809" width="48" height="22" rx="4" class="blank"/>
 <rect x="552" y="809" width="48" height="22" rx="4" class="blank"/>
 <rect x="604" y="809" width="48" height="22" rx="4" class="blank"/>
@@ -396,7 +396,8 @@
 <text x="337.0" y="985" text-anchor="middle" class="mut" font-size="11" opacity="0.42">-3.7%</text>
 <rect x="396" y="969" width="48" height="22" rx="4" fill="#fca5a5" opacity="0.42"/>
 <text x="420.0" y="985" text-anchor="middle" fill="#111827" opacity="0.42">-3.9%📆</text>
-<rect x="448" y="969" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<rect x="448" y="969" width="48" height="22" rx="4" fill="#fee2e2" opacity="0.42"/>
+<text x="472.0" y="985" text-anchor="middle" fill="#111827" opacity="0.42">-0.8%</text>
 <rect x="500" y="969" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
 <rect x="552" y="969" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
 <rect x="604" y="969" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
@@ -410,7 +411,8 @@
 <text x="337.0" y="1017" text-anchor="middle" class="mut" font-size="11" opacity="0.42">-5.5%</text>
 <rect x="396" y="1001" width="48" height="22" rx="4" fill="#16a34a" opacity="0.42"/>
 <text x="420.0" y="1017" text-anchor="middle" fill="#111827" opacity="0.42">-12.4%</text>
-<rect x="448" y="1001" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<rect x="448" y="1001" width="48" height="22" rx="4" fill="#fee2e2" opacity="0.42"/>
+<text x="472.0" y="1017" text-anchor="middle" fill="#111827" opacity="0.42">+0.3%</text>
 <rect x="500" y="1001" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
 <rect x="552" y="1001" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
 <rect x="604" y="1001" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
@@ -424,7 +426,8 @@
 <text x="337.0" y="1049" text-anchor="middle" class="mut" font-size="11" opacity="0.42">+4.5%</text>
 <rect x="396" y="1033" width="48" height="22" rx="4" fill="#86efac" opacity="0.42"/>
 <text x="420.0" y="1049" text-anchor="middle" fill="#111827" opacity="0.42">-3.1%</text>
-<rect x="448" y="1033" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<rect x="448" y="1033" width="48" height="22" rx="4" fill="#fee2e2" opacity="0.42"/>
+<text x="472.0" y="1049" text-anchor="middle" fill="#111827" opacity="0.42">+0.9%</text>
 <rect x="500" y="1033" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
 <rect x="552" y="1033" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
 <rect x="604" y="1033" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
@@ -438,7 +441,8 @@
 <text x="337.0" y="1081" text-anchor="middle" class="mut" font-size="11">+7.9%</text>
 <rect x="396" y="1065" width="48" height="22" rx="4" fill="#dc2626"/>
 <text x="420.0" y="1081" text-anchor="middle" fill="#111827">+9.8%</text>
-<rect x="448" y="1065" width="48" height="22" rx="4" class="blank"/>
+<rect x="448" y="1065" width="48" height="22" rx="4" fill="#dc2626"/>
+<text x="472.0" y="1081" text-anchor="middle" fill="#111827">+8.9%</text>
 <rect x="500" y="1065" width="48" height="22" rx="4" class="blank"/>
 <rect x="552" y="1065" width="48" height="22" rx="4" class="blank"/>
 <rect x="604" y="1065" width="48" height="22" rx="4" class="blank"/>
@@ -484,8 +488,16 @@
 <text x="286" y="1209" text-anchor="end" class="dim" font-size="10">2026-08-23</text>
 <rect x="300" y="1193" width="74" height="22" rx="4" class="blank"/>
 <text x="337.0" y="1209" text-anchor="middle" class="mut" font-size="11">-12.4%</text>
-<rect x="396" y="1193" width="412" height="22" rx="4" class="blank"/>
-<text x="600.0" y="1209" text-anchor="middle" class="dim" font-size="11">⏳ 未開錶　首個讀數 2026-08-30</text>
+<rect x="396" y="1193" width="48" height="22" rx="4" fill="#f87171"/>
+<text x="420.0" y="1209" text-anchor="middle" fill="#111827">-6.6%</text>
+<rect x="448" y="1193" width="48" height="22" rx="4" class="blank"/>
+<rect x="500" y="1193" width="48" height="22" rx="4" class="blank"/>
+<rect x="552" y="1193" width="48" height="22" rx="4" class="blank"/>
+<rect x="604" y="1193" width="48" height="22" rx="4" class="blank"/>
+<rect x="656" y="1193" width="48" height="22" rx="4" class="blank"/>
+<rect x="708" y="1193" width="48" height="22" rx="4" class="blank"/>
+<rect x="760" y="1193" width="48" height="22" rx="4" class="blank"/>
+<text x="822" y="1209" class="bad">✗ 暫時反向</text>
 <text x="12" y="1241"><tspan class="fg" font-weight="bold">🔺 HEI 極高</tspan><tspan class="mut" font-size="11" dx="8">●●●●●</tspan></text>
 <text x="286" y="1241" text-anchor="end" class="dim" font-size="10">2026-08-23</text>
 <rect x="300" y="1225" width="74" height="22" rx="4" class="blank"/>
@@ -496,14 +508,30 @@
 <text x="286" y="1273" text-anchor="end" class="dim" font-size="10" opacity="0.42">2026-08-23</text>
 <rect x="300" y="1257" width="74" height="22" rx="4" class="blank" opacity="0.42"/>
 <text x="337.0" y="1273" text-anchor="middle" class="mut" font-size="11" opacity="0.42">⚠-16.5%</text>
-<rect x="396" y="1257" width="412" height="22" rx="4" class="blank" opacity="0.42"/>
-<text x="600.0" y="1273" text-anchor="middle" class="mut" font-size="11">🚫 08-23 剔除：補課訊號（驅動資訊 2026-07-28 已公開）</text>
+<rect x="396" y="1257" width="48" height="22" rx="4" fill="#dc2626" opacity="0.42"/>
+<text x="420.0" y="1273" text-anchor="middle" fill="#111827" opacity="0.42">+9.2%</text>
+<rect x="448" y="1257" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<rect x="500" y="1257" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<rect x="552" y="1257" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<rect x="604" y="1257" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<rect x="656" y="1257" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<rect x="708" y="1257" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<rect x="760" y="1257" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<text x="822" y="1273" class="dim">🚫 08-23 剔除</text>
 <text x="12" y="1305"><tspan class="fg" font-weight="bold">🔻 9992 高</tspan><tspan class="mut" font-size="11" dx="8">●●●●</tspan></text>
 <text x="286" y="1305" text-anchor="end" class="dim" font-size="10">2026-08-23</text>
 <rect x="300" y="1289" width="74" height="22" rx="4" class="blank"/>
 <text x="337.0" y="1305" text-anchor="middle" class="mut" font-size="11">-3.3%</text>
-<rect x="396" y="1289" width="412" height="22" rx="4" class="blank"/>
-<text x="600.0" y="1305" text-anchor="middle" class="dim" font-size="11">⏳ 未開錶　首個讀數 2026-08-30</text>
+<rect x="396" y="1289" width="48" height="22" rx="4" fill="#f87171"/>
+<text x="420.0" y="1305" text-anchor="middle" fill="#111827">+5.9%</text>
+<rect x="448" y="1289" width="48" height="22" rx="4" class="blank"/>
+<rect x="500" y="1289" width="48" height="22" rx="4" class="blank"/>
+<rect x="552" y="1289" width="48" height="22" rx="4" class="blank"/>
+<rect x="604" y="1289" width="48" height="22" rx="4" class="blank"/>
+<rect x="656" y="1289" width="48" height="22" rx="4" class="blank"/>
+<rect x="708" y="1289" width="48" height="22" rx="4" class="blank"/>
+<rect x="760" y="1289" width="48" height="22" rx="4" class="blank"/>
+<text x="822" y="1305" class="bad">✗ 暫時反向</text>
 <text x="12" y="1337"><tspan class="fg" font-weight="bold">🔻 SMR 高</tspan><tspan class="mut" font-size="11" dx="8">●●●●</tspan></text>
 <text x="286" y="1337" text-anchor="end" class="dim" font-size="10">2026-08-23</text>
 <rect x="300" y="1321" width="74" height="22" rx="4" class="blank"/>
@@ -514,13 +542,21 @@
 <text x="286" y="1369" text-anchor="end" class="dim" font-size="10" opacity="0.42">2026-08-23</text>
 <rect x="300" y="1353" width="74" height="22" rx="4" class="blank" opacity="0.42"/>
 <text x="337.0" y="1369" text-anchor="middle" class="mut" font-size="11" opacity="0.42">+8.2%</text>
-<rect x="396" y="1353" width="412" height="22" rx="4" class="blank" opacity="0.42"/>
-<text x="600.0" y="1369" text-anchor="middle" class="mut" font-size="11">🚫 08-23 剔除：補課＋未經覆核＋財報落在窗口內</text>
+<rect x="396" y="1353" width="48" height="22" rx="4" fill="#86efac" opacity="0.42"/>
+<text x="420.0" y="1369" text-anchor="middle" fill="#111827" opacity="0.42">-2.9%📆</text>
+<rect x="448" y="1353" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<rect x="500" y="1353" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<rect x="552" y="1353" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<rect x="604" y="1353" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<rect x="656" y="1353" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<rect x="708" y="1353" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<rect x="760" y="1353" width="48" height="22" rx="4" class="blank" opacity="0.42"/>
+<text x="822" y="1369" class="dim">🚫 08-23 剔除</text>
 <text x="12" y="1401" opacity="0.42"><tspan class="fg" font-weight="bold" text-decoration="line-through">🔻 UNH 極高</tspan><tspan class="mut" font-size="11" dx="8">●●●●●</tspan></text>
 <text x="286" y="1401" text-anchor="end" class="dim" font-size="10" opacity="0.42">2026-08-23</text>
 <rect x="300" y="1385" width="74" height="22" rx="4" class="blank" opacity="0.42"/>
 <text x="337.0" y="1401" text-anchor="middle" class="mut" font-size="11" opacity="0.42">-2.1%</text>
 <rect x="396" y="1385" width="412" height="22" rx="4" class="blank" opacity="0.42"/>
 <text x="600.0" y="1401" text-anchor="middle" class="mut" font-size="11">🚫 08-23 剔除：補課訊號（驅動資訊 2026-07-16 已公開）</text>
-<text x="12" y="1430" font-size="10" class="dim">🚫 剔除＝列入名單但不建倉（計分照舊）：CEG 唯一支撐證據不可查證　IFNNY 改判引用帳本中不存在的來源　NET 同一項證據推動兩次降級　MSFT 財報訊號已隔五日，已反應　LEU 新樹觀察期（回填）　VST 新樹觀察期（回填）　AMD 補課訊號（改判理由誤稱本週確認）　MU 補課訊號（2 月 IDC 數據作本週新資訊）　HPQ 補課訊號（3 月發布會作本週新資訊）　BABA 補課訊號＋引用已失效目標　6324.T 補課訊號（5 月業績＋7 月競爭報導）　CEG 補課訊號（驅動證據為 2025 年舊聞）　QCOM 補課訊號（4 月／6 月舊聞）　— 詳見 portfolio/EXCLUSIONS.md</text>
+<text x="12" y="1430" font-size="10" class="dim">🚫 剔除＝列入名單但不建倉（計分照舊）：CEG 唯一支撐證據不可查證　IFNNY 改判引用帳本中不存在的來源　NET 同一項證據推動兩次降級　MSFT 財報訊號已隔五日，已反應　LEU 新樹觀察期（回填）　VST 新樹觀察期（回填）　AMD 補課訊號（改判理由誤稱本週確認）　MU 補課訊號（2 月 IDC 數據作本週新資訊）　HPQ 補課訊號（3 月發布會作本週新資訊）　BABA 補課訊號＋引用已失效目標　6324.T 補課訊號（5 月業績＋7 月競爭報導）　CEG 補課訊號（驅動證據為 2025 年舊聞）　QCOM 補課訊號（4 月／6 月舊聞）　BE 補課訊號（驅動資訊 2026-07-28 已公開）　INTU 補課＋未經覆核＋財報落在窗口內　— 詳見 portfolio/EXCLUSIONS.md</text>
 </svg>
